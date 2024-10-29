@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+  background-color: #f7f7f8;
+   font-family: 'Proxima Nova', sans-serif; 
+  margin: 0;
+  padding: 0; 
+ 
+}
+
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Formular', sans-serif; 
+}
+
+p {
+  font-family: 'Proxima Nova', sans-serif;
+} 
+
+.bg-box {
+  background-image: linear-gradient(
+    300deg,
+    #00729f 0%,
+    rgba(121, 159, 171, 1) 85%,
+    rgba(84, 132, 152, 1) 98%,
+    rgba(244, 248, 244, 1) 100%
+    
+  );
+  
+}
+  .bg-box1 {
+    background-image: linear-gradient(
+      122deg,
+      #00729f 0%,
+      rgba(121, 159, 171, 1) 90%,
+      rgba(84, 132, 152, 1) 100%,
+      rgba(244, 248, 244, 1) 100%
+    );
+    
+  }
+  .bg-boxright{
+
+    background-image: linear-gradient(
+      270deg,
+      #00729f 0%,
+      rgba(121, 159, 171, 1) 90%,
+      rgba(84, 132, 152, 1) 100%,
+      rgba(244, 248, 244, 1) 100%
+    );
+  }
+  .bg-boxleft{
+
+    background-image: linear-gradient(
+      90deg,
+      #00729f 0%,
+      rgba(121, 159, 171, 1) 90%,
+      rgba(84, 132, 152, 1) 100%,
+      rgba(244, 248, 244, 1) 100%
+    );
+  }
+
+  ._cUP1np9gMvFQrcPftuf.xahN8AEzyAvQtVj17TPv {
+    margin-top: 6px;
+    margin-bottom: 08px
+}
+
+._cUP1np9gMvFQrcPftuf._Y8HCTxgNkwxXcG_DCXx {
+  padding-right: 1%;
+  padding-left: 1%
+}
+
+
+/* Keyframes for spinning */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Class for spinning animation */
+.animate-spin-slow {
+  animation: spin 20s linear infinite; /* Keep spinning */
+}
+
+/* Hover effect for pop-out */
+/* Add hover scale for the entire container */
+.hover-pop-out:hover .pop-out {
+  transform: scale(1.2); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-pop-out:hover .pop-out-fast {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+}

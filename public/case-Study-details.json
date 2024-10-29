@@ -1,0 +1,27 @@
+[
+    {
+      "id": 0,
+      "details": "Detailed information about Pay10 project in Saudi Arab",
+      "client": "Pay10",
+      "description": "An all-inclusive digital wallet app for the Middle East."
+    },
+    {
+      "id": 1,
+      "details": "Detailed information about Complibuddy project in USA",
+      "client": "Complibuddy",
+      "description": "A full-suite management software for property compliance in NYC."
+    },
+    {
+      "id": 2,
+      "details": "Detailed information about Toto project in Canada",
+      "client": "Toto",
+      "description": "An AI-powered community platform for social change."
+    },
+    {
+      "id": 3,
+      "details": "Detailed information about Dexfolio project in USA",
+      "client": "Dexfolio",
+      "description": "A decentralized portfolio tracking application."
+    }
+  ]
+  
