@@ -94,7 +94,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("resize", handleSize);
     };
-  }, [isMenuOpen]);
+  }, [isMenuOpen, toggleMenu]);
 
   return (
     <>

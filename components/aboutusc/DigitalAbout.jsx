@@ -133,7 +133,7 @@ const Aboutus = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-6 text-white">Want to work with us?</h2>
           <p className="text-lg mb-6 text-white">
-            We're always looking for talented individuals to join our team and help us shape the future.
+            We re always looking for talented individuals to join our team and help us shape the future.
           </p>
           <a
             href="/contact"
