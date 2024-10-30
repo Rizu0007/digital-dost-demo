@@ -72,7 +72,7 @@ const landingPages = [
 function Navbar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isClickDone,setisClickDone]=useState(false);
+  const [isClickDone,setisClickDone]=useState(true);
 
   const toggleMega =() =>{
     setisClickDone(!isClickDone);
@@ -94,13 +94,15 @@ function Navbar() {
     return () => {
       window.removeEventListener("resize", handleSize);
     };
-  }, [isMenuOpen, toggleMenu]);
+  }, [isMenuOpen]);
+
+
 
   return (
     <>
       <header className="bg-white relative z-50 inset-0">
         {/* navbar start */}
-        <nav className="flex justify-center items-center w-full h-full shadow-lg xs:mt-3 lg:mt-0">
+        <nav className="flex justify-center items-center w-full h-full shadow-lg xs:py-3 lg:mt-0">
           {/* logo */}
           <div className="lg:1/6 flex justify-start">
             <Link href="/">
@@ -123,7 +125,7 @@ function Navbar() {
                 height={70}
                 alt="Logo"
               />
-              <div className="lg:hidden flex items-center w-1/2 justify-end mr-3">
+              <div className="lg:hidden flex items-center w-1/2 justify-end mr-3 ">
                 <button
                   className="text-[#fff] focus:outline-none"
                   onClick={toggleMenu}
@@ -137,15 +139,15 @@ function Navbar() {
               </div>
             </div>
             <ul className={`font-semibold text-[#171717d7] flex lg:space-x-16 xl:space-x-20 2xl:space-x-28 text-[14px] text-nowrap ${isMenuOpen ? " w-3/4 flex-col  justify-center flex mx-24 xs:mx-10  bg-white relative" : ""}`}>
-                <li className=" group relative">
+                <li className="relative group ">
 
-                  <Link href="/services" className="w-full pt-4 pb-2 md:hover:border-b-2 md: hover:border-b-[#00729f] flex">SERVICES
-                    <Image src='/down-arrow.png' alt='arrowdown' width={18} height={10} className="ml-1 h-[10px] w-[10px] mt-[6px]" onClick={toggleMega}
+                  <Link href="/services" className="w-full pt-4 pb-2 md:hover:border-b-2 md: hover:border-b-[#00729f] flex " onClick={() => setIsMenuOpen(false)}>SERVICES
+                    <Image src='/down-arrow.png' alt='arrowdown' width={18} height={10} className="ml-1 h-[10px] w-[10px] mt-[6px]"  onClick={toggleMega}
                     />
                   </Link>
                   {isClickDone && (
 
-                  <div id="mega-menu-full-dropdown" className={`   lg:absolute lg:-ml-[230px] min-[1199px]:-ml-[280px] xl:-ml-[260px] min-[1339px]:-ml-[300px] min-[1424px]:-ml-[400px] 2xl:-ml-[350px] hidden group-hover:flex  mt-3 mb-6 z-20 px-3${!isClickDone ? "z-0  " :" "}`}>
+                  <div id="mega-menu-full-dropdown" className={` lg:absolute lg:-ml-[230px] min-[1199px]:-ml-[280px] xl:-ml-[260px] min-[1339px]:-ml-[300px] min-[1424px]:-ml-[400px] 2xl:-ml-[350px] hidden group-hover:flex  mt-3 mb-6 z-20 px-3${!isClickDone ? "z-0  " :" "}`}>
                     <div className="grid w-[90vw]  2xl:w-[90vw]  px-4 py-5 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 shadow-md z-20">
                       <ul className="flex flex-col space-y-4 md:w-3/4 pl-4">
                         <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
@@ -237,7 +239,7 @@ function Navbar() {
                           </li>
                         ))}
                         <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                          <h3>blockchain Development</h3>
+                          <h3>Blockchain Development</h3>
 
                           {/* <Image src='/megamenu/mega7.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
                           {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
@@ -274,7 +276,7 @@ function Navbar() {
                           ))}
                         </div>
                         <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                          <h3>landing Pages</h3>
+                          <h3>Landing Pages</h3>
 
                           {/* <Image src='/megamenu/mega9.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
                           {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
@@ -307,13 +309,13 @@ function Navbar() {
                 </li>
               
               <li className="relative group ">
-                <Link href="/casestudyall" className="w-full pt-4 pb-2 md:hover:border-b-2 md: hover:border-b-[#00729f] flex">CASE STUDIES
-                  <Image src='/down-arrow.png' alt='arrowdown' width={18} height={10} className="ml-1 h-[10px] w-[10px] mt-[6px]" />
+                <Link href="/casestudyall" className="w-full pt-4 pb-2 md:hover:border-b-2 md: hover:border-b-[#00729f] flex" onClick={() => setIsMenuOpen(false)}>CASE STUDIES
+                  <Image src='/down-arrow.png' alt='arrowdown' width={18} height={10} className="ml-1 h-[10px] w-[10px] mt-[6px]" onClick={toggleMega} /> 
                 </Link>
                 {/* Mega menu hover */}
 
-
-                <div id="mega-menu-full-dropdown" className="absolute md:-ml-[220px] shadow-xl hidden group-hover:flex mt-3 mb-6 z-20">
+                {isClickDone && (
+                <div id="mega-menu-full-dropdown" className={`absolute md:-ml-[220px] shadow-xl hidden group-hover:flex mt-3 mb-6 z-20${!isClickDone ? "z-0  " :" "}`}>
                   <div className="grid w-[550px] px-5 py-3 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 z-20">
 
                     {/* Left Column: Industry */}
@@ -327,7 +329,7 @@ function Navbar() {
                       <li>
                         <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
                           <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/fashion.png' alt='fintech' height={25} width={25} className="mr-4" />
+                            <Image src='/megamenu/Fashion.png' alt='fintech' height={25} width={25} className="mr-4" />
                             Fashion
                           </div>
                         </Link>
@@ -360,7 +362,7 @@ function Navbar() {
                       <li>
                         <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
                           <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/ecommerce.png' alt='crypto' height={25} width={25} className="mr-4" />
+                            <Image src='/megamenu/Fashion.png' alt='crypto' height={25} width={25} className="mr-4" />
                             Ecommerce
                           </div>
                         </Link>
@@ -469,10 +471,11 @@ function Navbar() {
                   </div>
                 </div>
 
+                )}
 
               </li>
-              <Link href="/calendly" className="w-full py-4 hover:border-b-2 hover:border-b-[#00729f]">BOOK MEETING</Link>
-              <Link href="/digital-us" className="w-full py-4 hover:border-b-2 hover:border-b-[#00729f]">ABOUT</Link>
+              <Link href="/calendly" className="w-full py-4 hover:border-b-2 hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>BOOK MEETING</Link>
+              <Link href="/digital-us" className="w-full py-4 hover:border-b-2 hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
 
               {/* Adjusted button */}
               <li className="w-full lg:border-none flex justify-center mt-1.5">
