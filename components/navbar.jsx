@@ -198,7 +198,7 @@ function Navbar() {
                     : 'hidden group-hover:flex'
                     } lg:mt-3 mb-6  px-3`}
                 >
-                  <div className="grid xs:w-[100vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg;py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 lg:shadow-md ">
+                  <div className="grid xs:w-[100vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 lg:shadow-md ">
                     <ul className="flex flex-col space-y-4 md:w-3/4 lg:pl-4">
                       <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
                         <h3>Digital Marketing</h3>
