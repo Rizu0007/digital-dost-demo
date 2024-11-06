@@ -71,31 +71,59 @@ const landingPages = [
 
 function Navbar() {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isClickDone,setisClickDone]=useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState();
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const [isMegaMenuService, setIsMegaMenuService] = useState(false);
 
-  const toggleMega =() =>{
-    setisClickDone(!isClickDone);
-  }
+  const [isMobile, setIsMobile] = useState(false);
+
+
+  // Check if screen is mobile/tablet on mount and resize
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024); // md breakpoint
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   // Toggle menu visibility
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    if (isMegaMenuOpen) setIsMegaMenuOpen(false);
   };
 
-  // Close the menu if the width is 1024px or less
+
+
+
+  // Toggle mega menu
+  const toggleMegaMenu = (e) => {
+    if (isMobile) {
+      e.preventDefault();
+      setIsMegaMenuOpen(!isMegaMenuOpen);
+    }
+  };
+  const toggleMegaService = (e) => {
+    if (isMobile) {
+      e.preventDefault();
+      setIsMegaMenuService(!isMegaMenuService);
+    }
+  };
+
+  // Close menu on larger screens
   useEffect(() => {
     const handleSize = () => {
-      if (window.innerWidth > 1024 && isMenuOpen) {
-        toggleMenu();
+      if (window.innerWidth > 1024) {
+        setIsMenuOpen(false);
+        setIsMegaMenuOpen(false);
       }
     };
 
     window.addEventListener("resize", handleSize);
-    return () => {
-      window.removeEventListener("resize", handleSize);
-    };
-  }, [isMenuOpen]);
-
+    return () => window.removeEventListener("resize", handleSize);
+  }, []);
 
 
   return (
@@ -117,7 +145,7 @@ function Navbar() {
           </div>
 
           {/* menu */}
-          <div className={`pb-3 pt-3 lg:flex justify-center items-center w-3/4 flex-row ${isMenuOpen ? "  translateX(-100%) transition-transform duration-1000 ease-in-out fixed top-0 left-0 h-full w-full bg-white mt-0 z-50" : "hidden"}`}>
+          <div className={`pb-3 pt-3 lg:flex justify-center items-center w-3/4 flex-row  ${isMenuOpen ? "  translateX(-100%) transition-transform duration-1000 ease-in-out fixed top-0 left-0 h-full w-full bg-white mt-0 z-50 overflow-y-auto whitespace-nowrap xs:overflow-x-hidden lg:overflow-y-hidden lg:whitespace-normal " : "hidden"}`}>
             <div className="xs:1/6 lg:hidden flex justify-start ml-5">
               <Image
                 src="/Shopex logo blue.png"
@@ -138,191 +166,234 @@ function Navbar() {
                 </button>
               </div>
             </div>
-            <ul className={`font-semibold text-[#171717d7] flex lg:space-x-16 xl:space-x-20 2xl:space-x-28 text-[14px] text-nowrap ${isMenuOpen ? " w-3/4 flex-col  justify-center flex mx-24 xs:mx-10  bg-white relative" : ""}`}>
-                <li className="relative group ">
-
-                  <Link href="/services" className="w-full pt-4 pb-2 md:hover:border-b-2 md: hover:border-b-[#00729f] flex " onClick={() => setIsMenuOpen(false)}>SERVICES
-                    <Image src='/down-arrow.png' alt='arrowdown' width={18} height={10} className="ml-1 h-[10px] w-[10px] mt-[6px]"  onClick={toggleMega}
-                    />
-                  </Link>
-                  {isClickDone && (
-
-                  <div id="mega-menu-full-dropdown" className={` lg:absolute lg:-ml-[230px] min-[1199px]:-ml-[280px] xl:-ml-[260px] min-[1339px]:-ml-[300px] min-[1424px]:-ml-[400px] 2xl:-ml-[350px] hidden group-hover:flex  mt-3 mb-6 z-20 px-3${!isClickDone ? "z-0  " :" "}`}>
-                    <div className="grid w-[90vw]  2xl:w-[90vw]  px-4 py-5 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 shadow-md z-20">
-                      <ul className="flex flex-col space-y-4 md:w-3/4 pl-4">
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                          <h3>Digital Marketing</h3>
-
-                          {/* <Image src='/megamenu/performance.png' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                          {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                        </div>
-
-                        {digitalMarketing.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[10px] lg:xs:text-[10px] lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
-
-                        <div className="flex flex-col  space-y-4">
-                          <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                            <h3>App Development</h3>
-                            {/* <Image src='/megamenu/mega3.svg' alt='mega2' height={25} width={25} className="ml-3" /> */}
-
-                          </div>
-
-                          {appDevelopment.map((item, index) => (
-                            <li key={index}>
-                              <Link href={item.link} className="">
-                                <span className="xs:text-[10px] lg:xs:text-[10px] text-left lg:text-[16px] font-medium text-gray-500">
-                                  {item.sub}
-                                </span>
-                              </Link>
-                            </li>
-                          ))}
-                        </div>
-                      </ul>
-
-                      <ul className="flex flex-col space-y-4 md:w-3/4">
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                          <h3>Ui/Ux Design</h3>
-
-                          {/* <Image src='/megamenu/mega4.svg' alt='mega' height={25} width={25} className="ml-3" /> */}
-                          {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                        </div>
-
-                        {uiuxDesign.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[10px] lg:xs:text-[10px] lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                          <h3>CRM Solutions</h3>
-
-                          {/* <Image src='/megamenu/mega5.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                          {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                        </div>
-
-                        {crmSolutions.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[10px] lg:xs:text-[10px] lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
-
-                      </ul>
-                      <ul className="flex flex-col space-y-4 md:w-3/4">
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                          <h3>Email Marketing</h3>
-
-                          {/* <Image src='/megamenu/mega6.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                          {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                        </div>
-
-                        {emailMarketing.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[10px] lg:xs:text-[10px] lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                          <h3>Blockchain Development</h3>
-
-                          {/* <Image src='/megamenu/mega7.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                          {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                        </div>
-
-                        {blockchainDevelopment.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[10px] lg:xs:text-[10px] lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
-
-                      </ul>
-
-                      <ul className="flex flex-col   space-y-4 md:w-3/4 ml-4">
-                        <div className="flex flex-col  space-y-4">
-                          <div className="flex mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                            <h3>Web Development</h3>
-                            {/* <Image src='/megamenu/mega8.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-
-                          </div>
-
-                          {webDevelopment.map((item, index) => (
-                            <li key={index}>
-                              <Link href={item.link} className="">
-                                <span className="xs:text-[10px] lg:xs:text-[10px] text-left lg:text-[16px] font-medium text-gray-500">
-                                  {item.sub}
-                                </span>
-                              </Link>
-                            </li>
-                          ))}
-                        </div>
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[18px] 2xl:text-[20px]">
-                          <h3>Landing Pages</h3>
-
-                          {/* <Image src='/megamenu/mega9.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                          {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                        </div>
-
-                        {landingPages.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[10px] lg:xs:text-[10px] lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-
-
-
-                    </div>
-                  </div>
-
-
-
-
-
-
-
-)}
-
-                </li>
-              
+            <ul className={`font-semibold text-[#171717d7] flex lg:space-x-16 xl:space-x-20 2xl:space-x-28 xs:text-[18px]  lg:text-[14px] text-nowrap ${isMenuOpen ? " w-3/4 flex-col  justify-center flex mx-24 xs:mx-10  bg-white relative" : ""}`}>
               <li className="relative group ">
-                <Link href="/casestudyall" className="w-full pt-4 pb-2 md:hover:border-b-2 md: hover:border-b-[#00729f] flex" onClick={() => setIsMenuOpen(false)}>CASE STUDIES
-                  <Image src='/down-arrow.png' alt='arrowdown' width={18} height={10} className="ml-1 h-[10px] w-[10px] mt-[6px]" onClick={toggleMega} /> 
+
+                <Link
+                  href="/services"
+                  className="w-full pt-4 pb-2 md:hover:border-b-2 md:hover:border-b-[#00729f] flex"
+                  onClick={(e) => {
+                    if (isMobile) {
+                      e.preventDefault();
+                      toggleMegaService(e); // Call toggleMegaMenu here
+                    } else {
+                      setIsMegaMenuService(false);
+                    }
+                  }}
+
+                >
+                  SERVICES
+                  <Image
+                    src='/down-arrow.png'
+                    alt='arrowdown'
+                    width={18}
+                    height={10}
+                    className="ml-1 h-[10px] w-[10px] mt-[6px]"
+                  />
+                </Link>
+
+                <div id="mega-menu-full-dropdown"
+                  className={`lg:absolute xs:-ml-9 lg:-ml-[230px] min-[1199px]:-ml-[280px] xl:-ml-[260px] min-[1339px]:-ml-[300px] min-[1424px]:-ml-[400px] 2xl:-ml-[350px] ${isMobile
+                    ? isMegaMenuService ? 'block' : 'hidden'
+                    : 'hidden group-hover:flex'
+                    } lg:mt-3 mb-6  px-3`}
+                >
+                  <div className="grid xs:w-[100vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg;py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 lg:shadow-md ">
+                    <ul className="flex flex-col space-y-4 md:w-3/4 lg:pl-4">
+                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                        <h3>Digital Marketing</h3>
+
+                        {/* <Image src='/megamenu/performance.png' alt='mega1' height={25} width={25} className="ml-3" /> */}
+                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      </div>
+
+                      {digitalMarketing.map((item, index) => (
+                        <li key={index}>
+                          <Link href={item.link} className="">
+                            <span className="xs:text-[12px]  lg:text-[16px] font-medium text-gray-500">
+                              {item.sub}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+
+                      <div className="flex flex-col  space-y-4">
+                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                          <h3>App Development</h3>
+                          {/* <Image src='/megamenu/mega3.svg' alt='mega2' height={25} width={25} className="ml-3" /> */}
+
+                        </div>
+
+                        {appDevelopment.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="">
+                              <span className="xs:text-[12px] text-left lg:text-[16px] font-medium text-gray-500">
+                                {item.sub}
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
+                    </ul>
+
+                    <ul className="flex flex-col space-y-4 md:w-3/4">
+                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                        <h3>Ui/Ux Design</h3>
+
+                        {/* <Image src='/megamenu/mega4.svg' alt='mega' height={25} width={25} className="ml-3" /> */}
+                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      </div>
+
+                      {uiuxDesign.map((item, index) => (
+                        <li key={index}>
+                          <Link href={item.link} className="">
+                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+                              {item.sub}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                        <h3>CRM Solutions</h3>
+
+                        {/* <Image src='/megamenu/mega5.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
+                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      </div>
+
+                      {crmSolutions.map((item, index) => (
+                        <li key={index}>
+                          <Link href={item.link} className="">
+                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+                              {item.sub}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+
+                    </ul>
+                    <ul className="flex flex-col space-y-4 md:w-3/4">
+                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                        <h3>Email Marketing</h3>
+
+                        {/* <Image src='/megamenu/mega6.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
+                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      </div>
+
+                      {emailMarketing.map((item, index) => (
+                        <li key={index}>
+                          <Link href={item.link} className="">
+                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+                              {item.sub}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                        <h3>Blockchain Development</h3>
+
+                        {/* <Image src='/megamenu/mega7.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
+                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      </div>
+
+                      {blockchainDevelopment.map((item, index) => (
+                        <li key={index}>
+                          <Link href={item.link} className="">
+                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+                              {item.sub}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+
+                    </ul>
+
+                    <ul className="flex flex-col   space-y-4 md:w-3/4 lg:ml-4">
+                      <div className="flex flex-col  space-y-4">
+                        <div className="flex mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                          <h3>Web Development</h3>
+                          {/* <Image src='/megamenu/mega8.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
+
+                        </div>
+
+                        {webDevelopment.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="">
+                              <span className="xs:text-[12px] text-left lg:text-[16px] font-medium text-gray-500">
+                                {item.sub}
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
+                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                        <h3>Landing Pages</h3>
+
+                        {/* <Image src='/megamenu/mega9.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
+                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      </div>
+
+                      {landingPages.map((item, index) => (
+                        <li key={index}>
+                          <Link href={item.link} className="">
+                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+                              {item.sub}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+
+
+
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+              </li>
+
+              <li className="relative group ">
+                <Link
+                  href="/casestudyall"
+                  className="w-full pt-4 pb-2 md:hover:border-b-2 md:hover:border-b-[#00729f] flex"
+                  onClick={(e) => {
+                    if (isMobile) {
+                      e.preventDefault();
+                      toggleMegaMenu(e); // Call toggleMegaMenu here
+                    } else {
+                      setIsMenuOpen(false);
+                    }
+                  }}
+                >
+                  CASE STUDIES
+                  <Image
+                    src='/down-arrow.png'
+                    alt='arrowdown'
+                    width={18}
+                    height={10}
+                    className="ml-1 h-[10px] w-[10px] mt-[6px]"
+                  />
                 </Link>
                 {/* Mega menu hover */}
 
-                {isClickDone && (
-                <div id="mega-menu-full-dropdown" className={`absolute md:-ml-[220px] shadow-xl hidden group-hover:flex mt-3 mb-6 z-20${!isClickDone ? "z-0  " :" "}`}>
-                  <div className="grid w-[550px] px-5 py-3 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 z-20">
+                <div
+                  id="mega-menu-full-dropdown"
+                  className={`lg:absolute xs:-ml[240px] md:-ml-[220px] shadow-xl ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
+                    } mt-3 mb-6 `}
+                >
+                  <div className="grid w-[550px] px-5 py-3 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 ">
 
                     {/* Left Column: Industry */}
-                    <ul className="flex flex-col space-y-0 md:w-1/2">
+                    <ul className="flex flex-col space-y-0 lg:w-1/2">
                       {/* Heading */}
-                      <div className="flex justify-center  font-bold text-[30px]">
-                        <h3 className="ml-4">Industries</h3>
+                      <div className="flex lg:justify-center  font-bold text-[30px]">
+                        <h3 className="lg:ml-4">Industries</h3>
                       </div>
 
                       {/* Industry List */}
@@ -396,7 +467,7 @@ function Navbar() {
                     {/* Right Column: Services */}
                     <ul className="flex flex-col space-y-0 md:w-1/2">
                       {/* Heading */}
-                      <div className="flex justify-end font-bold text-[30px]">
+                      <div className="flex lg:justify-end font-bold text-[30px]">
                         <h3>Services</h3>
                       </div>
 
@@ -471,10 +542,12 @@ function Navbar() {
                   </div>
                 </div>
 
-                )}
+
 
               </li>
-              <Link href="/calendly" className="w-full py-4 hover:border-b-2 hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>BOOK MEETING</Link>
+
+
+              <Link href="/calendly" className="w-full py-4 md:hover:border-b-2 md:hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>BOOK MEETING</Link>
               <Link href="/digital-us" className="w-full py-4 hover:border-b-2 hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
 
               {/* Adjusted button */}
@@ -501,7 +574,7 @@ function Navbar() {
         </nav>
 
       </header>
-      
+
     </>
   );
 }
