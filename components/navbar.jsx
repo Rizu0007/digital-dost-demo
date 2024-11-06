@@ -74,8 +74,11 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState();
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [isMegaMenuService, setIsMegaMenuService] = useState(false);
+  const [isArrowRotated, setIsArrowRotated] = useState(false);
+  const [isArrowRotated2, setIsArrowRotated2] = useState(false);
 
   const [isMobile, setIsMobile] = useState(false);
+
 
 
   // Check if screen is mobile/tablet on mount and resize
@@ -103,12 +106,16 @@ function Navbar() {
     if (isMobile) {
       e.preventDefault();
       setIsMegaMenuOpen(!isMegaMenuOpen);
+      setIsArrowRotated2(!isArrowRotated2);
+
     }
   };
   const toggleMegaService = (e) => {
     if (isMobile) {
       e.preventDefault();
       setIsMegaMenuService(!isMegaMenuService);
+      setIsArrowRotated(!isArrowRotated);
+
     }
   };
 
@@ -188,7 +195,8 @@ function Navbar() {
                     alt='arrowdown'
                     width={18}
                     height={10}
-                    className="ml-1 h-[10px] w-[10px] mt-[6px]"
+                    className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 ${isArrowRotated ? 'rotate-180' : ''
+                      }`}
                   />
                 </Link>
 
@@ -377,14 +385,16 @@ function Navbar() {
                     alt='arrowdown'
                     width={18}
                     height={10}
-                    className="ml-1 h-[10px] w-[10px] mt-[6px]"
+                    className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 ${
+                      isArrowRotated2 ? 'rotate-180' : ''
+                    }`}
                   />
                 </Link>
                 {/* Mega menu hover */}
 
                 <div
                   id="mega-menu-full-dropdown"
-                  className={`lg:absolute xs:-ml[240px] md:-ml-[220px] shadow-xl ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
+                  className={`lg:absolute xs:-ml[240px] md:-ml-[200px] lg:-ml-[220px] shadow-xl ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
                     } mt-3 mb-6 `}
                 >
                   <div className="grid w-[550px] px-5 py-3 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 ">
@@ -548,7 +558,7 @@ function Navbar() {
 
 
               <Link href="/calendly" className="w-full py-4 md:hover:border-b-2 md:hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>BOOK MEETING</Link>
-              <Link href="/digital-us" className="w-full py-4 hover:border-b-2 hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
+              <Link href="/digital-us" className="w-full py-4 md:hover:border-b-2 md:hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
 
               {/* Adjusted button */}
               <li className="w-full lg:border-none flex justify-center mt-1.5">
