@@ -379,7 +379,7 @@ function Navbar() {
                     }
                   }}
                 >
-                  CASE STUDIES
+                  C=ASE STUDIES
                   <Image
                     src='/down-arrow.png'
                     alt='arrowdown'
