@@ -150,7 +150,7 @@ const Podcast = () => {
                       referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
                       className="w-full h-full rounded-xl"
-                      style={{ aspectRatio: `${getVideoSize(containerRef.current?.offsetWidth).aspectRatio}` }}
+                      // style={{ aspectRatio: `${getVideoSize(containerRef.current?.offsetWidth).aspectRatio}` }}
                     />
                   </div>
                 </div>
