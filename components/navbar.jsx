@@ -246,7 +246,7 @@ function Navbar() {
 
                     <ul className="flex flex-col space-y-4 md:w-3/4">
                       <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>Ui/Ux Design</h3>
+                        <h3>UI/UX Design</h3>
 
                         {/* <Image src='/megamenu/mega4.svg' alt='mega' height={25} width={25} className="ml-3" /> */}
                         {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
@@ -385,9 +385,8 @@ function Navbar() {
                     alt='arrowdown'
                     width={18}
                     height={10}
-                    className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 ${
-                      isArrowRotated2 ? 'rotate-180' : ''
-                    }`}
+                    className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 ${isArrowRotated2 ? 'rotate-180' : ''
+                      }`}
                   />
                 </Link>
                 {/* Mega menu hover */}
