@@ -16,7 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <div className="max-w-[1500px] mx-auto">
+
         {children}
+
+        </div>
         <Footer />
 
       </body>
