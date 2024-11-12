@@ -146,7 +146,7 @@ function Navbar() {
                 width={200}
                 height={70}
                 alt="Logo"
-                className="md:ml-5"
+                className=" xs:ml-3 md:ml-5"
               />
             </Link>
           </div>
