@@ -379,7 +379,7 @@ function Navbar() {
                     }
                   }}
                 >
-                  C=ASE STUDIES
+                  CASE STUDIES
                   <Image
                     src='/down-arrow.png'
                     alt='arrowdown'
@@ -394,7 +394,7 @@ function Navbar() {
 
                 <div
                   id="mega-menu-full-dropdown"
-                  className={`lg:absolute xs:-ml[240px] md:-ml-[200px] lg:-ml-[220px] shadow-xl ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
+                  className={`lg:absolute xs:-ml[240px] md:-ml-[200px] lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
                     } mt-3 mb-6 `}
                 >
                   <div className="grid w-[550px] px-5 py-3 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 ">
