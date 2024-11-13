@@ -137,7 +137,115 @@ function Navbar() {
     <>
       <header className="bg-white relative z-50 inset-0">
         {/* navbar start */}
-        <nav className="flex justify-center items-center w-full h-full shadow-lg xs:py-3 lg:mt-0">
+
+        <div className="flex justify-between pt-4 pb-2 border-b border-[#00729f]">
+          <div className=" flex ">
+            <Link href="/" className="inline-flex items-center ">
+              <Image
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAClElEQVR4nO2ZS2hTURCG//gG0Y1SXyiIK61LEZciulO68QEKIqjdSOOdc1vBVZbFnXVlNZm5SVcWivVZlC60UIS60Aq+UFAEV9YERUVUuNKTYik27T035GYC+WCWgXzMOTNn5gJNmtQRj9tAMgaSrzDyGCS70FC09y6GkcswEs4MLoGCDWgIurIrQHz3f4l/cQfq6cquB8nzOSTKQcFxqCV9dQ2IX88rYUW4CK9vHdSR6V8CktFIEtMyN6AO4vNOEtNxDKogeR9PhCfQKWuhBuJvMTMSgmQAajDyJrZIOTNHoAKSgepE5BVU4AftVWbkB1TgF1pg+E8VIo+gBuLh+BdeU6f3uC2myFNkMgughzAF4vEYx2of1OEFhx1FbkInYQpGRhya4UmoxQtaYeRXNBEuojPYArUQX3C4I0/gF5ZDJR09S+0fjHzEeNj+RiV+bhuMfHeQuY5MZhFUQnLasRRfsQVDJWa2bcqclewiFK+GHjhmpkdnZtJ2MfHW+Zgd6l8IdaTzm0DywbHzDyIjy6AOP7sdRj47ZuberH1mMltGTkytYn+D+KV9IiUGBTundsEOBYDHZ7wAfN5TsU+R3LKLwkTwcnth5KejTNG+zYhvR8jiBIiPJjm/uMm4x2AyG01fdjsfM+fgkt0p1BwvuwMkn2qcmRCGh2B4Y41lglaQfExApmSLTU3xC5vdm2aMIBmrrUhZpsVpwoyXlS9I7hMF99YwI6NIFMOnnOYZEzVy+5E4Z/NbnSZNM182+BLqxuQITNwdeaFhKt6NIR0TqC3R/DCmyDN09K2EHsIU/NxBt+PGL+w8pJMwBY8PgOS+fcKbiiIjML2r0RCcya+yr2LD1+wHI/sZkN/ByDk7ZjdpgrrwF77gtZTLPc/2AAAAAElFTkSuQmCC"
+                width={15}
+                height={15}
+                alt="phone"
+                className="xs:ml-3 md:ml-5"
+              />
+              <p className="ml-1 font-bold text-[18px] text-[#00729f]">+1-551-205-0240</p>
+            </Link>
+          </div>
+
+
+          
+          <Link href='/'className="lg:hidden xs:flex"  >
+            <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] xs:h-[41px] xs:w-[130px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[14px] w-full h-11 mx-5">
+                <div className="flex justify-center">
+                <div >
+                  <p>Get A Quote</p>
+                </div>
+                <Image
+                  src="/Services/arrowup.svg"
+                  alt="arrow"
+                  width={14}
+                  height={16}
+                  className="ml-2"
+                />
+             </div>
+            </button>
+            </Link>
+
+            
+            <div className="hidden lg:flex flex-col">
+              <p className="font-semibold">Generated Revenue For Clients</p>
+
+              <p className="text-[#00729f] font-bold text-[18px]">$100,000,000+</p>
+
+
+            </div>
+            <div className="hidden lg:flex flex-col">
+              <p className="font-semibold">Developed Websites For Clients</p>
+              <p className="text-[#00729f] font-bold text-[18px] ">1500+</p>
+
+            </div>
+            <div className="hidden lg:flex flex-col mr-3">
+              <p className="font-semibold">Generated Leads For Clients</p>
+              <p className="text-[#00729f] font-bold text-[18px] ">50,000+</p>
+
+            </div>
+         
+        </div>
+
+
+        
+        <div className="flex justify-between pt-4 pb-2 border-b border-[#00729f]">
+          <div className=" flex ">
+            <Link href="/" className="inline-flex items-center ">
+              <Image
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAClElEQVR4nO2ZS2hTURCG//gG0Y1SXyiIK61LEZciulO68QEKIqjdSOOdc1vBVZbFnXVlNZm5SVcWivVZlC60UIS60Aq+UFAEV9YERUVUuNKTYik27T035GYC+WCWgXzMOTNn5gJNmtQRj9tAMgaSrzDyGCS70FC09y6GkcswEs4MLoGCDWgIurIrQHz3f4l/cQfq6cquB8nzOSTKQcFxqCV9dQ2IX88rYUW4CK9vHdSR6V8CktFIEtMyN6AO4vNOEtNxDKogeR9PhCfQKWuhBuJvMTMSgmQAajDyJrZIOTNHoAKSgepE5BVU4AftVWbkB1TgF1pg+E8VIo+gBuLh+BdeU6f3uC2myFNkMgughzAF4vEYx2of1OEFhx1FbkInYQpGRhya4UmoxQtaYeRXNBEuojPYArUQX3C4I0/gF5ZDJR09S+0fjHzEeNj+RiV+bhuMfHeQuY5MZhFUQnLasRRfsQVDJWa2bcqclewiFK+GHjhmpkdnZtJ2MfHW+Zgd6l8IdaTzm0DywbHzDyIjy6AOP7sdRj47ZuberH1mMltGTkytYn+D+KV9IiUGBTundsEOBYDHZ7wAfN5TsU+R3LKLwkTwcnth5KejTNG+zYhvR8jiBIiPJjm/uMm4x2AyG01fdjsfM+fgkt0p1BwvuwMkn2qcmRCGh2B4Y41lglaQfExApmSLTU3xC5vdm2aMIBmrrUhZpsVpwoyXlS9I7hMF99YwI6NIFMOnnOYZEzVy+5E4Z/NbnSZNM182+BLqxuQITNwdeaFhKt6NIR0TqC3R/DCmyDN09K2EHsIU/NxBt+PGL+w8pJMwBY8PgOS+fcKbiiIjML2r0RCcya+yr2LD1+wHI/sZkN/ByDk7ZjdpgrrwF77gtZTLPc/2AAAAAElFTkSuQmCC"
+                width={15}
+                height={15}
+                alt="phone"
+                className="xs:ml-3 md:ml-5"
+              />
+              <p className="ml-1 font-bold text-[18px] text-[#00729f]">+1-551-205-0240</p>
+            </Link>
+          </div>
+
+
+          
+          <Link href='/'className="lg:hidden xs:flex"  >
+            <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] xs:h-[41px] xs:w-[130px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[14px] w-full h-11 mx-5">
+                <div className="flex justify-center">
+                <div >
+                  <p>Get A Quote</p>
+                </div>
+                <Image
+                  src="/Services/arrowup.svg"
+                  alt="arrow"
+                  width={14}
+                  height={16}
+                  className="ml-2"
+                />
+             </div>
+            </button>
+            </Link>
+
+          <div className=" hidden lg:flex mr-3 space-x-2 ">
+            <div className="">
+              <p className="font-semibold">Generated Revenue For Clients</p>
+
+              <p className="text-[#00729f] font-bold text-[18px]">$100,000,000+</p>
+
+
+            </div>
+
+            <div>
+              <p className="font-semibold">Generated Leads For Clients</p>
+              <p className="text-[#00729f] font-bold text-[18px] ">50,000+</p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <nav className="flex justify-center items-center w-full h-full shadow-lg xs:py-2 lg:mt-0">
           {/* logo */}
           <div className="lg:1/6 flex justify-start">
             <Link href="/">
@@ -146,7 +254,7 @@ function Navbar() {
                 width={200}
                 height={70}
                 alt="Logo"
-                className="md:ml-5"
+                className=" xs:ml-3 md:ml-5"
               />
             </Link>
           </div>
@@ -173,6 +281,7 @@ function Navbar() {
                 </button>
               </div>
             </div>
+            
             <ul className={`font-semibold text-[#171717d7] flex lg:space-x-16 xl:space-x-20 2xl:space-x-28 xs:text-[18px]  lg:text-[14px] text-nowrap ${isMenuOpen ? " w-3/4 flex-col  justify-center flex mx-24 xs:mx-10  bg-white relative" : ""}`}>
               <li className="relative group ">
 
@@ -246,7 +355,7 @@ function Navbar() {
 
                     <ul className="flex flex-col space-y-4 md:w-3/4">
                       <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>Ui/Ux Design</h3>
+                        <h3>UI/UX Design</h3>
 
                         {/* <Image src='/megamenu/mega4.svg' alt='mega' height={25} width={25} className="ml-3" /> */}
                         {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
@@ -379,22 +488,21 @@ function Navbar() {
                     }
                   }}
                 >
-                  C=ASE STUDIES
+                  CASE STUDIES
                   <Image
                     src='/down-arrow.png'
                     alt='arrowdown'
                     width={18}
                     height={10}
-                    className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 ${
-                      isArrowRotated2 ? 'rotate-180' : ''
-                    }`}
+                    className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 ${isArrowRotated2 ? 'rotate-180' : ''
+                      }`}
                   />
                 </Link>
                 {/* Mega menu hover */}
 
                 <div
                   id="mega-menu-full-dropdown"
-                  className={`lg:absolute xs:-ml[240px] md:-ml-[200px] lg:-ml-[220px] shadow-xl ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
+                  className={`lg:absolute xs:-ml[240px] md:-ml-[200px] lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
                     } mt-3 mb-6 `}
                 >
                   <div className="grid w-[550px] px-5 py-3 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 ">
