@@ -137,7 +137,7 @@ function Navbar() {
     <>
       <header className="bg-white relative z-50 inset-0">
         {/* navbar start */}
-
+{/* 
         <div className="flex justify-between pt-4 pb-2 border-b border-[#00729f]">
           <div className=" flex ">
             <Link href="/" className="inline-flex items-center ">
@@ -190,7 +190,7 @@ function Navbar() {
 
             </div>
          
-        </div>
+        </div> */}
 
 
         
@@ -214,7 +214,7 @@ function Navbar() {
             <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] xs:h-[41px] xs:w-[130px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[14px] w-full h-11 mx-5">
                 <div className="flex justify-center">
                 <div >
-                  <p>Get A Quote</p>
+                  <p>Get A Quote!</p>
                 </div>
                 <Image
                   src="/Services/arrowup.svg"
@@ -260,7 +260,7 @@ function Navbar() {
           </div>
 
           {/* menu */}
-          <div className={`pb-3 pt-3 lg:flex justify-center items-center w-3/4 flex-row  ${isMenuOpen ? "  translateX(-100%) transition-transform duration-1000 ease-in-out fixed top-0 left-0 h-full w-full bg-white mt-0 z-50 overflow-y-auto whitespace-nowrap xs:overflow-x-hidden lg:overflow-y-hidden lg:whitespace-normal " : "hidden"}`}>
+          <div className={`pb-3 pt-3 lg:flex justify-between items-center w-3/4 flex-row  ${isMenuOpen ? "  translateX(-100%) transition-transform duration-1000 ease-in-out fixed top-0 left-0 h-full w-full bg-white mt-0 z-50 overflow-y-auto whitespace-nowrap xs:overflow-x-hidden lg:overflow-y-hidden lg:whitespace-normal " : "hidden"}`}>
             <div className="xs:1/6 lg:hidden flex justify-start ml-5">
               <Image
                 src="/Shopex logo blue.png"
