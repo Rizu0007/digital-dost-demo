@@ -65,36 +65,36 @@ export default function ServicesComponent() {
               {selectedService.description}
             </p>
             <Link href='/services' >
-            <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11 ml-5">
+              <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11 ml-5">
                 <div className="flex justify-center">
-                <div >
-                  <p>VIEW MORE</p>
+                  <div >
+                    <p>VIEW MORE</p>
+                  </div>
+                  <Image
+                    src="/Services/arrowup.svg"
+                    alt="arrow"
+                    width={16}
+                    height={18}
+                    className="ml-2"
+                  />
                 </div>
-                <Image
-                  src="/Services/arrowup.svg"
-                  alt="arrow"
-                  width={16}
-                  height={18}
-                  className="ml-2"
-                />
-             </div>
-            </button>
+              </button>
             </Link>
             <Link href='/calendly' >
-            <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11 ml-5">
+              <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11 ml-5">
                 <div className="flex justify-center">
-                <div >
-                  <p>CONTACT US</p>
+                  <div >
+                    <p>CONTACT US</p>
+                  </div>
+                  <Image
+                    src="/Services/arrowup.svg"
+                    alt="arrow"
+                    width={16}
+                    height={18}
+                    className="ml-2"
+                  />
                 </div>
-                <Image
-                  src="/Services/arrowup.svg"
-                  alt="arrow"
-                  width={16}
-                  height={18}
-                  className="ml-2"
-                />
-             </div>
-            </button>
+              </button>
             </Link>
           </div>
         </div>
@@ -106,8 +106,8 @@ export default function ServicesComponent() {
           <div
             key={index}
             className={`pt-[38px] pr-[30px] pb-[24px] pl-[28px] w-72 h-52 rounded-xl shadow-xl group cursor-pointer transition-all duration-300 ${
-              selectedCardIndex === index ? "bg-box grow h-60 text-white" : "bg-[#ffffff] "
-            }`}
+              selectedCardIndex === index ? "bg-box grow h-60  text-white" : "bg-[#ffffff] "
+              }`}
             onClick={() => {
               setSelectedService(srvc); // Update the selected service
               setSelectedCardIndex(index); // Update the selected card index

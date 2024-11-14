@@ -36,6 +36,7 @@ module.exports = {
       backgroundImage: {
         'custom-image': "url('/CaseStudy-Full/CaseStudy-header-bg-1.webp')",
         'custom-image1':"url('/Header/hder.png')",
+        'custom-image2':"url('/Header/hder1.png')",
       },
 
       
