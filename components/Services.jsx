@@ -81,7 +81,7 @@ export default function ServicesComponent() {
               </button>
             </Link>
             <Link href='/calendly' >
-              <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11 ml-5">
+              <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11 ml-5 mt-5">
                 <div className="flex justify-center">
                   <div >
                     <p>CONTACT US</p>
