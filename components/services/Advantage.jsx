@@ -60,11 +60,11 @@ const Advantage = () => {
     ]
 
   return (
-    <section className='md:px-32 py-40 xs:px-8 bg-[url("/services-main/services.jpg")] bg-cover bg-center relative  '>
+    <section  style={{ background: 'linear-gradient(115deg, #ffffff, #eeeeee, #ffffff)' }} className='md:px-32 py-40 xs:px-8 bg-[url("/services-main/services.jpg")] bg-cover bg-center relative  ' >
     <div className=' xl:flex xl:flex-col xl:items-center '>
         <div>
             
-        <h1 className="text-white font-bold xs:text-4xl sm:text-5xl xl:text-[40px] 2xl:text-7xl leading-tight mb-16">
+        <h1 className="text-black font-bold xs:text-4xl sm:text-5xl xl:text-[40px] 2xl:text-7xl leading-tight mb-16">
         The Benefits of Collaborating with Us
             </h1>
         </div>
@@ -76,7 +76,7 @@ const Advantage = () => {
                 
          { Advantage.map((item, index) => (
             <>
-            <div key={index} className='bg-[#ffffff1a] lg:p-10 xs:p-4 h-[400px] text-white border border-[#4b5966] flex items-center flex-col sm:space-y-5  md:justify-around '>
+            <div key={index}  className='bg-[#887d7d23] lg:p-10 xs:p-4 h-[400px] text-black border border-[#4b5966] flex items-center flex-col sm:space-y-5  md:justify-around '>
                 
             <Image
             src={item.image}
