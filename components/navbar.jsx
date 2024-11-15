@@ -260,7 +260,7 @@ function Navbar() {
           </div>
 
           {/* menu */}
-          <div className={`pb-3 pt-3 lg:flex justify-between items-center w-3/4 flex-row  ${isMenuOpen ? "  translateX(-100%) transition-transform duration-1000 ease-in-out fixed top-0 left-0 h-full w-full bg-white mt-0 z-50 overflow-y-auto whitespace-nowrap xs:overflow-x-hidden lg:overflow-y-hidden lg:whitespace-normal " : "hidden"}`}>
+          <div className={`pb-3 pt-3 lg:flex justify-center items-center w-3/4 flex-row  ${isMenuOpen ? "  translateX(-100%) transition-transform duration-1000 ease-in-out fixed top-0 left-0 h-full w-full bg-white mt-0 z-50 overflow-y-auto whitespace-nowrap xs:overflow-x-hidden lg:overflow-y-hidden lg:whitespace-normal " : "hidden"}`}>
             <div className="xs:1/6 lg:hidden flex justify-start ml-5">
               <Image
                 src="/Shopex logo blue.png"

@@ -4,18 +4,18 @@ import Link from "next/link";
 const Header = () => {
   return (
     <>
-      <section className=" lg:pt-32 xs:pt-24 xs:px-10 bg-black min-w-full min-h-full bg-[url('/services-main/bgheading.webp')] bg-cover bg-center relative   ">
+      <section className=" lg:pt-32 xs:pt-24 xs:px-10 bg-white min-w-full min-h-full  bg-custom-image2 bg-no-repeat bg-left-bottom   ">
         <div className="lg:flex lg:flex-row md:flex-col  ">
-          <div className=" h-[400px] w-[400px] leading-tight opacity-60 mt-32 hidden lg:block">
+          <div className=" h-[400px] w-[400px] xs:leading-tight opacity-60 mt-32 hidden lg:block">
             
           </div>
           <div className="flex flex-col justify-evenly xs:w-[400px] sm:w-[500px] md:w-[500px] lg:w-[550px] xl:w-[700px] lg:-ml-32 z-10 xs:mx-auto xs:space-y-10">
-            <h1 className="text-white font-bold xs:text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl leading-tight ">
+            <h1 className="text-black font-bold xs:text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl leading-tight ">
               Product Management Services by Linkup Studio
             </h1>
 
             <Link href="#">
-              <button className="xs:px-36 xs:py-4 sm:px-60 sm:py-4 xs:text-nowrap md:px-10 md:py-2  xl:px-20 xl:py-3 2xl:px-28 2xl:py-5 rounded-md font-extrabold xl:text-[18px] bg-white">
+              <button className="xs:px-36 xs:py-4 sm:px-60 sm:py-4 xs:text-nowrap md:px-10 md:py-2  xl:px-20 xl:py-3 2xl:px-28 2xl:py-5 rounded-md font-extrabold xl:text-[18px] bg-[#00729f] text-white">
                 Contact Us
               </button>
             </Link>
@@ -23,7 +23,7 @@ const Header = () => {
 
           <div className="md:ml-28 md:-mt-20 ">
             <Image
-              src="/services-main/heroimg.webp"
+              src="/services-main/heroimg1.png"
               alt="hero"
               width={600}
               height={600}
