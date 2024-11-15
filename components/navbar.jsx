@@ -78,7 +78,7 @@ function Navbar() {
   const [isArrowRotated, setIsArrowRotated] = useState(false);
   const [isArrowRotated2, setIsArrowRotated2] = useState(false);
   // newly made neeed to handle
-  
+
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -283,23 +283,7 @@ function Navbar() {
                           </li>
                         ))}
                       </div>
-                      <div className="flex flex-col  space-y-4">
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                          <h3>App Development</h3>
-                          {/* <Image src='/megamenu/mega3.svg' alt='mega2' height={25} width={25} className="ml-3" /> */}
 
-                        </div>
-
-                        {appDevelopment.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[12px] text-left lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
-                      </div>
                     </ul>
 
                     <ul className="flex flex-col space-y-4 md:w-3/4">
@@ -319,25 +303,7 @@ function Navbar() {
                           </Link>
                         </li>
                       ))}
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>CRM Solutions</h3>
 
-                        {/* <Image src='/megamenu/mega5.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                      </div>
-
-                      {crmSolutions.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
-                              {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-
-                    </ul>
-                    <ul className="flex flex-col space-y-4 md:w-3/4">
                       <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
                         <h3>Email Marketing</h3>
 
@@ -354,26 +320,8 @@ function Navbar() {
                           </Link>
                         </li>
                       ))}
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>Blockchain Development</h3>
-
-                        {/* <Image src='/megamenu/mega7.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                      </div>
-
-                      {blockchainDevelopment.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
-                              {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-
                     </ul>
-
-                    <ul className="flex flex-col   space-y-4 md:w-3/4 lg:ml-4">
+                    <ul className="flex flex-col space-y-4 md:w-3/4">
                       <div className="flex flex-col  space-y-4">
                         <div className="flex mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
                           <h3>Web Development</h3>
@@ -391,6 +339,12 @@ function Navbar() {
                           </li>
                         ))}
                       </div>
+
+
+                    </ul>
+
+                    <ul className="flex flex-col   space-y-4 md:w-3/4 lg:ml-4">
+
                       <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
                         <h3>Landing Pages</h3>
 
@@ -399,6 +353,48 @@ function Navbar() {
                       </div>
 
                       {landingPages.map((item, index) => (
+                        <li key={index}>
+                          <Link href={item.link} className="">
+                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+                              {item.sub}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+
+
+
+
+
+                      <div className="flex flex-col  space-y-4">
+                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                          <h3>App Development</h3>
+                          {/* <Image src='/megamenu/mega3.svg' alt='mega2' height={25} width={25} className="ml-3" /> */}
+
+                        </div>
+
+                        {appDevelopment.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="">
+                              <span className="xs:text-[12px] text-left lg:text-[16px] font-medium text-gray-500">
+                                {item.sub}
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
+
+
+
+
+                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
+                        <h3>CRM Solutions</h3>
+
+                        {/* <Image src='/megamenu/mega5.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
+                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      </div>
+
+                      {crmSolutions.map((item, index) => (
                         <li key={index}>
                           <Link href={item.link} className="">
                             <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
