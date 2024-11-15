@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <>
-      <section className=" lg:pt-32 xs:pt-24 xs:px-10 bg-white min-w-full min-h-full  bg-custom-image2 bg-no-repeat bg-left-bottom   ">
+      <section className=" lg:pt-32 xs:pt-24 xs:px-10 bg-white min-w-full min-h-full  bg-custom-image2 bg-no-repeat bg-left-bottom    ">
         <div className="lg:flex lg:flex-row md:flex-col  ">
           <div className=" h-[400px] w-[400px] xs:leading-tight opacity-60 mt-32 hidden lg:block">
             
