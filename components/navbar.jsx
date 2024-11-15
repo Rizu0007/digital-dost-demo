@@ -22,7 +22,7 @@ const webDevelopment = [
   { sub: 'React Development', link: '#' },
   { sub: 'Next.js Development', link: '#' },
   { sub: 'Node.js Development', link: '#' },
-  { sub: 'Django Development', link: '#' },
+  { sub: 'Nest.js Development', link: '#' },
   { sub: 'WordPress Development', link: '#' },
   { sub: 'Shopify Development', link: '#' },
   { sub: 'Wix Development', link: '#' },
