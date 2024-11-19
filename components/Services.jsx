@@ -2,6 +2,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 // Service data array
 const Service = [
@@ -33,15 +37,119 @@ const Service = [
       "Experience the seamless evolution of your product from concept to MVP creation, launch, and ongoing maintenance. We provide a clear and hands-on end-to-end approach to product management solutions.",
     cardimg: "/Services/Servicescardbefore4.svg",
   },
+  {
+    imagesrc: "/Services/Services1.webp",
+    title: "Product Design",
+    description:
+      "Give your product’s idea a shape. Plan and evaluate the essential features of your product to accomplish your business goals and eliminate possible mistakes.",
+    cardimg: "/Services/Servicescardbefore1.svg",
+  },
+  {
+    imagesrc: "/Services/Services2.png",
+    title: "B2B Marketing",
+    description:
+      "Get your unique digital marketing strategy with clearly outlined goals. Work with professionals across diverse marketing channels to stand out in the market, find clients, expand opportunities, and more.",
+    cardimg: "/Services/Servicescardbefore2.svg",
+  },
+  {
+    imagesrc: "/Services/Services3.webp",
+    title: "Custom Software Development",
+    description:
+      "Custom app development tailored exclusively for your business goals.",
+    cardimg: "/Services/Servicescardbefore3.svg",
+  },
+  {
+    imagesrc: "/Services/Services4.webp",
+    title: "Product Management",
+    description:
+      "Experience the seamless evolution of your product from concept to MVP creation, launch, and ongoing maintenance. We provide a clear and hands-on end-to-end approach to product management solutions.",
+    cardimg: "/Services/Servicescardbefore4.svg",
+  },
 ];
+const CustomPrevArrow = ({ onClick }) => (
+  <div
+    className="bg-[#fff3] border-solid border-2 border-[#00729F] rounded-full h-11 w-11 flex justify-center items-center absolute left-[-55px] top-[50%] transform -translate-y-1/2 z-10"
+    onClick={onClick}
+  >
+    <Image
+      src="/Podcast/whitearrowleft.svg"
+      alt="arrow"
+      height={25}
+      width={24}
+    />
+  </div>
+);
+
+const CustomNextArrow = ({ onClick }) => (
+  <div
+    className="bg-[#fff3] border-solid border-2 border-[#00729F] rounded-full h-11 w-11 flex justify-center items-center absolute right-[-40px] top-[50%] transform -translate-y-1/2 z-10"
+    onClick={onClick}
+  >
+    <Image
+      src="/Podcast/whitearrow.svg"
+      alt="arrow"
+      height={25}
+      width={24}
+    />
+  </div>
+);
 
 export default function ServicesComponent() {
   // State to hold the currently selected service and card index
   const [selectedService, setSelectedService] = useState(Service[0]); // Initialize with the first service
   const [selectedCardIndex, setSelectedCardIndex] = useState(0); // Track the selected card index
 
+
+
+  var settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+
+    ],
+   
+  }
   return (
-    <div className=" md:px-[60px] lg:px-[100px] xl:px-[124.5px] pt-[274px] pb-[230px]">
+    <div className="mt-20 md:px-[60px] lg:px-[100px] xl:px-[124.5px] pt-[274px] pb-[230px]">
       {/* Main Service Display */}
       <div className="w-full flex justify-between h-[500px]">
         {/* Main Image */}
@@ -81,7 +189,7 @@ export default function ServicesComponent() {
               </button>
             </Link>
             <Link href='/calendly' >
-              <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11 ml-5 mt-5">
+              <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11 mt-5 ml-5">
                 <div className="flex justify-center">
                   <div >
                     <p>CONTACT US</p>
@@ -101,33 +209,40 @@ export default function ServicesComponent() {
       </div>
 
       {/* Service Cards */}
-      <div className="flex space-x-4 mt-10 justify-center">
-        {Service.map((srvc, index) => (
-          <div
-            key={index}
-            className={`pt-[38px] pr-[30px] pb-[24px] pl-[28px] w-72 h-52 rounded-xl shadow-xl group cursor-pointer transition-all duration-300 ${
-              selectedCardIndex === index ? "bg-box grow h-60  text-white" : "bg-[#ffffff] "
-              }`}
-            onClick={() => {
-              setSelectedService(srvc); // Update the selected service
-              setSelectedCardIndex(index); // Update the selected card index
-            }}
-          >
-            <a >
-              <div className="flex flex-col item w-full h-full justify-between">
-                <Image
-                  className="group-hover:rotate-180 duration-300"
-                  src={srvc.cardimg}
-                  alt={srvc.title}
-                  height={48}
-                  width={48}
-                />
-                <p className="text-[16px] font-bold ">{srvc.title}</p>
+      <div className="flex mt-10 justify-center xs:hidden lg:block">
+        <Slider
+          {...settings}
+          className="w-[80vw] lg:min-w-[700px] xl:min-w-[1150px] 2xl:max-w-[1300px]  " // Fixed the class syntax
+        >
+          {Service.map((srvc, index) => (
+            <div key={index} className="">
+              <div
+                className={`pt-[38px] pr-[30px] pb-[24px] pl-[28px] lg:w-11/12 lg:h-52 xl:w-11/12 xl:h-52 2xl:w-72 2xl:h-52 rounded-xl shadow-xl group cursor-pointer transition-all duration-300 ${selectedCardIndex === index ? "bg-box grow h-60 text-white" : "bg-[#ffffff]"
+                  }`}
+                onClick={() => {
+                  setSelectedService(srvc);
+                  setSelectedCardIndex(index);
+                }}
+              >
+                <a>
+                  <div className="flex flex-col w-full h-full justify-between">
+                    <Image
+                      className="group-hover:rotate-180 duration-300"
+                      src={srvc.cardimg}
+                      alt={srvc.title}
+                      height={48}
+                      width={48}
+                    />
+                    <p className="text-[16px] font-bold">{srvc.title}</p>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        ))}
+            </div>
+          ))}
+        </Slider>
       </div>
+    
+
     </div>
   );
 }
