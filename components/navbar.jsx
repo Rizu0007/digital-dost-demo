@@ -105,7 +105,7 @@ function Navbar() {
       }));
     }
   };
-  
+
 
   // Check if screen is mobile/tablet on mount and resize
   useEffect(() => {
@@ -311,10 +311,10 @@ function Navbar() {
 
                       <div
                         className={`${isMobile
-                            ? dropMenuState.digitalMarketing.visible
-                              ? "block"
-                              : "hidden"
-                            : "lg:flex" // Always visible on larger screens
+                          ? dropMenuState.digitalMarketing.visible
+                            ? "block"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
                         {digitalMarketing.map((item, index) => (
@@ -342,54 +342,118 @@ function Navbar() {
                     </ul>
 
                     <ul className="flex flex-col space-y-4 md:w-3/4">
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>UI/UX Design</h3>
+                      <Link
+                        href="/"
+                        className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "uiuxDesign"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        UI/UX Design
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.uiuxDesign.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
-                        {/* <Image src='/megamenu/mega4.svg' alt='mega' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.uiuxDesign.visible
+                            ? "block"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
+                        {uiuxDesign.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="text-gray-500 font-medium">
+                              {item.sub}
+                            </Link>
+                          </li>
+                        ))}
                       </div>
 
-                      {uiuxDesign.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+
+                      <Link
+                        href="/"
+                        className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "emailMarketing"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        Email Marketing
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.emailMarketing.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
+
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.emailMarketing.visible
+                            ? "block"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
+                        {emailMarketing.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="text-gray-500 font-medium">
                               {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>Email Marketing</h3>
-
-                        {/* <Image src='/megamenu/mega6.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                            </Link>
+                          </li>
+                        ))}
                       </div>
 
-                      {emailMarketing.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
-                              {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
                     </ul>
                     <ul className="flex flex-col space-y-4 md:w-3/4">
-                      <div className="flex flex-col  space-y-4">
-                        <div className="flex mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                          <h3>Web Development</h3>
-                          {/* <Image src='/megamenu/mega8.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
+                      <Link
+                        href="/"
+                        className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "webDevelopment"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        Web Development
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.webDevelopment.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
-                        </div>
-
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.webDevelopment.visible
+                            ? "block"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
                         {webDevelopment.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[12px] text-left lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
+                            <Link href={item.link} className="text-gray-500 font-medium">
+                              {item.sub}
                             </Link>
                           </li>
                         ))}
@@ -400,40 +464,39 @@ function Navbar() {
 
                     <ul className="flex flex-col   space-y-4 md:w-3/4 lg:ml-4">
 
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>Landing Pages</h3>
+                      <Link
+                        href="/"
+                        className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "landingPages"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        Landing Pages
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.landingPages.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
-                        {/* <Image src='/megamenu/mega9.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                      </div>
-
-                      {landingPages.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
-                              {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-
-
-
-
-
-                      <div className="flex flex-col  space-y-4">
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                          <h3>App Development</h3>
-                          {/* <Image src='/megamenu/mega3.svg' alt='mega2' height={25} width={25} className="ml-3" /> */}
-
-                        </div>
-
-                        {appDevelopment.map((item, index) => (
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.landingPages.visible
+                            ? "block"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
+                        {landingPages.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[12px] text-left lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
+                            <Link href={item.link} className="text-gray-500 font-medium">
+                              {item.sub}
                             </Link>
                           </li>
                         ))}
@@ -442,22 +505,87 @@ function Navbar() {
 
 
 
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>CRM Solutions</h3>
+                      <div className="flex flex-col  space-y-4">
+                        <Link
+                          href="/"
+                          className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]"
+                          onClick={(e) => {
+                            if (isMobile) {
+                              e.preventDefault(); // Prevent navigation on mobile
+                              dropDownMenu(e, "appDevelopment"); // Toggle dropdown state
+                            }
+                          }}
+                        >
+                          App Development
+                          <Image
+                            src="/down-arrow.png"
+                            alt="arrowdown"
+                            width={18}
+                            height={10}
+                            className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.appDevelopment.rotated ? "rotate-180" : ""
+                              }`}
+                          />
+                        </Link>
 
-                        {/* <Image src='/megamenu/mega5.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                        <div
+                          className={`${isMobile
+                            ? dropMenuState.appDevelopment.visible
+                              ? "block"
+                              : "hidden"
+                            : "lg:flex" // Always visible on larger screens
+                            } flex flex-col space-y-4`}
+                        >
+                          {appDevelopment.map((item, index) => (
+                            <li key={index}>
+                              <Link href={item.link} className="text-gray-500 font-medium">
+                                {item.sub}
+                              </Link>
+                            </li>
+                          ))}
+                        </div>
+
                       </div>
 
-                      {crmSolutions.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+
+
+                      <Link
+                        href="/"
+                        className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "crmSolutions"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        CRM Solutions
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.crmSolutions.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
+
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.crmSolutions.visible
+                            ? "block"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
+                        {crmSolutions.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="text-gray-500 font-medium">
                               {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
+
                     </ul>
 
 
