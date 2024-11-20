@@ -71,7 +71,7 @@ const landingPages = [
 
 function Navbar() {
 
-  const [isMenuOpen, setIsMenuOpen] = useState();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [isMegaMenuService, setIsMegaMenuService] = useState(false);
 
@@ -82,7 +82,30 @@ function Navbar() {
 
   const [isMobile, setIsMobile] = useState(false);
 
+  const [dropMenuState, setDropMenuState] = useState({
+    digitalMarketing: { visible: false, rotated: false },
+    webDevelopment: { visible: false, rotated: false },
+    appDevelopment: { visible: false, rotated: false },
+    blockchainDevelopment: { visible: false, rotated: false },
+    uiuxDesign: { visible: false, rotated: false },
+    crmSolutions: { visible: false, rotated: false },
+    emailMarketing: { visible: false, rotated: false },
+    landingPages: { visible: false, rotated: false },
+  });
 
+  const dropDownMenu = (e, section) => {
+    if (isMobile) {
+      e.preventDefault();
+      setDropMenuState((prev) => ({
+        ...prev,
+        [section]: {
+          visible: !prev[section].visible,
+          rotated: !prev[section].rotated,
+        },
+      }));
+    }
+  };
+  
 
   // Check if screen is mobile/tablet on mount and resize
   useEffect(() => {
@@ -264,26 +287,58 @@ function Navbar() {
                 >
                   <div className="grid xs:w-[100vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 lg:shadow-md ">
                     <ul className="flex flex-col space-y-4 md:w-3/4 lg:pl-4">
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>Digital Marketing</h3>
 
-                        {/* <Image src='/megamenu/performance.png' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                      </div>
+                      <Link
+                        href="/"
+                        className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "digitalMarketing"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        Digital Marketing
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.digitalMarketing.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
-
-                      <div className="xs:flex flex-col space-y-4 ">
+                      <div
+                        className={`${isMobile
+                            ? dropMenuState.digitalMarketing.visible
+                              ? "block"
+                              : "hidden"
+                            : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
                         {digitalMarketing.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[12px]  lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
+                            <Link href={item.link} className="text-gray-500 font-medium">
+                              {item.sub}
                             </Link>
                           </li>
                         ))}
                       </div>
 
+
+                      <div
+                        className={`${dropMenuState.digitalMarketing.visible ? "block xs:flex flex-col space-y-4" : "hidden"
+                          } flex flex-col`}
+                      >
+                        {digitalMarketing.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="text-gray-500 font-medium">
+                              {item.sub}
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
                     </ul>
 
                     <ul className="flex flex-col space-y-4 md:w-3/4">
@@ -409,13 +464,6 @@ function Navbar() {
 
                   </div>
                 </div>
-
-
-
-
-
-
-
 
 
               </li>
