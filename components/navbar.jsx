@@ -302,7 +302,7 @@ function Navbar() {
                     : 'hidden group-hover:flex'
                     } lg:mt-3 mb-6  px-3`}
                 >
-                  <div className="grid xs:w-[88vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 lg:shadow-md ">
+                  <div className="grid xs:w-[83vw] sm:w-[82vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 lg:grid-cols-4 lg:shadow-md ">
                     <ul className="flex flex-col lg:space-y-4 md:w-3/4 lg:pl-4">
 
                       <Link
@@ -509,7 +509,7 @@ function Navbar() {
 
 
 
-                      <div className="flex flex-col  space-y-4">
+                      <div className="flex flex-col  lg:space-y-4">
                         <Link
                           href="/"
                           className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
@@ -627,10 +627,10 @@ function Navbar() {
 
                 <div
                   id="mega-menu-full-dropdown"
-                  className={`lg:absolute xs:-ml[240px] md:-ml-[200px] lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
+                  className={`lg:absolute xs:-ml[240px]  lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
                     } lg:mt-3 lg:mb-6 `}
                 >
-                  <div className="grid xs:w-[78vw] lg:w-[550px] lg:px-5 lg:py-3 mx-auto bg-white  lg:shadow-md rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 ">
+                  <div className="grid xs:w-[72vw] sm:w-[76vw] lg:w-[550px] lg:px-5 lg:py-3 mx-auto bg-white  lg:shadow-md rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 lg:grid-cols-2 ">
 
                     {/* Left Column: Industry */}
                     <ul className="flex flex-col space-y-0 lg:w-1/2">
@@ -681,7 +681,7 @@ function Navbar() {
                     </ul>
 
                     {/* Right Column: Services */}
-                    <ul className="flex flex-col space-y-0 md:w-1/2">
+                    <ul className="flex flex-col space-y-0 lgcommi:w-1/2">
                       {/* Heading */}
                       <Link
                         href="/"
