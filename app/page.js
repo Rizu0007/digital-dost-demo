@@ -15,7 +15,7 @@ export default function Home() {
     <Services/>
     <Testimonial2/>
     <CaseStudy/>
-    <Podcast/>
+    {/* <Podcast/> */}
    
     
  
