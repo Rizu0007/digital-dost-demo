@@ -32,7 +32,7 @@ const Service = () => {
   // bg-[url("/services-main/services.jpg")] bg-cover bg-center
   return (
     <>
-    <section className='md:px-32 py-40 xs:px-8   relative ' >
+    <section className='md:px-py-40 xs:px-8   relative ' >
       <div className=' xl:flex xl:flex-col xl:items-center '>
         <div>
           <h1 className="text-[black] font-bold xs:text-4xl sm:text-5xl xl:text-[40px] 2xl:text-7xl leading-tight mb-16">
@@ -47,10 +47,10 @@ const Service = () => {
               <div
                 key={index}
                 
-                className='lg:p-10 xs:p-4 text-black sm:w-full sm:h-[200px] md:w-1/3 md:h-[450px] lg:h-[450px] xl:h-[400px] border border-[black] flex flex-col sm:space-y-5 md:justify-around'
+                className='lg:p-10 xs:p-4 text-black sm:w-full sm:h-[200px] md:w-1/3 md:h-[450px] lg:h-[500px] xl:h-[400px] border border-[black] flex flex-col sm:space-y-5 md:justify-around'
               >
                 <h1 className='text-[22px] font-bold'>{service.title}</h1>
-                <p className='leading-tight'>{service.description}</p>
+                <p className=' text-[15px] leading-tight'>{service.description}</p>
               </div>
             ))}
           </div>
