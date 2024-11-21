@@ -8,7 +8,7 @@ const Services1 = [
   { name: 'Performance Marketing', image: '/megamenu/performance.png', alt: 'performance', link: '#' },
   { name: 'Social Media Management', image: '/megamenu/socialmedia.png', alt: 'socialmedia', link: '#' },
   { name: 'SEO', image: '/megamenu/mega3.svg', alt: 'seo', height: 20, width: 20, link: '#' },
-  { name: 'Lead Generation', image: '/megamenu/mega10.svg',  alt: 'leadgen', link: '#', extraClass:'w-6 h-6' },
+  { name: 'Lead Generation', image: '/megamenu/mega10.svg', alt: 'leadgen', link: '#', extraClass: 'w-6 h-6' },
   { name: 'Content Creation', image: '/megamenu/mega11.svg', alt: 'content', link: '#' },
   { name: 'Web Development', image: '/megamenu/mega7.svg', alt: 'performance', height: 25, width: 25, extraClass: 'w-6 h-6', link: '#' },
   { name: 'App Development', image: '/megamenu/mega11.png', alt: 'performance', height: 25, width: 25, extraClass: 'w-5 h-5', link: '#' },
@@ -302,12 +302,12 @@ function Navbar() {
                     : 'hidden group-hover:flex'
                     } lg:mt-3 mb-6  px-3`}
                 >
-                  <div className="grid xs:w-[100vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 lg:shadow-md ">
-                    <ul className="flex flex-col space-y-4 md:w-3/4 lg:pl-4">
+                  <div className="grid xs:w-[88vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 lg:shadow-md ">
+                    <ul className="flex flex-col lg:space-y-4 md:w-3/4 lg:pl-4">
 
                       <Link
                         href="/"
-                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px] "
+                        className="flex xs:justify-between lg:justify-start items-center text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -321,47 +321,34 @@ function Navbar() {
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.digitalMarketing.rotated ? "rotate-180" : ""
+                          className={`ml-1 xs:h-3 xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.digitalMarketing.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
 
                       <div
                         className={`${isMobile
-                          ? dropMenuState.digitalMarketing.visible
-                            ? "block"
-                            : "hidden"
-                          : "lg:flex" // Always visible on larger screens
+                            ? dropMenuState.digitalMarketing.visible
+                              ? "block text-[15px] mb-2 "
+                              : "hidden"
+                            : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
                         {digitalMarketing.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
+                            <Link href={item.link} className="text-gray-500  xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
                         ))}
                       </div>
 
-
-                      <div
-                        className={`${dropMenuState.digitalMarketing.visible ? "block xs:flex flex-col space-y-4" : "hidden"
-                          } flex flex-col`}
-                      >
-                        {digitalMarketing.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
-                              {item.sub}
-                            </Link>
-                          </li>
-                        ))}
-                      </div>
                     </ul>
 
                     <ul className="flex flex-col lg:space-y-4 md:w-3/4">
                       <Link
                         href="/"
-                        className="flex justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -375,7 +362,7 @@ function Navbar() {
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.uiuxDesign.rotated ? "rotate-180" : ""
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.uiuxDesign.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
@@ -383,14 +370,14 @@ function Navbar() {
                       <div
                         className={`${isMobile
                           ? dropMenuState.uiuxDesign.visible
-                            ? "block"
+                            ? "block  text-[15px] mb-2"
                             : "hidden"
                           : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
                         {uiuxDesign.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
@@ -400,7 +387,7 @@ function Navbar() {
 
                       <Link
                         href="/"
-                        className="flex justify-start items-center text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        className="flex xs:justify-between lg:justify-start items-center text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -414,7 +401,7 @@ function Navbar() {
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.emailMarketing.rotated ? "rotate-180" : ""
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.emailMarketing.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
@@ -422,14 +409,14 @@ function Navbar() {
                       <div
                         className={`${isMobile
                           ? dropMenuState.emailMarketing.visible
-                            ? "block"
+                            ? "block text-[15px] mb-2"
                             : "hidden"
                           : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
                         {emailMarketing.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
@@ -437,10 +424,10 @@ function Navbar() {
                       </div>
 
                     </ul>
-                    <ul className="flex flex-col space-y-4 md:w-3/4">
+                    <ul className="flex flex-col lg:space-y-4 md:w-3/4">
                       <Link
                         href="/"
-                        className="flex justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -454,7 +441,7 @@ function Navbar() {
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.webDevelopment.rotated ? "rotate-180" : ""
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.webDevelopment.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
@@ -462,14 +449,14 @@ function Navbar() {
                       <div
                         className={`${isMobile
                           ? dropMenuState.webDevelopment.visible
-                            ? "block"
+                            ? "block text-[15px] mb-2"
                             : "hidden"
                           : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
                         {webDevelopment.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
@@ -479,11 +466,11 @@ function Navbar() {
 
                     </ul>
 
-                    <ul className="flex flex-col   space-y-4 md:w-3/4 lg:ml-4">
+                    <ul className="flex flex-col  lg:space-y-4 md:w-3/4 lg:ml-4">
 
                       <Link
                         href="/"
-                        className="flex justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -497,7 +484,7 @@ function Navbar() {
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.landingPages.rotated ? "rotate-180" : ""
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.landingPages.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
@@ -505,14 +492,14 @@ function Navbar() {
                       <div
                         className={`${isMobile
                           ? dropMenuState.landingPages.visible
-                            ? "block"
+                            ? "block text-[15px] mb-2"
                             : "hidden"
                           : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
                         {landingPages.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
@@ -525,7 +512,7 @@ function Navbar() {
                       <div className="flex flex-col  space-y-4">
                         <Link
                           href="/"
-                          className="flex justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                          className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                           onClick={(e) => {
                             if (isMobile) {
                               e.preventDefault(); // Prevent navigation on mobile
@@ -539,7 +526,7 @@ function Navbar() {
                             alt="arrowdown"
                             width={18}
                             height={10}
-                            className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.appDevelopment.rotated ? "rotate-180" : ""
+                            className={`ml-1  xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.appDevelopment.rotated ? "rotate-180" : ""
                               }`}
                           />
                         </Link>
@@ -547,14 +534,14 @@ function Navbar() {
                         <div
                           className={`${isMobile
                             ? dropMenuState.appDevelopment.visible
-                              ? "block"
+                              ? "block  text-[15px] mb-2"
                               : "hidden"
                             : "lg:flex" // Always visible on larger screens
                             } flex flex-col space-y-4`}
                         >
                           {appDevelopment.map((item, index) => (
                             <li key={index}>
-                              <Link href={item.link} className="text-gray-500 font-medium">
+                              <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                                 {item.sub}
                               </Link>
                             </li>
@@ -567,7 +554,7 @@ function Navbar() {
 
                       <Link
                         href="/"
-                        className="flex justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -581,7 +568,7 @@ function Navbar() {
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.crmSolutions.rotated ? "rotate-180" : ""
+                          className={`ml-1  xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.crmSolutions.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
@@ -589,14 +576,14 @@ function Navbar() {
                       <div
                         className={`${isMobile
                           ? dropMenuState.crmSolutions.visible
-                            ? "block"
+                            ? "block  text-[15px] mb-2"
                             : "hidden"
                           : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
                         {crmSolutions.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
@@ -641,16 +628,16 @@ function Navbar() {
                 <div
                   id="mega-menu-full-dropdown"
                   className={`lg:absolute xs:-ml[240px] md:-ml-[200px] lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
-                    } mt-3 mb-6 `}
+                    } lg:mt-3 lg:mb-6 `}
                 >
-                  <div className="grid w-[550px] px-5 py-3 mx-auto bg-white  lg:shadow-md rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 ">
+                  <div className="grid xs:w-[78vw] lg:w-[550px] lg:px-5 lg:py-3 mx-auto bg-white  lg:shadow-md rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 ">
 
                     {/* Left Column: Industry */}
                     <ul className="flex flex-col space-y-0 lg:w-1/2">
                       {/* Heading */}
                       <Link
                         href="/"
-                        className="flex justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-3 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -658,15 +645,15 @@ function Navbar() {
                           }
                         }}
                       >
-                        <div className="flex lg:justify-center font-bold text-[30px]">
-                          <h3 className="lg:ml-4">Industries</h3>
+                        <div className="flex lg:justify-center text-[16px] font-medium lg:ml-4 lg:font-semibold lg:text-[30px]">
+                          Industries
                         </div>
                         <Image
                           src="/down-arrow.png"
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.industries.rotated ? "rotate-180" : ""
+                          className={`ml-1  xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.industries.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
@@ -674,15 +661,15 @@ function Navbar() {
                       <div
                         className={`${isMobile
                           ? dropMenuState.industries.visible
-                            ? "block"
+                            ? "block text-[#6B7280]"
                             : "hidden"
-                          : "lg:flex" // Always visible on larger screens
+                          : "lg:flex text-[#6B7280]" // Always visible on larger screens
                           } flex flex-col `}
                       >
                         {industries.map((industry, index) => (
                           <li key={index}>
                             <Link href={industry.link} className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                              <div className="font-medium flex xs:text-[12px] lg:text-[14px]">
+                              <div className="font-medium  flex xs:text-[15px] lg:text-[14px]">
                                 <Image src={industry.image} alt={industry.alt} height={25} width={25} className="mr-4" />
                                 {industry.name}
                               </div>
@@ -698,7 +685,7 @@ function Navbar() {
                       {/* Heading */}
                       <Link
                         href="/"
-                        className="flex justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px] "
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-3 lg:p-0 2xl:text-[20px] "
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -706,15 +693,15 @@ function Navbar() {
                           }
                         }}
                       >
-                        <div className="flex lg:justify-end font-bold text-[30px]">
-                          <h3>Services</h3>
+                        <div className="flex lg:justify-center text-[16px] font-medium lg:ml-4 lg:font-semibold lg:text-[30px]">
+                          services
                         </div>
                         <Image
                           src="/down-arrow.png"
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.services1.rotated ? "rotate-180" : ""
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.services1.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
@@ -724,15 +711,15 @@ function Navbar() {
                       <div
                         className={`${isMobile
                           ? dropMenuState.services1.visible
-                            ? "block"
+                            ? "block text-[#6B7280] "
                             : "hidden"
-                          : "lg:flex" // Always visible on larger screens
+                          : "lg:flex text-[#6B7280]" // Always visible on larger screens
                           } flex flex-col `}
                       >
                         {Services1.map((service, index) => (
                           <li key={index}>
                             <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                              <div className="font-medium flex xs:text-[12px] lg:text-[14px]">
+                              <div className="font-medium flex xs:text-[15px] lg:text-[14px]">
                                 <Image
                                   src={service.image}
                                   alt={service.alt}
