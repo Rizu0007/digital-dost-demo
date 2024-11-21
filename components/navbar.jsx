@@ -4,6 +4,28 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+const Services1 = [
+  { name: 'Performance Marketing', image: '/megamenu/performance.png', alt: 'performance', link: '#' },
+  { name: 'Social Media Management', image: '/megamenu/socialmedia.png', alt: 'socialmedia', link: '#' },
+  { name: 'SEO', image: '/megamenu/mega3.svg', alt: 'seo', height: 20, width: 20, link: '#' },
+  { name: 'Lead Generation', image: '/megamenu/mega10.svg', alt: 'leadgen', link: '#', extraClass: 'w-6 h-6' },
+  { name: 'Content Creation', image: '/megamenu/mega11.svg', alt: 'content', link: '#' },
+  { name: 'Web Development', image: '/megamenu/mega7.svg', alt: 'performance', height: 25, width: 25, extraClass: 'w-6 h-6', link: '#' },
+  { name: 'App Development', image: '/megamenu/mega11.png', alt: 'performance', height: 25, width: 25, extraClass: 'w-5 h-5', link: '#' },
+  { name: 'Email Marketing', image: '/megamenu/mega5.svg', alt: 'seo', height: 20, width: 20, link: '#' }
+];
+
+const industries = [
+  { name: 'Fashion', image: '/megamenu/Fashion.png', alt: 'fashion', link: '#' },
+  { name: 'RealState', image: '/megamenu/realstate.png', alt: 'realstate', link: '#' },
+  { name: 'Skin Care', image: '/megamenu/scrub.png', alt: 'skincare', link: '#' },
+  { name: 'Health care', image: '/megamenu/healthcare.png', alt: 'healthcare', link: '#' },
+  { name: 'Ecommerce', image: '/megamenu/Fashion.png', alt: 'ecommerce', link: '#' },
+  { name: 'Sport & Fitness', image: '/megamenu/sports.png', alt: 'sports', link: '#' },
+  { name: 'BlockChain & Crypto', image: '/megamenu/bitcoin.png', alt: 'crypto', link: '#' },
+  { name: 'Local Business & Services', image: '/megamenu/business.png', alt: 'business', link: '#' }
+];
+
 
 const digitalMarketing = [
   { sub: 'Performance Marketing', link: '#' },
@@ -34,13 +56,6 @@ const appDevelopment = [
   { sub: 'React Native Development', link: '#' }
 ];
 
-const blockchainDevelopment = [
-  { sub: 'Smart Contract Development', link: '#' },
-  { sub: 'Decentralized Apps (dApps)', link: '#' },
-  { sub: 'Crypto Wallet Integration', link: '#' },
-  { sub: 'Token Creation & ICO Services', link: '#' },
-  { sub: 'Blockchain Consulting', link: '#' }
-];
 
 const uiuxDesign = [
   { sub: 'UI/UX Research', link: '#' },
@@ -91,6 +106,8 @@ function Navbar() {
     crmSolutions: { visible: false, rotated: false },
     emailMarketing: { visible: false, rotated: false },
     landingPages: { visible: false, rotated: false },
+    industries: { visible: false, rotated: false },
+    services1: { visible: false, rotated: false },
   });
 
   const dropDownMenu = (e, section) => {
@@ -105,7 +122,7 @@ function Navbar() {
       }));
     }
   };
-  
+
 
   // Check if screen is mobile/tablet on mount and resize
   useEffect(() => {
@@ -252,12 +269,12 @@ function Navbar() {
               </div>
             </div>
 
-            <ul className={`font-semibold text-[#171717d7] flex lg:space-x-16 xl:space-x-20 2xl:space-x-28 xs:text-[18px]  lg:text-[14px] text-nowrap ${isMenuOpen ? " w-3/4 flex-col  justify-center flex mx-24 xs:mx-10  bg-white relative" : ""}`}>
+            <ul className={`font-semibold text-[#171717d7] flex lg:space-x-16 xl:space-x-20 2xl:space-x-28 xs:text-[20px]  lg:text-[14px] text-nowrap ${isMenuOpen ? " w-3/4 flex-col  justify-center flex mx-24 xs:mx-10  bg-white relative" : ""}`}>
               <li className="relative group ">
 
                 <Link
                   href="/services"
-                  className="w-full pt-4 pb-2 md:hover:border-b-2 md:hover:border-b-[#00729f] flex"
+                  className="w-full  xs:pt-6 lg:pt-4 pb-4 border-b-[1px] border-[#00729f] lg:border-0 lg:hover:border-b-2 lg:hover:border-b-[#00729f] flex justify-between"
                   onClick={(e) => {
                     if (isMobile) {
                       e.preventDefault();
@@ -274,7 +291,7 @@ function Navbar() {
                     alt='arrowdown'
                     width={18}
                     height={10}
-                    className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 ${isArrowRotated ? 'rotate-180' : ''
+                    className={`ml-1 xs:h-3  xs:w-3 lg:h-[10px] lg:w-[10px] xs:mt-4 lg:mt-[6px]  transition-transform duration-300 ${isArrowRotated ? 'rotate-180' : ''
                       }`}
                   />
                 </Link>
@@ -285,12 +302,12 @@ function Navbar() {
                     : 'hidden group-hover:flex'
                     } lg:mt-3 mb-6  px-3`}
                 >
-                  <div className="grid xs:w-[100vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-4 lg:shadow-md ">
-                    <ul className="flex flex-col space-y-4 md:w-3/4 lg:pl-4">
+                  <div className="grid xs:w-[83vw] sm:w-[82vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 lg:grid-cols-4 lg:shadow-md ">
+                    <ul className="flex flex-col lg:space-y-4 md:w-3/4 lg:pl-4">
 
                       <Link
                         href="/"
-                        className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]"
+                        className="flex xs:justify-between lg:justify-start items-center text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
@@ -304,7 +321,7 @@ function Navbar() {
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.digitalMarketing.rotated ? "rotate-180" : ""
+                          className={`ml-1 xs:h-3 xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.digitalMarketing.rotated ? "rotate-180" : ""
                             }`}
                         />
                       </Link>
@@ -312,84 +329,135 @@ function Navbar() {
                       <div
                         className={`${isMobile
                             ? dropMenuState.digitalMarketing.visible
-                              ? "block"
+                              ? "block text-[15px] mb-2 "
                               : "hidden"
                             : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
                         {digitalMarketing.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
+                            <Link href={item.link} className="text-gray-500  xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
                         ))}
                       </div>
 
+                    </ul>
+
+                    <ul className="flex flex-col lg:space-y-4 md:w-3/4">
+                      <Link
+                        href="/"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "uiuxDesign"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        UI/UX Design
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.uiuxDesign.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
                       <div
-                        className={`${dropMenuState.digitalMarketing.visible ? "block xs:flex flex-col space-y-4" : "hidden"
-                          } flex flex-col`}
+                        className={`${isMobile
+                          ? dropMenuState.uiuxDesign.visible
+                            ? "block  text-[15px] mb-2"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
                       >
-                        {digitalMarketing.map((item, index) => (
+                        {uiuxDesign.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="text-gray-500 font-medium">
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
                         ))}
                       </div>
-                    </ul>
 
-                    <ul className="flex flex-col space-y-4 md:w-3/4">
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>UI/UX Design</h3>
 
-                        {/* <Image src='/megamenu/mega4.svg' alt='mega' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                      <Link
+                        href="/"
+                        className="flex xs:justify-between lg:justify-start items-center text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "emailMarketing"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        Email Marketing
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.emailMarketing.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
+
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.emailMarketing.visible
+                            ? "block text-[15px] mb-2"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
+                        {emailMarketing.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
+                              {item.sub}
+                            </Link>
+                          </li>
+                        ))}
                       </div>
 
-                      {uiuxDesign.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
-                              {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>Email Marketing</h3>
-
-                        {/* <Image src='/megamenu/mega6.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                      </div>
-
-                      {emailMarketing.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
-                              {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
                     </ul>
-                    <ul className="flex flex-col space-y-4 md:w-3/4">
-                      <div className="flex flex-col  space-y-4">
-                        <div className="flex mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                          <h3>Web Development</h3>
-                          {/* <Image src='/megamenu/mega8.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
+                    <ul className="flex flex-col lg:space-y-4 md:w-3/4">
+                      <Link
+                        href="/"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "webDevelopment"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        Web Development
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.webDevelopment.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
-                        </div>
-
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.webDevelopment.visible
+                            ? "block text-[15px] mb-2"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
                         {webDevelopment.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[12px] text-left lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
+                              {item.sub}
                             </Link>
                           </li>
                         ))}
@@ -398,42 +466,41 @@ function Navbar() {
 
                     </ul>
 
-                    <ul className="flex flex-col   space-y-4 md:w-3/4 lg:ml-4">
+                    <ul className="flex flex-col  lg:space-y-4 md:w-3/4 lg:ml-4">
 
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>Landing Pages</h3>
+                      <Link
+                        href="/"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "landingPages"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        Landing Pages
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.landingPages.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
-                        {/* <Image src='/megamenu/mega9.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
-                      </div>
-
-                      {landingPages.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
-                              {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-
-
-
-
-
-                      <div className="flex flex-col  space-y-4">
-                        <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                          <h3>App Development</h3>
-                          {/* <Image src='/megamenu/mega3.svg' alt='mega2' height={25} width={25} className="ml-3" /> */}
-
-                        </div>
-
-                        {appDevelopment.map((item, index) => (
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.landingPages.visible
+                            ? "block text-[15px] mb-2"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
+                        {landingPages.map((item, index) => (
                           <li key={index}>
-                            <Link href={item.link} className="">
-                              <span className="xs:text-[12px] text-left lg:text-[16px] font-medium text-gray-500">
-                                {item.sub}
-                              </span>
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
+                              {item.sub}
                             </Link>
                           </li>
                         ))}
@@ -442,22 +509,87 @@ function Navbar() {
 
 
 
-                      <div className="flex justify-start items-center mt-2 text-[#444444] font-semibold text-[14px] 2xl:text-[20px]">
-                        <h3>CRM Solutions</h3>
+                      <div className="flex flex-col  lg:space-y-4">
+                        <Link
+                          href="/"
+                          className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                          onClick={(e) => {
+                            if (isMobile) {
+                              e.preventDefault(); // Prevent navigation on mobile
+                              dropDownMenu(e, "appDevelopment"); // Toggle dropdown state
+                            }
+                          }}
+                        >
+                          App Development
+                          <Image
+                            src="/down-arrow.png"
+                            alt="arrowdown"
+                            width={18}
+                            height={10}
+                            className={`ml-1  xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.appDevelopment.rotated ? "rotate-180" : ""
+                              }`}
+                          />
+                        </Link>
 
-                        {/* <Image src='/megamenu/mega5.svg' alt='mega1' height={25} width={25} className="ml-3" /> */}
-                        {/* <Link href="#" className="block p-3 rounded-lg bg-blue-500 hover:bg-gray-50 w-48 dark:hover:bg-gray-100"> */}
+                        <div
+                          className={`${isMobile
+                            ? dropMenuState.appDevelopment.visible
+                              ? "block  text-[15px] mb-2"
+                              : "hidden"
+                            : "lg:flex" // Always visible on larger screens
+                            } flex flex-col space-y-4`}
+                        >
+                          {appDevelopment.map((item, index) => (
+                            <li key={index}>
+                              <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
+                                {item.sub}
+                              </Link>
+                            </li>
+                          ))}
+                        </div>
+
                       </div>
 
-                      {crmSolutions.map((item, index) => (
-                        <li key={index}>
-                          <Link href={item.link} className="">
-                            <span className="xs:text-[12px] lg:text-[16px] font-medium text-gray-500">
+
+
+                      <Link
+                        href="/"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "crmSolutions"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        CRM Solutions
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1  xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.crmSolutions.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
+
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.crmSolutions.visible
+                            ? "block  text-[15px] mb-2"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
+                        {crmSolutions.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                               {item.sub}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
+
                     </ul>
 
 
@@ -471,7 +603,7 @@ function Navbar() {
               <li className="relative group ">
                 <Link
                   href="/casestudyall"
-                  className="w-full pt-4 pb-2 md:hover:border-b-2 md:hover:border-b-[#00729f] flex"
+                  className="w-full py-4 border-b-[1px] border-[#00729f] lg:border-0 lg:hover:border-b-2 lg:hover:border-b-[#00729f] flex justify-between"
                   onClick={(e) => {
                     if (isMobile) {
                       e.preventDefault();
@@ -487,7 +619,7 @@ function Navbar() {
                     alt='arrowdown'
                     width={18}
                     height={10}
-                    className={`ml-1 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 ${isArrowRotated2 ? 'rotate-180' : ''
+                    className={`ml-1 xs:h-3  xs:w-3  lg:h-[10px] lg:w-[10px] xs:mt-4 lg:mt-[6px] transition-transform duration-300 ${isArrowRotated2 ? 'rotate-180' : ''
                       }`}
                   />
                 </Link>
@@ -495,160 +627,112 @@ function Navbar() {
 
                 <div
                   id="mega-menu-full-dropdown"
-                  className={`lg:absolute xs:-ml[240px] md:-ml-[200px] lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
-                    } mt-3 mb-6 `}
+                  className={`lg:absolute xs:-ml[240px]  lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
+                    } lg:mt-3 lg:mb-6 `}
                 >
-                  <div className="grid w-[550px] px-5 py-3 mx-auto bg-white rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 md:grid-cols-2 ">
+                  <div className="grid xs:w-[72vw] sm:w-[76vw] lg:w-[550px] lg:px-5 lg:py-3 mx-auto bg-white  lg:shadow-md rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 lg:grid-cols-2 ">
 
                     {/* Left Column: Industry */}
                     <ul className="flex flex-col space-y-0 lg:w-1/2">
                       {/* Heading */}
-                      <div className="flex lg:justify-center  font-bold text-[30px]">
-                        <h3 className="lg:ml-4">Industries</h3>
+                      <Link
+                        href="/"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-3 lg:p-0 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "industries"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        <div className="flex lg:justify-center text-[16px] font-medium lg:ml-4 lg:font-semibold lg:text-[30px]">
+                          Industries
+                        </div>
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1  xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.industries.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
+
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.industries.visible
+                            ? "block text-[#6B7280]"
+                            : "hidden"
+                          : "lg:flex text-[#6B7280]" // Always visible on larger screens
+                          } flex flex-col `}
+                      >
+                        {industries.map((industry, index) => (
+                          <li key={index}>
+                            <Link href={industry.link} className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
+                              <div className="font-medium  flex xs:text-[15px] lg:text-[14px]">
+                                <Image src={industry.image} alt={industry.alt} height={25} width={25} className="mr-4" />
+                                {industry.name}
+                              </div>
+                            </Link>
+                          </li>
+                        ))}
                       </div>
 
-                      {/* Industry List */}
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/Fashion.png' alt='fintech' height={25} width={25} className="mr-4" />
-                            Fashion
-                          </div>
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/realstate.png' alt='banking' height={25} width={25} className="mr-4" />
-                            RealState
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/scrub.png' alt='realestate' height={25} width={25} className="mr-4" />
-                            Skin Care
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/healthcare.png' alt='government' height={25} width={25} className="mr-4" />
-                            Health care
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/Fashion.png' alt='crypto' height={25} width={25} className="mr-4" />
-                            Ecommerce
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/sports.png' alt='finance' height={25} width={25} className="mr-4" />
-                            Sport & Fitness
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/bitcoin.png' alt='crypto' height={25} width={25} className="mr-4 w-[25px] h-[25px]" />
-                            BlockChain & Crypto
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/business.png' alt='crypto' height={25} width={25} className="mr-4" />
-                            Local Business & Services
-                          </div>
-                        </Link>
-                      </li>
                     </ul>
 
                     {/* Right Column: Services */}
-                    <ul className="flex flex-col space-y-0 md:w-1/2">
+                    <ul className="flex flex-col space-y-0 lgcommi:w-1/2">
                       {/* Heading */}
-                      <div className="flex lg:justify-end font-bold text-[30px]">
-                        <h3>Services</h3>
-                      </div>
+                      <Link
+                        href="/"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-3 lg:p-0 2xl:text-[20px] "
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "services1"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        <div className="flex lg:justify-center text-[16px] font-medium lg:ml-4 lg:font-semibold lg:text-[30px]">
+                          services
+                        </div>
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.services1.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
                       {/* Services List */}
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/performance.png' alt='performance' height={25} width={25} className="mr-4 " />
-                            Performance Marketing
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/socialmedia.png' alt='socialmedia' height={25} width={25} className="mr-4" />
-                            Social Media Management
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-[14px] rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/mega3.svg' alt='seo' height={20} width={20} className="mr-4" />
-                            SEO
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/mega10.svg' alt='leadgen' height={25} width={25} className="mr-4" />
-                            Lead Generation
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/mega11.svg' alt='content' height={25} width={25} className="mr-4" />
-                            Content Creation
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/mega7.svg' alt='performance' height={25} width={25} className="mr-4 w-6 h-6" />
-                            Web Development
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-[14px] rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/mega11.png' alt='performance' height={25} width={25} className="mr-4 w-5 h-5" />
-                            App Development
-                          </div>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="block p-[14px] rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
-                          <div className="font-medium flex xs:text-[12px] lg:text-[14px] ">
-                            <Image src='/megamenu/mega5.svg' alt='seo' height={20} width={20} className="mr-4" />
-                            Email Marketing
-                          </div>
-                        </Link>
-                      </li>
 
-
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.services1.visible
+                            ? "block text-[#6B7280] "
+                            : "hidden"
+                          : "lg:flex text-[#6B7280]" // Always visible on larger screens
+                          } flex flex-col `}
+                      >
+                        {Services1.map((service, index) => (
+                          <li key={index}>
+                            <Link href="#" className="block p-3 rounded-lg hover:bg-gray-50 w-48 dark:hover:bg-gray-100">
+                              <div className="font-medium flex xs:text-[15px] lg:text-[14px]">
+                                <Image
+                                  src={service.image}
+                                  alt={service.alt}
+                                  height={service.height || 25}
+                                  width={service.width || 25}
+                                  className={`mr-4 ${service.extraClass || ''}`}
+                                />
+                                {service.name}
+                              </div>
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
                     </ul>
                   </div>
                 </div>
@@ -658,8 +742,8 @@ function Navbar() {
               </li>
 
 
-              <Link href="/calendly" className="w-full py-4 md:hover:border-b-2 md:hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>BOOK MEETING</Link>
-              <Link href="/digital-us" className="w-full py-4 md:hover:border-b-2 md:hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
+              <Link href="/calendly" className="w-full py-4 border-b-[1px] border-[#00729f] lg:border-0 lg:hover:border-b-2 lg:hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>BOOK MEETING</Link>
+              <Link href="/digital-us" className="w-full py-4 border-b-[1px] border-[#00729f] lg:border-0 lg:hover:border-b-2 lg:hover:border-b-[#00729f]" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
 
               {/* Adjusted button */}
               <li className="w-full lg:border-none flex justify-center mt-1.5">
