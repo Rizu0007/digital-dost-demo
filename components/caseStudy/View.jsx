@@ -125,7 +125,7 @@ const View = () => {
             <div className="relative group">
               <label
                 htmlFor="industry-filter"
-                className="mb-1 text-[18px] rounded-full h-10 w-36 font-semibold border-2 flex justify-center items-center border-gray-500 text-center cursor-pointer"
+                className="mb-1 text-[18px] rounded-full h-10 w-40 font-semibold border-2 flex justify-center items-center border-gray-500 text-center cursor-pointer"
               >
                 <span>
                   <Image src='/CaseStudy/gear.png' alt='gear' width={20} height={20} className='mr-2' />
@@ -178,7 +178,7 @@ const View = () => {
               </select>
             </div>
 
-            <div className="relative group">
+            <div className="relative group md:block xs:hidden">
               <label
                 htmlFor="country-filter"
                 className="mb-1 text-[18px] rounded-full h-10 w-36 font-semibold border-2 flex justify-center items-center border-gray-500 text-center cursor-pointer"
