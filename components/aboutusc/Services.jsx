@@ -62,10 +62,11 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <section className='flex justify-center items-center xs:p-3 sm:p-5 md:p-10 lg:p-20 xl:p-44'>
+    <section className='flex flex-col justify-center items-center xs:p-3 sm:p-5 md:p-10 lg:p-20 xl:p-44'>
       <div>
 
-        Services We Offer
+        <h3 className='font-bold xs:text-4xl md:text-5xl lg:text-6xl mb-4'>Services We Offer</h3>
+
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-auto xs:gap-1 sm:gap-4">
         {services.map((service, index) => (

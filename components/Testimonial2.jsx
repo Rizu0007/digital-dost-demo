@@ -141,13 +141,13 @@ const Testimonial2 = () => {
         {/* Horizontal line with arrows */}
         <div className="flex w-full h-auto mt-12 justify-center items-center">
           {/* White line */}
-          <div className="relative h-[2px] w-[90%] bg-[#dadce2]">
+          <div className="relative h-[2px] w-[80%] bg-[#dadce2]">
             {/* Black line */}
             <div
-              className="absolute top-0 h-[2px] bg-[#00729f] transition-all duration-300"
+              className="absolute top-0 h-[2px] bg-[#00729f] transition-all duration-300 "
               style={{
                 width: "20%", // The black line stays at a fixed length of 20%
-                left: `${(activeIndex / (testimonials.length - 1)) * 80}%`,
+                left: `${(activeIndex / (testimonials.length - 1)) * 100}%`,
               }}
             ></div>
           </div>

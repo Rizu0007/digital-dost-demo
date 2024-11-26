@@ -28,7 +28,44 @@ const Aboutus = () => {
   return (
     <div>
       {/* Hero Section */}
-      
+      <div className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Video Background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/shopex video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Content */}
+      <div className="relative z-10 text-center text-white px-4">
+        <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+          Your Gateway to Tech Excellence
+        </h1>
+        <p className="text-lg lg:text-xl mb-8">
+          Software & Mobile App Maintenance for Seamless Operations
+        </p>
+        <div className="flex justify-center space-x-4">
+          <a
+            href="#"
+            className="bg-[#00729f] text-white px-6 py-3 rounded-full transition"
+          >
+            Services
+          </a>
+          <a
+            href="#"
+            className="border border-white text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
+          >
+            Portfolio
+          </a>
+        </div>
+      </div>
+    </div>
+
       <section className="bg-cover bg-center h-96 " style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}>
         <div className="flex justify-center items-center h-full bg-box1">
           <h1 className="text-white text-4xl md:text-5xl font-bold">About Us</h1>

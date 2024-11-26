@@ -104,7 +104,7 @@ export default function ServicesComponent() {
 
   var settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -135,14 +135,18 @@ export default function ServicesComponent() {
         settings: {
           slidesToShow: 1.5,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 2,
+              infinite: true,
+
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+              infinite: true,
+
         }
       }
 
