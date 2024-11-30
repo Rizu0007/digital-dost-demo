@@ -1,0 +1,132 @@
+[
+    {
+        
+      "slug": "digital-marketing",
+      "title": "Standout in the Digital Marketing Landscape | Result-Driven Digital Marketing | ROI-Driven Digital Marketing",
+      "image": "/services-main/heroimg1.png",
+      "services": [
+        {
+          "mainheading":"Our Company’s Digital Marketing Services"
+        }
+        ,
+        {
+          "title": "Performance Marketing",
+          "description": "Keep sight of long-term business goals. Performance marketing is another marketing campaign method and is now the focal point of all brand media and content. Throughout the consumer decision cycle, we purchase media, produce content, and improve brand experiences to achieve business goals."
+        },
+        {
+          "title": "Social Media Management",
+          "description": "Rise above the rabble with our social media management (SMM) services. Shopex incorporates social media management services into your comprehensive marketing plan to optimize online visibility. The accurate Instagram or Facebook management service can draw in, develop, and turn followers into devoted clients. Our team has planned and managed the franchises, small businesses, and corporate clients through social media management campaigns."
+        },
+        {
+          "title": "SEO (Search Engine Optimization)",
+          "description": "Shopex exceeds the conventional SEO company model. We have collaborated with various brands to achieve impactful, data-driven SEO outcomes. Our focus extends beyond merely increasing your online visibility. Our competent team of SEO experts is dedicated to helping you acquire more customers, enhance search traffic, and boost conversions."
+        },
+        {
+          "title": "Graphic Design & (UI/UX)",
+          "description": "Our forte is branding and unique design to increase conversions. Our UI/UX, web design, and development experts will weave your data, extraordinary insights, competitive analysis, and industry research to build an exceptional digital experience—partner with us to create a unique website that increases user attention, retention, and conversions."
+        },
+        {
+          "title": "Content Writing",
+          "description": "Creating appealing content is essential to building your audience and expanding your company. Our marketing and SEO teams produce high-quality content that targets suitable keywords and key phrases to rank higher in search results. We can assist your team in researching subjects, keywords, and keyphrases that can increase your company's traffic and revenue."
+        },
+        {
+          "title": "Affiliate Marketing",
+          "description": "We optimize our client's return on investment (ROI) with each exceptional affiliate marketing strategy to guarantee profitability and visibility. Ultimately, our solutions will enable you to connect with more valuable online leads. We do much more than develop plans with our affiliate marketing. Team Shopex uses tailored strategies to build solid alliances, generate traffic, and increase conversions to ensure your brand reaches its most significant online potential."
+        },
+        {
+          "title": "Influencer Marketing",
+          "description": "Uncover new target customers who love your products. We pair brands with social media influencers for optimal reach and visibility to launch ingenious influencer campaigns. Our influencer marketing strategy strives to raise brand awareness through high-quality content and interaction, naturally building brand associations and advocates that stimulate sales."
+        },
+        {
+          "title": "User-Generated Content",
+          "description": "Our top-notch user-generated content service will help you generate product interest, trigger conversations, and boost revenue. Do you know why it's a marketing goldmine? Because UGC is more than obsolete advertising. Your audience prefers to hear from your customers regarding your brand's photos, videos, reviews, and blog posts. User-generated content is cost-effective, more authentic, and saves you time."
+        },
+        {
+          "title": "Shopify Development",
+          "description": "As a competent team, we acknowledge the value of developing customized solutions to meet our partners' demands. For this reason, we always provide every company with customized Shopify development services, which enables us to fulfill your expectations for the project's outcome. Each individual in our team is devoted to the outcomes we provide to our partners. We are more than a few designers and developers prepared to boost your company's performance."
+        },
+        {
+          "title": "WordPress Development",
+          "description": "When it comes ato selling your brand, nothing beats your website. With Shopex's help, your website may become an effective medium of professional communication, befitting the high caliber of your position. We have expertise in custom WordPress development, WordPress SEO, and WordPress website design. The WordPress CMS is an excellent option for any eCommerce or content-based website because it simplifies managing your content. Our professionals will create a development plan, platform suggestions, project budget, and schedule. Building your website will enable you to expand and scale to meet future company needs."
+        }
+      ],
+
+      "advantages":[
+
+        {
+            "image": "/advantages/6.svg",
+            "title": "How Does a Digital Marketing Agency Help to Grow Your Business?",
+            "text": "Digital marketing is all about a robust strategy. The right approach can drive the right traffic, clicks, conversions, and sales to fulfill the desired ROI. A good strategy can help a company attract new customers, communicate with new audiences, and collect critical data on customer behavior. Here’s how:"
+          },
+          {
+            "image": "/advantages/7.svg",
+            "title": "Save Money by Partnering with an Agency",
+            "text": "Launching a new business or company requires proper setup and a team to manage and optimize multiple digital marketing strategies. We can't take ease with in-house marketing costs and must pay for employees' salaries, software, and marketing tools. A team can monitor your new campaigns; you don't need to waste your budget on testing. An agency can help you achieve your business goal by saving time. If you are partnering with Shopex, you will work with a team of over a hundred industry experts who not only support your approaches but will implement new ones too."
+          },
+          {
+            "image": "/advantages/8.svg",
+            "title": "Higher ROI On Your Marketing Budget Plan",
+            "text": "Every business has concerns about maximum return on investment (ROI) within their marketing budget. An outstanding digital marketing firm can manage to monitor your results and ensure that you are deriving the most revenue for your business by implementing your ongoing optimization. Shopex can help you in this regard. Our devoted digital marketers will track possible leads and revenue sources and can funnel your budget to the networks that grow your business beyond the limits."
+          },
+          {
+            "image": "/advantages/9.svg",
+            "title": "Work With a Team to Save Valuable Time",
+            "text": "Your time is money; you don't need to explore the latest industry trends, marketing strategies, and many more tasks while running your business. Hiring a team of experts will help you analyze your competitors, industry trends, and marketing insights to optimize your strategies accordingly. Let Shopex handle your digital marketing with its personalized approach to save time."
+          }
+          
+
+
+
+      ],
+
+      "flow":[
+
+              {
+                "number": "01",
+                "title": "Initial Meeting",
+                "description": "First, our Linkup Studio product managers invite you to a free first meeting. This is where we start our journey together, diving into the specifics of your product, understanding your needs, and discussing your objectives."
+              },
+              {
+                "number": "02",
+                "title": "Discovery",
+                "description": "Then, our focus shifts to thoroughly grasping your business aims, identifying your target customers, and getting a grip on the competitive market environment. Through detailed research, trend analysis, and conversations with potential users, we aim to craft a distinct vision and strategy. This includes a roadmap pinpointing crucial steps ahead."
+              },
+              {
+                "number": "03",
+                "title": "Concept Validation (Proof of Concept)",
+                "description": "When necessary, Linkup Studio company’s product managers create a preliminary model to test the feasibility of your idea. This stage is all about evaluating critical components, soliciting user input, and confirming the technical practicality. Our aim is to shape a concept that not only resonates with your business objectives but is also viable in the real world."
+              },
+              {
+                "number": "04",
+                "title": "Development",
+                "description": "After that, our product management experts move on to developing a basic, functional version of your digital solution, focusing on the key features that meet immediate user requirements. Launching this MVP version allows you to collect feedback from actual users, verify market interest, and progressively refine the product based on these insights."
+              },
+              {
+                "number": "05",
+                "title": "Launch & Support",
+                "description": "Adopting an agile method, we ensure the continuous delivery of updates and improvements, driven by user feedback and analytical insights. Linkup Studio is committed to providing ongoing support in order to ensure the seamless operation of your digital platform or app and resolve any emerging issues."
+              }
+            
+          
+          
+      ]
+    },
+    {
+      "slug": "performance-marketing",
+      "title": "Performance Marketing",
+      "description": "Maximize your ROI with our data-driven performance marketing strategies."
+    },
+    {
+      "slug": "social-media-management",
+      "title": "Social Media Management",
+      "description": "Engage your audience with tailored social media strategies.",
+      "image": "/images/social-media-management.jpg"
+    },
+    {
+      "slug": "seo",
+      "title": "Search Engine Optimization (SEO)",
+      "description": "Boost your organic visibility with expert SEO techniques.",
+      "image": "/images/seo.jpg"
+    }
+  ]
+  

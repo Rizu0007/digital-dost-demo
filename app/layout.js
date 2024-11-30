@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar"; // Ensure this path is correct
 import Footer from "@/components/footer/Footer"; // Ensure this path is correct
 
+
 const inter = Poppins({ weight:['100','200','300','400','500','600','700','800','900'],subsets: ["latin"] });
 
 export const metadata = {

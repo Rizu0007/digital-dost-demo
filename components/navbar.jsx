@@ -7,7 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Services1 = [
   { name: 'Performance Marketing', image: '/megamenu/performance.png', alt: 'performance', link: '#' },
   { name: 'Social Media Management', image: '/megamenu/socialmedia.png', alt: 'socialmedia', link: '#' },
-  { name: 'SEO', image: '/megamenu/mega3.svg', alt: 'seo', height: 20, width: 20, link: '#' },
+  { id:'3',name: 'SEO', image: '/megamenu/mega3.svg', alt: 'seo', height: 20, width: 20, link: '#' },
   { name: 'Lead Generation', image: '/megamenu/mega10.svg', alt: 'leadgen', link: '#', extraClass: 'w-6 h-6' },
   { name: 'Content Creation', image: '/megamenu/mega11.svg', alt: 'content', link: '#' },
   { name: 'Web Development', image: '/megamenu/mega7.svg', alt: 'performance', height: 25, width: 25, extraClass: 'w-6 h-6', link: '#' },
