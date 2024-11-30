@@ -16,7 +16,7 @@ const Header = (title, image) => {
 
             <Link href="#">
               <button className="xs:px-28 xs:py-4 sm:px-60 sm:py-4 xs:text-nowrap md:px-10 md:py-2  xl:px-20 xl:py-3 2xl:px-28 2xl:py-5 rounded-md font-extrabold xl:text-[18px] bg-[#00729f] text-white">
-                Contact Us
+                Contact us
               </button>
             </Link>
           </div>

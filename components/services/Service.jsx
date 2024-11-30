@@ -54,7 +54,7 @@ const Service = ({ mainheading, services }) => {
       <div className=' xl:flex xl:flex-col xl:items-center '>
         <div>
           <h1 className="text-[black] font-bold xs:text-4xl sm:text-5xl xl:text-[40px] 2xl:text-7xl leading-tight mb-16">
-            {/* Our Company’s Product Management Services */}
+            {/* Our Company’s Product Management Services ss*/}
             {mainheading}
           </h1>
         </div>

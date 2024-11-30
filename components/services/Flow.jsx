@@ -41,7 +41,7 @@ const Flow = () => {
         <div className="relative w-full lg:w-[50%] ">
           <div className="w-full leading-3 h-[200px] flex flex-col justify-between px-2">
             <h2 className="xs:text-3xl sm:text-5xl font-semibold mb-8 leading-snug">
-              The Steps of Product Management as a Service
+              The Steps of Product Management as a service
             </h2>
             <div className="sticky top-16">
               <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] w-full h-11">
