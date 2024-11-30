@@ -28,6 +28,8 @@ const industries = [
 
 
 const digitalMarketing = [
+
+  { sub: 'Branding', link: '#' },
   { sub: 'Performance Marketing', link: '#' },
   { sub: 'Social Media Management', link: '#' },
   { sub: 'SEO', link: '#' },
@@ -41,45 +43,38 @@ const digitalMarketing = [
 ];
 
 const webDevelopment = [
-  { sub: 'React Development', link: '#' },
-  { sub: 'Next.js Development', link: '#' },
-  { sub: 'Node.js Development', link: '#' },
-  { sub: 'Nest.js Development', link: '#' },
+  { sub: 'Frontend Development', link: '#' },
+  { sub: 'Backend Development', link: '#' },
   { sub: 'WordPress Development', link: '#' },
   { sub: 'Shopify Development', link: '#' },
   { sub: 'Wix Development', link: '#' },
-  { sub: 'Bubble.io Development', link: '#' }
 ];
 
 const appDevelopment = [
   { sub: 'Flutter Development', link: '#' },
   { sub: 'React Native Development', link: '#' }
 ];
+const ecommerce = [
+  { sub: 'Shopify', link: '#' },
+  { sub: 'Ecommerce marketing', link: '#' },
+  { sub: 'Branding ', link: '#' }
+];
 
 
 const uiuxDesign = [
-  { sub: 'UI/UX Research', link: '#' },
-  { sub: 'Wireframing & Prototyping', link: '#' },
   { sub: 'Mobile App UI/UX Design', link: '#' },
   { sub: 'Web Design & User Experience', link: '#' }
 ];
 
-const crmSolutions = [
-  { sub: 'Odoo CRM', link: '#' },
-  { sub: 'Salesforce CRM', link: '#' },
-  { sub: 'Zoho CRM', link: '#' }
-];
 
 const emailMarketing = [
   { sub: 'Campaign Strategy & Design', link: '#' },
   { sub: 'Email Automation', link: '#' },
-  { sub: 'A/B Testing & Analytics', link: '#' }
 ];
 
 const landingPages = [
-  { sub: 'Custom Landing Page Design', link: '#' },
+  { sub: 'Web Design', link: '#' },
   { sub: 'Conversion Rate Optimization ', link: '#' },
-  { sub: 'A/B Testing & Split Testing', link: '#' }
 ];
 
 
@@ -107,6 +102,7 @@ function Navbar() {
     emailMarketing: { visible: false, rotated: false },
     landingPages: { visible: false, rotated: false },
     industries: { visible: false, rotated: false },
+    ecommerce: { visible: false, rotated: false },
     services1: { visible: false, rotated: false },
   });
 
@@ -346,44 +342,44 @@ function Navbar() {
                     </ul>
 
                     <ul className="flex flex-col lg:space-y-4 md:w-3/4">
-                      <Link
+                     
+                    <Link
                         href="/"
                         className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
                             e.preventDefault(); // Prevent navigation on mobile
-                            dropDownMenu(e, "uiuxDesign"); // Toggle dropdown state
+                            dropDownMenu(e, "ecommerce"); // Toggle dropdown state
                           }
                         }}
                       >
-                        UI/UX Design
+                        Ecommerce 
                         <Image
                           src="/down-arrow.png"
                           alt="arrowdown"
                           width={18}
                           height={10}
-                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.uiuxDesign.rotated ? "rotate-180" : ""
+                          className={`ml-1  xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.ecommerce.rotated ? "rotate-180" : ""
                             }`}
                         />
-                      </Link>
+                      </Link> 
 
-                      <div
+                       <div
                         className={`${isMobile
-                          ? dropMenuState.uiuxDesign.visible
+                          ? dropMenuState.ecommerce.visible
                             ? "block  text-[15px] mb-2"
                             : "hidden"
                           : "lg:flex" // Always visible on larger screens
                           } flex flex-col space-y-4`}
                       >
-                        {uiuxDesign.map((item, index) => (
+                        {ecommerce.map((item, index) => (
                           <li key={index}>
                             <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
                               {item.sub}
                             </Link>
                           </li>
                         ))}
-                      </div>
-
+                      </div> 
 
                       <Link
                         href="/"
@@ -462,7 +458,43 @@ function Navbar() {
                           </li>
                         ))}
                       </div>
+                      <Link
+                        href="/"
+                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
+                        onClick={(e) => {
+                          if (isMobile) {
+                            e.preventDefault(); // Prevent navigation on mobile
+                            dropDownMenu(e, "uiuxDesign"); // Toggle dropdown state
+                          }
+                        }}
+                      >
+                        UI/UX Design
+                        <Image
+                          src="/down-arrow.png"
+                          alt="arrowdown"
+                          width={18}
+                          height={10}
+                          className={`ml-1 xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.uiuxDesign.rotated ? "rotate-180" : ""
+                            }`}
+                        />
+                      </Link>
 
+                      <div
+                        className={`${isMobile
+                          ? dropMenuState.uiuxDesign.visible
+                            ? "block  text-[15px] mb-2"
+                            : "hidden"
+                          : "lg:flex" // Always visible on larger screens
+                          } flex flex-col space-y-4`}
+                      >
+                        {uiuxDesign.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
+                              {item.sub}
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
 
                     </ul>
 
@@ -551,45 +583,7 @@ function Navbar() {
                       </div>
 
 
-
-                      <Link
-                        href="/"
-                        className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
-                        onClick={(e) => {
-                          if (isMobile) {
-                            e.preventDefault(); // Prevent navigation on mobile
-                            dropDownMenu(e, "crmSolutions"); // Toggle dropdown state
-                          }
-                        }}
-                      >
-                        CRM Solutions
-                        <Image
-                          src="/down-arrow.png"
-                          alt="arrowdown"
-                          width={18}
-                          height={10}
-                          className={`ml-1  xs:h-3  xs:w-3 h-[10px] w-[10px] mt-[6px] transition-transform duration-300 lg:hidden ${dropMenuState.crmSolutions.rotated ? "rotate-180" : ""
-                            }`}
-                        />
-                      </Link>
-
-                      <div
-                        className={`${isMobile
-                          ? dropMenuState.crmSolutions.visible
-                            ? "block  text-[15px] mb-2"
-                            : "hidden"
-                          : "lg:flex" // Always visible on larger screens
-                          } flex flex-col space-y-4`}
-                      >
-                        {crmSolutions.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link} className="text-gray-500 xs:p-4 lg:p-0 font-medium">
-                              {item.sub}
-                            </Link>
-                          </li>
-                        ))}
-                      </div>
-
+                  
                     </ul>
 
 
@@ -694,7 +688,7 @@ function Navbar() {
                         }}
                       >
                         <div className="flex lg:justify-center text-[16px] font-medium lg:ml-4 lg:font-semibold lg:text-[30px]">
-                          services
+                          Services
                         </div>
                         <Image
                           src="/down-arrow.png"
