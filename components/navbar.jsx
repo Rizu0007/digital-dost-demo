@@ -29,8 +29,8 @@ const industries = [
 
 const digitalMarketing = [
 
-  { sub: 'Branding', link: '#' },
-  { sub: 'Performance Marketing', link: '#' },
+  { sub: 'Branding', link: '/services/Branding' },
+  { sub: 'Performance Marketing', link: '' },
   { sub: 'Social Media Management', link: '#' },
   { sub: 'SEO', link: '#' },
   { sub: 'Graphic Design & UI/UX', link: '#' },
@@ -302,7 +302,7 @@ function Navbar() {
                     <ul className="flex flex-col lg:space-y-4 md:w-3/4 lg:pl-4">
 
                       <Link
-                        href="/"
+                        href="/services/digital-marketing"
                         className="flex xs:justify-between lg:justify-start items-center text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {

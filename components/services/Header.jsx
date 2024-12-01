@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-const Header = (title, image) => {
+const Header = ({title, image}) => {
+  console.log({title,image})
   return (
     <>
       <section className=" lg:pt-32 xs:pt-24 xs:px-10 bg-white min-w-full min-h-full  bg-custom-image2 bg-no-repeat bg-left-bottom    ">
