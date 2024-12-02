@@ -15,8 +15,8 @@ const Booking = () => {
   return (
 
     <div className="flex-col justify-center items-center h-screen bg-gradient-to-r from-slate-300 to-slate-200">
-        <div className="absolute top-30 left-3 w-32 h-32 bg-black opacity-20 rounded-full mix-blend-multiply filter blur-2xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-48 h-48 bg-black opacity-20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+        {/* <div className="absolute top-30 left-3 w-32 h-32 bg-black opacity-20 rounded-full mix-blend-multiply filter blur-2xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-48 h-48 bg-black opacity-20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div> */}
 
         
     <div

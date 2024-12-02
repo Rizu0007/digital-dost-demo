@@ -11,60 +11,54 @@ import "slick-carousel/slick/slick-theme.css";
 const Service = [
   {
     imagesrc: "/Services/Services1.webp",
-    title: "Product Design",
+    title: "Digital Marketing",
     description:
       "Give your product’s idea a shape. Plan and evaluate the essential features of your product to accomplish your business goals and eliminate possible mistakes.",
     cardimg: "/Services/Servicescardbefore1.svg",
   },
   {
     imagesrc: "/Services/Services2.png",
-    title: "B2B Marketing",
+    title: "Ecommerce",
     description:
       "Get your unique digital marketing strategy with clearly outlined goals. Work with professionals across diverse marketing channels to stand out in the market, find clients, expand opportunities, and more.",
     cardimg: "/Services/Servicescardbefore2.svg",
   },
   {
     imagesrc: "/Services/Services3.webp",
-    title: "Custom Software Development",
+    title: "Email Marketing",
     description:
       "Custom app development tailored exclusively for your business goals.",
     cardimg: "/Services/Servicescardbefore3.svg",
   },
   {
     imagesrc: "/Services/Services4.webp",
-    title: "Product Management",
+    title: "Web development",
     description:
       "Experience the seamless evolution of your product from concept to MVP creation, launch, and ongoing maintenance. We provide a clear and hands-on end-to-end approach to product management solutions.",
     cardimg: "/Services/Servicescardbefore4.svg",
   },
   {
     imagesrc: "/Services/Services1.webp",
-    title: "Product Design",
+    title: "UI/UX Design",
     description:
       "Give your product’s idea a shape. Plan and evaluate the essential features of your product to accomplish your business goals and eliminate possible mistakes.",
     cardimg: "/Services/Servicescardbefore1.svg",
   },
   {
     imagesrc: "/Services/Services2.png",
-    title: "B2B Marketing",
+    title: "Landing Pages",
     description:
       "Get your unique digital marketing strategy with clearly outlined goals. Work with professionals across diverse marketing channels to stand out in the market, find clients, expand opportunities, and more.",
     cardimg: "/Services/Servicescardbefore2.svg",
   },
   {
     imagesrc: "/Services/Services3.webp",
-    title: "Custom Software Development",
+    title: "App Development",
     description:
       "Custom app development tailored exclusively for your business goals.",
     cardimg: "/Services/Servicescardbefore3.svg",
   },
-  {
-    imagesrc: "/Services/Services4.webp",
-    title: "Product Management",
-    description:
-      "Experience the seamless evolution of your product from concept to MVP creation, launch, and ongoing maintenance. We provide a clear and hands-on end-to-end approach to product management solutions.",
-    cardimg: "/Services/Servicescardbefore4.svg",
-  },
+
 ];
 const CustomPrevArrow = ({ onClick }) => (
   <div
