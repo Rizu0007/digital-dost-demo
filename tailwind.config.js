@@ -37,6 +37,14 @@ module.exports = {
         'custom-image': "url('/CaseStudy-Full/CaseStudy-header-bg-1.webp')",
         'custom-image1':"url('/Header/hder.png')",
         'custom-image2':"url('/Header/hder1.png')",
+        'custom-image3':"url('/Header/arrow1.png')",
+        'custom-image3':"url('/Header/arrow2.png')",
+        'custom-image5':"url('/Header/arrow3.png')",
+        'custom-image6':"url('/Header/arrow 4.png')",
+        'custom-image7':"url('/Header/arrow5.png')",
+        'custom-image8':"url('/Header/final arrow.png')",
+        'custom-image9':"url('/Header/finalarrow2.png')",
+        'custom-image10':"url('/Header/finalarrow3.png')",
       },
 
       

@@ -99,7 +99,7 @@ const Footer = () => {
               className='mt-1 mb-[5px]'
             />
 
-            <p className="xs:ml-4 xs:flex xs:justify-center xs:items-end lg:text-center text-white lg:mr-2">49 Reviews</p>
+            <p className="xs:ml-4 xs:flex xs:justify-center xs:items-end lg:text-center text-white lg:mr-2">1 Reviews</p>
             </div>
 
             <div className='flex mt-5 space-x-0'>
