@@ -66,7 +66,7 @@ const Service = ({services}) => {
               {services.slice(1,services.length).map((service, index) => (
                 <div
                   key={index}
-                  className="lg:p-10 xs:p-4 text-black sm:w-full sm:h-[200px] md:w-1/3 md:h-[450px] lg:h-[500px] xl:h-[400px] border flex flex-col sm:space-y-5 md:justify-around"
+                  className="lg:px-10 xs:p-4 text-black sm:w-full sm:h-[200px] md:w-1/3 md:h-[450px] lg:h-[500px] xl:h-[400px] border flex flex-col sm:space-y-5 md:justify-center"
                 >
                   <h1 className="text-[22px] font-bold">{service.title}</h1>
                   <p className="text-[15px] lg:text-[16px] leading-tight">

@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Service data array
 const Service = [
   {
-    imagesrc: "/Services/Services1.webp",
+    imagesrc: "/Services/DigitalMarketingimg.png",
     title: "Digital Marketing",
     description:
       "We drive massive ROI from a custom revenue-generating approach. More traffic means more leads. More Leads create more sales, and the result is ultimately driving more revenue. Shopex will help your business reach beyond the desired goals with a personalized digital marketing strategy.",
@@ -18,7 +18,7 @@ const Service = [
     selectedCardimg: "/Services/Digital Marketingiconwhite.png",
   },
   {
-    imagesrc: "/Services/Services2.png",
+    imagesrc: "/Services/Ecommerce img1.png",
     title: "Ecommerce",
     description:
       "From E-commerce store creation to optimization to strong online presence and marketing, we are here to help your business. At Shopex, we have a team of intelligent business consultants and pro-coders to help our e-commerce clients with various business challenges.",
@@ -27,7 +27,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Services3.webp",
+    imagesrc: "/Services/Email Marketing Page img.png",
     title: "Email Marketing",
     description:
       "If you want to connect your brand with the right audience at the right time and increase sales, look no further than e-mail marketing. Shopex result-driven email marketing strategies will help you to fit your business objectives perfectly. Let us set up an email campaign. ",
@@ -36,7 +36,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Services4.webp",
+    imagesrc: "/Services/Web Development.png",
     title: "Web development",
     description:
       "When it comes to selling your brand, nothing beats your website. With ShopeX's help, your website may become an effective medium of professional communication, befitting the high caliber of your position. We use threat resistance, proven architectures, ongoing maintenance, and customized CMS solutions to increase efficiency.",
@@ -45,7 +45,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Services1.webp",
+    imagesrc: "/Services/UIUX.png",
     title: "UI/UX Design",
     description:
       "If you want to transform your vision into a seamless user experience, Shopex's exclusive UI/UX design services are the ultimate boosters that turn concepts into functional products. You need to share your idea, and we have it covered. ",
@@ -54,7 +54,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Services2.png",
+    imagesrc: "/Services/LandingPageimg.png",
     title: "Landing Pages",
     description:
       "Your marketing and advertising campaigns depend heavily on your landing pages. Increase the effect of these pages with expert landing page design. Shopex's bespoke landing page designs can help you increase sales, improve the quality of your leads, and increase your revenue.",
@@ -63,7 +63,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Services3.webp",
+    imagesrc: "/Services/App Development img.png",
     title: "App Development",
     description:
       "We create reliable, scalable apps that can grow with your company. We can make a mobile application that will delight your users and propel your company to new heights. Shopex provides a comprehensive range of application design, integration, and management services.",

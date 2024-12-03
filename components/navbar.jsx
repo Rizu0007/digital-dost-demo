@@ -43,7 +43,7 @@ const digitalMarketing = [
 ];
 
 const webDevelopment = [
-  { sub: 'Frontend Development', link: '#' },
+  { sub: 'Frontend Development', link: 'Web-design' },
   { sub: 'Backend Development', link: '#' },
   { sub: 'WordPress Development', link: '#' },
   { sub: 'Shopify Development', link: '#' },
@@ -51,8 +51,8 @@ const webDevelopment = [
 ];
 
 const appDevelopment = [
-  { sub: 'Flutter Development', link: '#' },
-  { sub: 'React Native Development', link: '#' }
+  { sub: 'Flutter Development', link: '/services/Flutter-Development' },
+  { sub: 'React Native Development', link: '/services/React-Native-Development' }
 ];
 const ecommerce = [
   { sub: 'Shopify', link: '#' },
@@ -73,8 +73,8 @@ const emailMarketing = [
 ];
 
 const landingPages = [
-  { sub: 'Web Design', link: 'landing-pages' },
-  { sub: 'Conversion Rate Optimization ', link: '#' },
+  { sub: 'Web Design', link: '/services/Web-design' },
+  { sub: 'Conversion Rate Optimization ', link: '/services/Conversion-Rate-Optimization' },
 ];
 
 
@@ -422,7 +422,7 @@ function Navbar() {
                     </ul>
                     <ul className="flex flex-col lg:space-y-4 md:w-3/4">
                       <Link
-                        href="/"
+                        href="/services/Web-Development"
                         className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
@@ -543,7 +543,7 @@ function Navbar() {
 
                       <div className="flex flex-col  lg:space-y-4">
                         <Link
-                          href="/"
+                          href="/services/App-Development"
                           className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                           onClick={(e) => {
                             if (isMobile) {
