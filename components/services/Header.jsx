@@ -6,7 +6,7 @@ const Header = ({title, image}) => {
   console.log({title,image})
   return (
     <>
-      <section className=" lg:pt-32 lg:pb-32 xs:pt-24 xs:px-10 bg-white min-w-full min-h-full  bg-custom-image10 bg-no-repeat bg-left-top    ">
+      <section className=" lg:pt-32 pb-64 xs:pt-24 xs:px-10 bg-white min-w-full min-h-full  bg-custom-image10 bg-no-repeat bg-left-top    ">
         <div className="lg:flex lg:flex-row md:flex-col  ">
          
           <div className="flex pl-20 flex-col justify-evenly xs:w-[350px] sm:w-[500px] md:w-[500px] lg:w-[550px] xl:w-[700px]  z-10 xs:mx-auto xs:space-y-10">
@@ -19,11 +19,7 @@ const Header = ({title, image}) => {
             Shopex specialists are among the most accomplished in the digital sector. They have a history of proven experiences expanding their clients' businesses through high-quality work and outstanding customer service.       
 
             </p>
-            <Link href="#">
-              <button className="xs:px-28 xs:py-4 sm:px-60 sm:py-4 xs:text-nowrap md:px-10 md:py-2  xl:px-20 xl:py-3 2xl:px-28 2xl:py-5 rounded-md font-extrabold xl:text-[18px] bg-[#00729f] text-white">
-                Contact us
-              </button>
-            </Link>
+          
             
           </div>
 
@@ -37,7 +33,16 @@ const Header = ({title, image}) => {
             />
           </div>
         </div>
+
+
       </section>
+      <div className="-mt-16 ml-28">
+      <Link href="#" className="mt-32">
+              <button className="xs:px-28 xs:py-4 sm:px-60 sm:py-4 xs:text-nowrap md:px-10 md:py-2  xl:px-20 xl:py-3 2xl:px-28 2xl:py-5 rounded-md font-extrabold xl:text-[18px] bg-[#00729f] text-white">
+                Contact us
+              </button>
+            </Link>
+            </div>
     </>
   );
 };
