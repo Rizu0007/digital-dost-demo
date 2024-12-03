@@ -10,7 +10,7 @@ const services = [
     height: 'h-full', // Different height for mobile and desktop
   },
   {
-    title: 'UI/UX design',
+    title: 'Ecommerce',
     category: 'UI/UX design',
     image: '/ImageAbout/Web.jpg',
     span: 'col-span-1 row-span-1',
@@ -51,7 +51,7 @@ const services = [
   },
 
   {
-    title: 'CRM Solutions',
+    title: 'UX/UX Design',
     category: 'CRM  Solutions',
     image: '/ImageAbout/blockchain.jpg',
     span: 'col-span-3 row-span-1',
@@ -82,7 +82,7 @@ export default function ServicesGrid() {
               height={300}
             />
             <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col justify-end p-4">
-              <span className="text-sm text-pink-400">{service.category}</span>
+              {/* <span className="text-sm text-pink-400">{service.category}</span> */}
               <h3 className="text-lg text-white font-semibold">
                 {service.title}
               </h3>
