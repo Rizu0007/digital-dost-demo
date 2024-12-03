@@ -7,7 +7,7 @@ import Link from 'next/link'
 function Header() {
   return (
     <>
-      <div className='flex xs:flex-col md:flex-row bg-white bg-custom-image1 bg-no-repeat bg-right-top pt-5 pb-60'>
+      <div className='flex xs:flex-col md:flex-row bg-white bg-custom-image8  bg-no-repeat bg-right-top pt-5 pb-60'>
 
         <div className='xs:w-full md:w-[60%] xs:pb-20 xs:pt-10 sm:py-20 xs:pl-5 md:pl-20 space-y-16 py-10 mt-10 mx-5'>
           <div className='flex items-center justify-between'>

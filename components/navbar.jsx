@@ -270,7 +270,7 @@ function Navbar() {
 
                 <Link
                   href="#"
-                  className="w-full  xs:pt-6 lg:pt-4 pb-4 border-b-[1px] border-[#00729f] lg:border-0 lg:hover:border-b-2 lg:hover:border-b-[#00729f] flex justify-between"
+                  className="w-full  xs:pt-6 lg:pt-4 pb-4 border-b-[1px] border-[#00729f] lg:border-b-2 lg:border-[#ffffff] lg:hover:border-b-2 lg:hover:border-b-[#00729f] flex justify-between"
                   onClick={(e) => {
                     if (isMobile) {
                       e.preventDefault();
@@ -296,7 +296,7 @@ function Navbar() {
                   className={`lg:absolute xs:-ml-9 lg:-ml-[230px] min-[1199px]:-ml-[280px] xl:-ml-[260px] min-[1339px]:-ml-[300px] min-[1424px]:-ml-[400px] 2xl:-ml-[350px] ${isMobile
                     ? isMegaMenuService ? 'block' : 'hidden'
                     : 'hidden group-hover:flex'
-                    } lg:mt-3 mb-6  px-3`}
+                    }  mb-6  px-3`}
                 >
                   <div className="grid xs:w-[83vw] sm:w-[82vw] md:w-[90vw]  2xl:w-[90vw]  px-4 lg:py-5 mx-auto bg-white lg:rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 lg:grid-cols-4 lg:shadow-md ">
                     <ul className="flex flex-col lg:space-y-4 md:w-3/4 lg:pl-4">
@@ -622,7 +622,7 @@ function Navbar() {
                 <div
                   id="mega-menu-full-dropdown"
                   className={`lg:absolute xs:-ml[240px]  lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
-                    } lg:mt-3 lg:mb-6 `}
+                    }  lg:mb-6 `}
                 >
                   <div className="grid xs:w-[72vw] sm:w-[76vw] lg:w-[550px] lg:px-5 lg:py-3 mx-auto bg-white  lg:shadow-md rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 lg:grid-cols-2 ">
 
