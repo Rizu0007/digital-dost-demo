@@ -598,24 +598,25 @@ function Navbar() {
                 <Link
                   href="/casestudyall"
                   className="w-full py-4 border-b-[1px] border-[#00729f] lg:border-0 lg:hover:border-b-2 lg:hover:border-b-[#00729f] flex justify-between"
-                  onClick={(e) => {
-                    if (isMobile) {
-                      e.preventDefault();
-                      toggleMegaMenu(e); // Call toggleMegaMenu here
-                    } else {
-                      setIsMenuOpen(false);
-                    }
-                  }}
+                  onClick={toggleMenu}
+                  // onClick={(e) => {
+                  //   if (isMobile) {
+                  //     e.preventDefault();
+                  //     toggleMegaMenu(e); // Call toggleMegaMenu here
+                  //   } else {
+                  //     setIsMenuOpen(false);
+                  //   }
+                  // }}
                 >
                   CASE STUDIES
-                  <Image
+                  {/* <Image
                     src='/down-arrow.png'
                     alt='arrowdown'
                     width={18}
                     height={10}
                     className={`ml-1 xs:h-3  xs:w-3  lg:h-[10px] lg:w-[10px] xs:mt-4 lg:mt-[6px] transition-transform duration-300 ${isArrowRotated2 ? 'rotate-180' : ''
                       }`}
-                  />
+                  /> */}
                 </Link>
                 {/* Mega menu hover */}
 

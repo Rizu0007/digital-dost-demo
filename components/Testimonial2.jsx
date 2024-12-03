@@ -5,53 +5,52 @@ import Image from "next/image";
 const Testimonial2 = () => {
   const testimonials = [
     {
-      title: "They're equipped with phenomenal design skills",
+      title: "Friendly, Fast, and Focused on Success",
       feedback:
-        "Equipped with phenomenal design skills, Linkup Studio has produced a design that's helped the client spark user engagement and raise capital. The team exhibits superb project management skills. Diligent and thorough, they back their skills up with research.",
+        "SHOPEX Digital Marketing’s services generate a substantial amount of revenue for the client. The team responds quickly to emails and calls, maintaining open and direct lines of communication. Customers can expect superior quality from a team that is both friendly and professional",
       authorName: "David Fraunberger",
-      authorDesignation: "CEO at WeVidit, Inc",
+      authorDesignation: "Shades Studio",
       img:"/testimonial/David Fraunberger.png",
     },
     {
       title:
-        "Each team member was highly efficient, responsive, and always available",
+        "Thrilled with the Results and Exceptional Service",
       feedback:
-        "I like the way the Linkup team was organized to work on the CashFlow project. Each team member was highly efficient, responsive, and always available. They all played their role very well.",
-      authorName: "Michael Konrad",
-      authorDesignation: "Founder & CEO at CashFlow",
+        "Very pleased with the level of service and the results we’ve received to date. We did our homework researching different vendors for PPC before deciding on SHOPEX. They won us over first on knowledge and then on price. I highly recommend SHOPEX for PPC & SEO.",
+      authorName: "Brian Dunham",
+      authorDesignation: "ACA Reporting,A Sky Reporting",
       img:"/testimonial/Brian Dunham.png",
     },
     {
-      title: "Linkup Studio cares deeply about our products",
-      feedback:
-        "SHOPEX  has been managing our Apparel brand from that 1 year and it has been an amazing journey with them. As our brand has been expanding exponentially on digital platforms and sales that we are getting is actually  more that our expectation.Team SHOPEX has been very cooperative and manage very good communication with our team.",
+      title: "Effective Communication and Exponential Growth in Sales",
+      feedback:"We’ve had an amazing year with SHOPEX managing our apparel brand. Their expertise has driven exponential growth on digital platforms, and our sales have exceeded expectations. The team is highly cooperative and maintains excellent communication throughout.",
       authorName: "Amna Hussain",
-      authorDesignation: "Founder & Brand Owner XOXO ",
+      authorDesignation: "Brand Manager at Vanya",
       img:"/testimonial/amna Hussain.png",
     },
     {
-      title: "They're equipped with phenomenal design skills",
+      title: "Trusted Support in Building Our Leading Online Brand",
       feedback:
-        "We have developed our lingerie brand XOXO as a leading and women's favorite online store and SHOPEX has been there all the time.We strongly recommend SHOPEX for your online e-commerce store. ",
-      authorName: "Matt Sherwood",
-      authorDesignation: "CEO at WeVidit, Inc",
+        "We’ve built XOXO into a leading and favorite online lingerie brand, with SHOPEX supporting us every step of the way. Their expertise has been invaluable in our growth, helping us exceed expectations in both sales and customer satisfaction. We highly recommend their services for e-commerce success.",
+      authorName: "Fatima Waheed",
+      authorDesignation: "Founder & Brand Owner,XOXO",
       img:"/testimonial/fatima naheed.png",
     },
     {
       title:
         "Each team member was highly efficient, responsive, and always available",
       feedback:
-        "I like the way the Linkup team was organized to work on the CashFlow project. Each team member was highly efficient, responsive, and always available. They all played their role very well.",
-      authorName: "Michael Konrad",
-      authorDesignation: "Founder & CEO at CashFlow",
+        "I have truly enjoyed working with the SHOPEX team! They are incredibly professional, reliable, and always deliver top-notch service. Their dedication to understanding our brand’s needs and providing tailored solutions has been invaluable. With their expertise, we've seen great improvements in our online presence and overall business performance.",
+      authorName: "Irum Changaiz",
+      authorDesignation: "Marketing Head,Nureh",
       img:"/testimonial/irum changaiz.png",
     },
     {
-      title: "Linkup Studio cares deeply about our products",
+      title: "Professional, Effective, and a Pleasure to Work With",
       feedback:
-        "Linkup Studio team cares deeply about our products and understands the intents behind them. Their talented and scalable team manages projects well via GitHub and Notion. They're also very responsive and vet designs to prevent bad development.",
-      authorName: "Naseem Makiya",
-      authorDesignation: "Founder & CEO at Impactive",
+        "SHOPEX helped to develop my website. They did a great job and I noticed the positive results almost immediately. They are very professional and very pleasant to work with. I am very happy with the services provided and I highly recommend SHOPEX to everyone.",
+      authorName: "Maryana Kanda",
+      authorDesignation: "NEW JERSY MEDIATION",
       img:"/testimonial/Maryana Kanda.png",
     },
   ];
@@ -113,7 +112,7 @@ const Testimonial2 = () => {
               </div>
 
               {/* Testimonial author */}
-              <div className="flex justify-between mt-10 items-center">
+              <div className="flex justify-between mt-3 items-center">
                 <div>
                   <Image
                     src={test.img}
@@ -132,12 +131,12 @@ const Testimonial2 = () => {
                 </div>
 
                 <div>
-                  <Image
+                  {/* <Image
                     src="/linkedin.svg"
                     alt="pic"
                     width={26}
                     height={26}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
