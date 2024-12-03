@@ -86,10 +86,10 @@ const Testimonial2 = () => {
        
         {/* Heading container start */}
         <div className="w-full mb-12">
-          <p className="text-[16px] font-medium">Testimonial</p>
           <h6 className="font-bold xs:text-[36px] md:text-[48px]">
-            Clients About Our <br /> Cooperation
+          Testimonial
           </h6>
+          <p className="text-[16px] font-medium ml-2"> Clients About Our Cooperation</p>
         </div>
         {/* Heading container end */}
 

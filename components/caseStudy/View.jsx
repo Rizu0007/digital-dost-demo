@@ -7,11 +7,13 @@ import Link from "next/link";
 const industries = [
   "Fashion",
   "RealState",
+  "Apparel",
+  "Sports",
   "Skin Care",
+  "Environmental Services",
+  "Eco-friendly Services",
   "Health Care",
   "Ecommerce",
-  "Sport & Fitness ",
-  "BlockChain & Crypto",
   "Local Business & Services",
 ];
 const services = [
@@ -24,85 +26,38 @@ const services = [
   "App Development",
   "Email Marketing ",
 ];
-const countries = ["Saudi Arabia", "USA", "Canada"];
+const countries = ["UK", "USA", "Australia"];
 
 const caseStudies = [
   {
-    id: 1, // Added unique id
-    imageSrc: "/CaseStudy/caseStudy1.webp",
-    tag: "Pay10 | Saudi Arab",
-    title: "All-inclusive Digital Wallet App for Middle East",
-    category: [{ type: "Fashion" }, { type: "Finance" }, { type: "Banking" }],
-    service: "Performance Marketing",
+    id: 1,
+    imageSrc: "/CaseStudy/GG bin Hire.jpg",
+    tag: "GG bin Hire | Australia",
+    title: "Generated 5000 high-quality leads within 5 Months Through a Strategic Approach",
+    category: [{ type: "Environmental Services" }, { type: "Eco-friendly Services" }]
   },
   {
     id: 2,
-    imageSrc: "/CaseStudy/caseStudy2.webp",
-    tag: "Complibuddy | USA",
-    title: "Full-suite Management Software For Property Compliance in NYC",
-    category: [{ type: "RealState" }, { type: "Health Care" }],
-    service: "Social Media Management",
+    imageSrc: "/CaseStudy/Leathershire.jpg",
+    tag: "Leather Shire | UK",
+    title: "Boosted Organic Search & Generated High ROI Through Bespoke Digital Marketing",
+    category: [{ type: "Fashion" }, { type: "Apparel" }]
   },
   {
     id: 3,
-    imageSrc: "/CaseStudy/caseStudy3.webp",
-    tag: "Toto | Canada",
-    title: "AI-Powered Community Platform for Social Change",
-    category: [{ type: "Ecommerce" }],
-    service: "SEO",
+    imageSrc: "/CaseStudy/Mcd Sports.jpg",
+    tag: "Mcd Sports | UK",
+    title: "Boosted Organic Search Results Within a Challenging Time",
+    category: [{ type: "Sports" }, { type: "Fitness gear" }]
   },
   {
     id: 4,
-    imageSrc: "/CaseStudy/caseStudy4.webp",
-    tag: "Dexfolio | USA",
-    title: "Decentralized Portfolio Tracking Application",
-    category: [
-      { type: "Cryptocurrency" },
-      { type: "Finance" },
-      { type: "BlockChain & Crypto" },
-    ],
-    service: "Lead Generation",
-  },
-  {
-    id: 5, // Added unique id
-    imageSrc: "/CaseStudy/caseStudy1.webp",
-    tag: "Pay10 | Saudi Arab",
-    title: "All-inclusive Digital Wallet App for Middle East",
-    category: [
-      { type: "Fintech" },
-      { type: "Finance" },
-      { type: "BlockChain & Crypto" },
-    ],
-    service: "Content Creation ",
-  },
-  {
-    id: 6,
-    imageSrc: "/CaseStudy/caseStudy2.webp",
-    tag: "Complibuddy | USA",
-    title: "Full-suite Management Software For Property Compliance in NYC",
-    category: [{ type: "Real Estate" }],
-    service: "Web Development",
-  },
-  {
-    id: 7,
-    imageSrc: "/CaseStudy/caseStudy3.webp",
-    tag: "Toto | Canada",
-    title: "AI-Powered Community Platform for Social Change",
-    category: [{ type: "Sport & Fitness" }],
-    service: "App Development",
-  },
-  {
-    id: 8,
-    imageSrc: "/CaseStudy/caseStudy4.webp",
-    tag: "Dexfolio | USA",
-    title: "Decentralized Portfolio Tracking Application",
-    category: [
-      { type: "Cryptocurrency" },
-      { type: "Finance" },
-      { type: "Sport & Fitness" },
-    ],
-    service: "Email Marketing ",
-  },
+    imageSrc: "/CaseStudy/Some Slight.jpg",
+    tag: "Some Slight | USA",
+    title: "Boosted Online Presence to Increase Sales and Improve Customer Acquisition",
+    category: [{ type: "Fashion" }, { type: "Apparel" }]
+  }
+  
 ];
 
 const View = () => {
