@@ -23,7 +23,7 @@ const ModernFeatures = () => {
             </svg>
           ),
           title: "Fashion",
-          description: "Explore the latest trends in fashion and stay ahead with style."
+          description: "Strategic brand positioning and marketing solutions for fashion industry clients."
         },
         {
           icon: (
@@ -45,7 +45,7 @@ const ModernFeatures = () => {
             </svg>
           ),
           title: "Real Estate",
-          description: "Discover prime properties to invest in or call your home."
+          description: "Digital marketing strategies and social media management for real estate professionals."
         },
         {
           icon: (
@@ -69,7 +69,7 @@ const ModernFeatures = () => {
             </svg>
           ),
           title: "Skin Care",
-          description: "Find premium products to keep your skin healthy and glowing."
+          description: "Influencer marketing and social media campaigns for beauty and skincare brands."
         },
         {
           icon: (
@@ -93,7 +93,7 @@ const ModernFeatures = () => {
             </svg>
           ),
           title: "Sports & Fitness",
-          description: "Achieve your fitness goals with the best tools and guidance."
+          description: "Content creation and community management for fitness brands and wellness programs."
         },
         {
           icon: (
@@ -116,7 +116,7 @@ const ModernFeatures = () => {
             </svg>
           ),
           title: "Health Care",
-          description: "Access quality healthcare products and services with ease."
+          description: "Healthcare marketing solutions and patient engagement strategies through social media."
         },
         {
           icon: (
@@ -138,7 +138,7 @@ const ModernFeatures = () => {
             </svg>
           ),
           title: "Local Business & Service",
-          description: "Support local businesses and find services near you."
+          description: "Local SEO and social media marketing solutions for small businesses and service providers."
         },
       ];
 
@@ -147,13 +147,13 @@ const ModernFeatures = () => {
       <section className="relative px-6 py-16 md:py-24">
         <div className="relative mx-auto max-w-5xl text-center">
           <div className="mb-4 inline-block rounded-full bg-[#00729f] px-3 py-1.5 text-sm font-bold uppercase tracking-[0.2rem] text-white">
-          Our Categories
+            Our Categories
           </div>
           <h2 className="mb-8 text-4xl font-medium text-gray-900 md:text-5xl">
-            Tradifier simplifies your asset lifecycle
+            Transform your brand with our marketing solutions
           </h2>
           <p className="mx-auto mb-16 max-w-2xl text-lg text-gray-600">
-            Tradifier is at the forefront of revolutionizing asset trading for the solar and IT industries.
+            We specialize in creating impactful digital marketing strategies and social media campaigns that drive engagement and growth across various industries.
           </p>
         </div>
 
@@ -163,12 +163,9 @@ const ModernFeatures = () => {
               key={index}
               className="group relative overflow-hidden rounded-xl bg-white p-8 transition-all hover:bg-orange-50 shadow-xl"
             >
-              {/* Decorative elements */}
               <div className="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-[#00729F]/10 transition-transform group-hover:scale-150" />
-            <div className="absolute -left-4 -bottom-4 h-32 w-32 rounded-full bg-[#00729F]/5 transition-transform group-hover:scale-150" />
+              <div className="absolute -left-4 -bottom-4 h-32 w-32 rounded-full bg-[#00729F]/5 transition-transform group-hover:scale-150" />
 
-              
-              {/* Content */}
               <div className="relative">
                 <div className="mb-6 flex items-center justify-between">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#00729f] text-white shadow-lg /20 transition-transform group-hover:scale-110">
@@ -184,8 +181,6 @@ const ModernFeatures = () => {
                 <p className="text-gray-600 leading-relaxed">
                   {feature.description}
                 </p>
-                
-               
               </div>
             </div>
           ))}
