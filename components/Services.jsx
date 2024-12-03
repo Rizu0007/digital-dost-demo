@@ -14,7 +14,7 @@ const Service = [
     title: "Digital Marketing",
     description:
       "We drive massive ROI from a custom revenue-generating approach. More traffic means more leads. More Leads create more sales, and the result is ultimately driving more revenue. Shopex will help your business reach beyond the desired goals with a personalized digital marketing strategy.",
-    cardimg: "/Services/DigitalMarketing1.png.png",
+    cardimg: "/Services/DigitalMarketing1.png",
     selectedCardimg: "/Services/Digital Marketingiconwhite.png",
   },
   {
@@ -163,15 +163,25 @@ export default function ServicesComponent() {
   return (
     <div className="mt-20 md:px-[60px] lg:px-[100px] xl:px-[124.5px] xs:pt-[150px] pt-[274px] pb-[230px] xs:px-4">
       {/* Main Service Display */}
-      <div className="w-full flex xs:flex-col-reverse lg:flex-row justify-between h-[500px]">
+      <div className="w-full flex xs:flex-col-reverse lg:flex-row justify-between ">
         {/* Main Image */}
-        <div className="xs:flex xs:justify-center" >
+        {/* <div className="xs:flex xs:justify-center" >
           <Image
             src={selectedService.imagesrc}
             alt={selectedService.title}
             height={517}
             width={625}
             className=" xs:w-[500px] xs:h-[350px] md:h-[450px] md:w-[625px]"
+          />
+        </div> */}
+
+        <div className="xs:flex xs:justify-center" >
+          <Image
+            src={selectedService.imagesrc}
+            alt={selectedService.title}
+            height={640}
+            width={640}
+            className=" "
           />
         </div>
 
