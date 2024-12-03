@@ -5,25 +5,25 @@ import Link from "next/link";
 const CaseStudy = () => {
   const caseStudy = [
     {
-      imageSrc: "/CaseStudy/MobileCiti.jpg",
+      imageSrc: "/CaseStudy/GG bin Hire.jpg",
       tag: "Pay10 | Saudi Arab",
       title: "All-inclusive Digital Wallet App for Middle East",
       category: [{ type: "Fintech" }, { type: "Finance" }, { type: "Banking" }]
     },
     {
-      imageSrc: "/CaseStudy/MobileCiti.jpg",
+      imageSrc: "/CaseStudy/Leathershire.jpg",
       tag: "Complibuddy | USA",
       title: "Full-suite Management Software For Property Compliance in NYC",
       category: [{ type: "Real Estate" }]
     },
     {
-      imageSrc: "/CaseStudy/caseStudy3.webp",
+      imageSrc: "/CaseStudy/Mcd Sports.jpg",
       tag: "Toto | Canada",
       title: "AI-Powered Community Platform for Social Change",
       category: [{ type: "Government & public service" }]
     },
     {
-      imageSrc: "/CaseStudy/caseStudy4.webp",
+      imageSrc: "/CaseStudy/MobileCiti.jpg",
       tag: "Dexfolio | USA",
       title: "Decentralized Portfolio Tracking Application",
       category: [{ type: "Cryptocurrency" }, { type: "Finance" }, { type: "Banking" }]
