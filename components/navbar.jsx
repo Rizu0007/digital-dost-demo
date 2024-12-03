@@ -30,16 +30,16 @@ const industries = [
 const digitalMarketing = [
 
   { sub: 'Branding', link: '/services/Branding' },
-  { sub: 'Performance Marketing', link: '#' },
-  { sub: 'Social Media Management', link: '#' },
-  { sub: 'SEO', link: '#' },
-  { sub: 'Graphic Design & UI/UX', link: '' },
-  { sub: 'Content Writing', link: '#' },
-  { sub: 'Affiliate Marketing', link: '#' },
-  { sub: 'Influencer Marketing', link: '#' },
-  { sub: 'User-Generated Content ', link: '#' },
-  { sub: 'Shopify Development', link: '#' },
-  { sub: 'WordPress Development', link: '#' }
+  { sub: 'Performance Marketing', link: '/services/Performance-Marketing' },
+  { sub: 'Social Media Management', link: '/services/Social-Media-Management' },
+  { sub: 'SEO', link: '/services/SEO' },
+  { sub: 'Graphic Design & UI/UX', link: '/services/UI-UXdesign' },
+  { sub: 'Content Writing', link: 'Content-Writing' },
+  { sub: 'Affiliate Marketing', link: '/services/Affiliate-Marketing' },
+  { sub: 'Influencer Marketing', link: '/services/Influencer-Marketing' },
+  { sub: 'User-Generated Content ', link: '/services/User-Generated-Content' },
+  { sub: 'Shopify Development', link: '/services/Shopify-Development' },
+  { sub: 'WordPress Development', link: '/services/Wordpress-Development' }
 ];
 
 const webDevelopment = [
@@ -55,21 +55,21 @@ const appDevelopment = [
   { sub: 'React Native Development', link: '/services/React-Native-Development' }
 ];
 const ecommerce = [
-  { sub: 'Shopify', link: '#' },
-  { sub: 'Ecommerce marketing', link: '#' },
-  { sub: 'Branding ', link: '#' }
+  { sub: 'Shopify', link: '/services/Shopify-Development' },
+  { sub: 'Ecommerce marketing', link: '/services/Ecommerce-Marketing' },
+  { sub: 'Branding ', link: '/services/Branding' }
 ];
 
 
 const uiuxDesign = [
-  { sub: 'Mobile App UI/UX Design', link: '#' },
-  { sub: 'Web Design & User Experience', link: '#' }
+  { sub: 'Mobile App UI/UX Design', link: '/services/Mobile-App-UI-UX' },
+  { sub: 'Web Design & User Experience', link: '/services/WebDesign-UserExperience' }
 ];
 
 
 const emailMarketing = [
-  { sub: 'Campaign Strategy & Design', link: '#' },
-  { sub: 'Email Automation', link: '#' },
+  { sub: 'Campaign Strategy & Design', link: '/services/CampaignStrategy-Design' },
+  { sub: 'Email Automation', link: '/services/Email-Automation' },
 ];
 
 const landingPages = [
@@ -344,7 +344,7 @@ function Navbar() {
                     <ul className="flex flex-col lg:space-y-4 md:w-3/4">
                      
                     <Link
-                        href="/"
+                        href="/services/Ecommerce"
                         className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
@@ -382,7 +382,7 @@ function Navbar() {
                       </div> 
 
                       <Link
-                        href="/"
+                        href="/services/Email-Marketing"
                         className="flex xs:justify-between lg:justify-start items-center text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
