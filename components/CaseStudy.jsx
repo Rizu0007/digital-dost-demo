@@ -5,13 +5,13 @@ import Link from "next/link";
 const CaseStudy = () => {
   const caseStudy = [
     {
-      imageSrc: "/CaseStudy/caseStudy1.webp",
+      imageSrc: "/CaseStudy/MobileCiti.jpg",
       tag: "Pay10 | Saudi Arab",
       title: "All-inclusive Digital Wallet App for Middle East",
       category: [{ type: "Fintech" }, { type: "Finance" }, { type: "Banking" }]
     },
     {
-      imageSrc: "/CaseStudy/caseStudy2.webp",
+      imageSrc: "/CaseStudy/MobileCiti.jpg",
       tag: "Complibuddy | USA",
       title: "Full-suite Management Software For Property Compliance in NYC",
       category: [{ type: "Real Estate" }]
