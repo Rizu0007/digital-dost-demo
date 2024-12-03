@@ -65,7 +65,7 @@ export const servicedata = [
       {
         title: "WordPress Development",
         description:
-          "When it comes ato selling your brand, nothing beats your website. With Shopex's help, your website may become an effective medium of professional communication, befitting the high caliber of your position. We have expertise in custom WordPress development, WordPress SEO, and WordPress website design. The WordPress CMS is an excellent option for any eCommerce or content-based website because it simplifies managing your content. Our professionals will create a development plan, platform suggestions, project budget, and schedule. Building your website will enable you to expand and scale to meet future company needs.",
+          "Your website is your brand's most powerful tool. With Shopex, it can become a professional communication hub that reflects your high standards. We specialize in custom WordPress development, SEO, and design, creating eCommerce and content-based websites that are easy to manage. Our experts craft tailored plans, platform suggestions, budgets, and timelines, ensuring your site is built to grow and scale with your business.",
       },
       {
         title: "Copywriting Services",
@@ -81,7 +81,7 @@ export const servicedata = [
        },
       {
         image: "/advantages/3.svg",
-        title: "Drive Higher ROI With Digital Marketing",
+        title: "Higher ROI With Digital Marketing",
         text: "Every business has concerns about maximum return on investment (ROI) within their marketing budget. An outstanding digital marketing firm can manage to monitor your results and ensure that you are deriving the most revenue for your business by implementing your ongoing optimization. Shopex can help you in this regard. Our devoted digital marketers will track possible leads and revenue sources and can funnel your budget to the networks that grow your business beyond the limits.",
       },
       {
@@ -96,7 +96,7 @@ export const servicedata = [
       },
       {
         image: "/advantages/6.svg",
-        title: "Digital Marketing Improves Conversion Rate",
+        title: "Improves Conversion Rate",
         text: "You have a better chance of achieving a conversion when you target those more likely to be interested in your business. Through tailored and data-driven initiatives, digital marketing helps companies interact with their target audience more successfully. Automated follow-ups and conversion rate optimization (CRO) strategies improve ROI by effectively nurturing and converting prospects. Let's work together to increase conversions for your business so you can expand it.",
       },
       {
@@ -258,7 +258,7 @@ export const servicedata = [
     ],
   },
 
-  //written by us
+  //written by us landing
   {
     slug: "landing-pages",
     id: "3",
@@ -370,5 +370,696 @@ export const servicedata = [
           "Post-launch, we offer ongoing support and maintenance to keep your website secure, up-to-date, and optimized for performance.",
       },
     ],
+  },
+
+  // web design
+  {
+    slug: "Web-design",
+    id: "3",
+    header: {
+      title: "Build a Unique Online Identity with Our Web Design Expertise",
+      image: "/services-main/heroimg1.png",
+    },
+
+    services: [
+      {
+        mainheading: "Our Web Design Service",
+      },
+      {
+        title: "Custom Designs Tailored to Your Brand",
+        description:
+          "We create unique, custom-designed websites that align with your brand identity. Our team ensures every design element reflects your business goals and appeals to your target audience, enhancing both aesthetics and user experience.",
+      },
+      {
+        title: "Responsive Web Design",
+        description:
+          "We build websites that are fully responsive, ensuring they perform seamlessly across all devices. Whether viewed on desktops, tablets, or smartphones, your website will provide an optimal user experience, increasing engagement and conversions.",
+      },
+      {
+        title: "SEO-Optimized Structure",
+        description:
+          "Our web design services incorporate SEO best practices, ensuring your website ranks well on search engines. We focus on clean code, fast load times, and content optimization to improve search visibility and attract organic traffic.",
+      },
+      {
+        title: "User-Focused Experience",
+        description:
+          "We prioritize intuitive navigation and user-friendly layouts, ensuring visitors can easily find information and take action. By enhancing usability, we help retain visitors, reduce bounce rates, and encourage more conversions, improving overall website performance.",
+      },
+      {
+        title: "Scalable and Future-Ready Designs",
+        description:
+          "Our websites are designed with scalability in mind, making it easy to add features or expand as your business grows. Whether you need an e-commerce platform or additional integrations, we build sites that grow with you.",
+      },
+      {
+        title: "Ongoing Support and Maintenance",
+        description:
+          "We offer continuous support and maintenance services to keep your website secure and up-to-date. Our team ensures your site performs optimally, handling updates, troubleshooting, and improvements as needed to maintain a smooth online presence.",
+      },
+    ],
+
+    advantages: [
+      {
+        title: "Advantages Of Working With Us",
+      },
+      {
+        image: "/advantages/3.svg",
+        title: "Tailored solutions",
+        text: "Our tailored solutions are designed to meet your business’s unique needs, ensuring a custom approach for every project. We craft web design services and CRO strategies that align with your brand’s goals and target audience. This personalized approach enhances user engagement, maximizes conversions, and drives measurable business results.",
+      },
+      {
+        image: "/advantages/4.svg",
+        title: "improved user experience",
+        text: "We prioritize improved user experience by designing intuitive, easy-to-navigate, and visually appealing websites. Our responsive designs ensure seamless performance across all devices, enhancing customer satisfaction. By optimizing page load times and simplifying navigation, we keep visitors engaged longer, ultimately boosting conversion rates and overall site performance.",
+      },
+      {
+        image: "/advantages/5.svg",
+        title: "data-driven results",
+        text: "Our data-driven results approach uses user behavior and analytics to optimize your website. Through CRO strategies and A/B testing, we identify effective changes to boost conversions. By focusing on measurable outcomes, we ensure each decision aligns with your business goals, maximizing website effectiveness and driving sustained growth.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "SEO optimization",
+        text: "Our SEO optimization focuses on improving your website’s visibility in search engines, driving organic traffic. By implementing best practices in content, structure, and mobile responsiveness, we enhance your search engine rankings. This ensures higher visibility, attracting targeted visitors, increasing engagement, and ultimately boosting conversions and business growth.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "support",
+        text: "We provide ongoing support to ensure your website stays optimized, secure, and up-to-date. Our team continuously monitors performance, implements updates, and addresses any issues promptly. This proactive approach helps maintain a seamless user experience, improve site functionality, and ensure long-term success, keeping your business ahead of the competition.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "maximized ROI",
+        text: "Our approach to maximized ROI focuses on turning your website traffic into valuable conversions. By combining web design services and CRO strategies, we enhance user engagement, boost conversion rates, and increase customer retention. This results in higher returns on your investment, driving sustainable business growth and long-term success.",
+      },
+    ],
+    flow: [
+      {
+        mainheading: "Our Strategic Process",
+      },
+      {
+        number: "01",
+        title: "Initial Consultation and Discovery",
+        description:
+          "We begin by understanding your business goals, target audience, and specific needs. This helps us define the scope of the project, key functionalities, and the overall direction for the website design.",
+      },
+      {
+        number: "02",
+        title: "Planning and Strategy Developmen",
+        description:
+          "After gathering the necessary information, we create a roadmap for the design process. We establish timelines, set priorities, and outline key deliverables to ensure a clear strategy that aligns with your business objectives.",
+      },
+      {
+        number: "03",
+        title: "Design and Wireframing",
+        description:
+          "Our design team creates wireframes and mockups that visually represent the website layout. This phase focuses on the user experience, ensuring the design is intuitive, responsive, and easy to navigate.",
+      },
+      {
+        number: "04",
+        title: "Development and Coding",
+        description:
+          "Once the design is approved, our developers turn the wireframes into a fully functional website. This involves coding, implementing interactive elements, and ensuring compatibility across various browsers and devices",
+      },
+      {
+        number: "05",
+        title: "Content Integration and Optimization",
+        description:
+          "We integrate high-quality content, ensuring it is optimized for SEO and user engagement. Our team ensures that your content is not only informative but also structured to improve search engine rankings and user interaction.",
+      },
+      {
+        number: "06",
+        title: "Testing and Quality Assurance",
+        description:
+          "Rigorous testing is performed to ensure that the website is bug-free and performs optimally across all devices. We test functionality, responsiveness, and user experience, making any necessary adjustments before the launch.",
+      },
+      {
+        number: "07",
+        title: "Launch and Deployment",
+        description:
+          "After final approval, we launch the website. Our team ensures a smooth transition from development to the live site, making it accessible to your audience while monitoring for any issues.",
+      },
+    ],
+  },
+
+  // cro
+  {
+    slug: "Conversion-Rate-Optimization",
+    id: "3",
+    header: {
+      title: "Increase Engagement and Conversions with Proven CRO Tactics",
+      image: "/services-main/heroimg1.png",
+    },
+
+    services: [
+      {
+        mainheading: "Our Conversion Rate Optimization Service",
+      },
+      {
+        title: "In-Depth Analysis of User Behavior",
+        description:
+          "We begin by analyzing user behavior to understand how visitors interact with your site. Using tools like heatmaps and analytics, we gather data to pinpoint areas that need improvement, ensuring targeted and effective optimization strategies.",
+      },
+      {
+        title: "A/B Testing for Effective Changes",
+        description:
+          "Our team runs A/B tests on key elements such as headlines, calls-to-action, and page layouts. This data-driven approach helps identify what resonates best with your audience, optimizing elements for higher engagement and conversion rates.",
+      },
+      {
+        title: "Optimizing User Experience (UX)",
+        description:
+          "We focus on streamlining site navigation and improving design elements to create a smooth, user-friendly experience. Faster load times, intuitive interfaces, and mobile responsiveness enhance engagement, reducing bounce rates and improving overall site performance.",
+      },
+      {
+        title: "Improved Calls-to-Action (CTAs)",
+        description:
+          "We optimize your CTAs to make them more compelling and effective. By testing various messaging, design, and placements, we ensure that each CTA captures the attention of visitors and encourages them to take desired actions.",
+      },
+      {
+        title: "Personalized Content and Offers",
+        description:
+          "Using data insights, we personalize content and offers for your audience. Customizing recommendations and messaging increases user engagement and conversion, ensuring that visitors feel valued and are more likely to follow through with their purchase.",
+      },
+      {
+        title: "Ongoing Monitoring and Adjustments",
+        description:
+          "We continuously monitor the performance of the website, making necessary adjustments as trends evolve. By analyzing key metrics, we ensure that your conversion strategies remain effective and your website continues to grow with sustained results.",
+      },
+    ],
+
+    advantages: [
+      {
+        title: "Benefits Of Collaborating With Us",
+      },
+      {
+        image: "/advantages/3.svg",
+        title: "Data-Driven Insights for Better Decisions",
+        text: "We leverage detailed analytics and user behavior data to guide our CRO strategies. By understanding your audience, we implement targeted improvements that maximize conversion rates, ensuring each decision is backed by measurable, actionable insights for better outcomes.",
+      },
+      {
+        image: "/advantages/4.svg",
+        title: "Increased ROI from Existing Traffic",
+        text: "Our CRO service focuses on optimizing your current website traffic. Instead of relying on acquiring new visitors, we enhance conversion potential, maximizing the value of your existing traffic and generating more revenue with fewer resources",
+      },
+      {
+        image: "/advantages/5.svg",
+        title: "Continuous Testing for Optimal Results",
+        text: "We conduct A/B tests and multivariate testing to fine-tune your website elements. This continuous testing process helps us identify which changes lead to improved performance, ensuring your website remains optimized for conversions over time.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "Enhanced User Experience (UX)",
+        text: "By improving site navigation, reducing load times, and refining mobile responsiveness, we create a seamless, enjoyable experience for visitors. A positive user experience leads to higher engagement, longer site visits, and ultimately, increased conversion rates.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "Personalized Strategy for Your Business",
+        text: "We tailor our CRO strategies to fit your business goals and audience. With customized solutions that align with your brand, we ensure the changes we implement resonate with your target market, leading to more relevant and effective conversions.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "Sustained Business Growth",
+        text: "Our CRO service is designed to provide long-term benefits. By constantly optimizing your website and adapting to changes in user behavior, we help you stay ahead of the competition and drive continuous growth through improved conversion rates.",
+      },
+    ],
+    flow: [
+      {
+        mainheading: "Our Strategic Process",
+      },
+      {
+        number: "01",
+        title: "Website Audit and Data Collection",
+        description:
+          "We begin by analyzing your website’s performance through tools like Google Analytics and heatmaps. This helps identify user behavior patterns, drop-off points, and areas with the potential for improvement, setting the foundation for optimization.",
+      },
+      {
+        number: "02",
+        title: "Goal Definition and KPI Setting",
+        description:
+          "Together, we define clear business objectives and key performance indicators (KPIs). Whether increasing sales or improving form submissions, establishing measurable goals helps align our CRO efforts with your specific needs, ensuring we track the right metrics.",
+      },
+      {
+        number: "03",
+        title: "Identify Conversion Barriers",
+        description:
+          "We assess your site’s elements to uncover friction points that hinder conversions. Issues like poor navigation, slow loading speeds, or unclear calls-to-action are identified and prioritized for improvement, ensuring we address the most impactful barriers first.",
+      },
+      {
+        number: "04",
+        title: "A/B Testing and Optimization",
+        description:
+          "We conduct A/B testing on critical website components such as CTAs, layout, and content. By experimenting with variations, we identify the most effective design and messaging changes that improve user engagement and drive higher conversion rates.",
+      },
+      {
+        number: "05",
+        title: "Implement Improvements and Refine UX",
+        description:
+          "Based on testing results, we make targeted improvements such as refining CTAs, optimizing forms, and enhancing mobile responsiveness. The goal is to create a seamless, intuitive user experience that encourages visitors to take desired actions.",
+      },
+      {
+        number: "06",
+        title: "Continuous Monitoring and Iteration",
+        description:
+          "Post-implementation, we monitor website performance and track KPIs. Using ongoing data analysis, we make necessary adjustments to further enhance user experience and continuously improve conversion rates, ensuring sustained growth and success for your business.",
+      },
+     
+    ],
+  },
+
+  //app dev
+  {
+    slug: "App-Development",
+    id: "3",
+    header: {
+      title: "Take Your Ideas Further with Professional App Development",
+      image: "/services-main/heroimg1.png",
+    },
+
+    services: [
+      {
+        mainheading: "Our Company’s App Development Service",
+      },
+      {
+        title: "Flutter App Development",
+        description:
+          "Our Flutter app development services enable you to build high-performance, natively compiled applications for mobile, web, and desktop from a single codebase. With Flutter, we ensure faster development cycles and smoother user experiences across multiple platforms.",
+      },
+      {
+        title: "React Native App Development",
+        description:
+          "We specialize in React Native, offering cross-platform mobile app development that delivers a native-like experience. By using React Native, we can create apps that run seamlessly on both Android and iOS, providing cost-effective and efficient solutions for your business.",
+      },
+      {
+        title: "Progressive Web App (PWA) Development",
+        description:
+        "Develop fast, reliable, and engaging Progressive Web Apps that combine the best of websites and mobile apps. PWAs offer offline functionality, enhanced user experiences, and broad compatibility across devices, making them a cost-effective app development solution.",
+      },
+    
+      
+    ],
+
+    advantages: [
+      {
+        title: "Benefits Of Collaborating With Us",
+      },
+      {
+        image: "/advantages/3.svg",
+        title: "Expertise in Multiple Platforms",
+        text: "We specialize in both Flutter and React Native, offering cross-platform solutions that ensure your app runs smoothly on iOS, Android, and web. With our experience, we guarantee a consistent and high-quality user experience across all devices.",
+      },
+      {
+        image: "/advantages/4.svg",
+        title: "Faster Development and Time-to-Market",
+        text: "Our expertise in Flutter and React Native accelerates the development process, allowing us to deliver your app faster without compromising on quality. This reduces time-to-market, helping you stay ahead of competitors and meet business demands quickly.",
+      },
+      {
+        image: "/advantages/5.svg",
+        title: "Cost-Effective Solutions",
+        text: "With cross-platform frameworks like Flutter and React Native, we create apps for multiple platforms with a single codebase. This approach reduces development and maintenance costs, providing you with a more affordable solution while maximizing the return on your investment.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "Customized App Development",
+        text: "We take the time to understand your unique business requirements and tailor every aspect of the app development process to meet your goals. Our custom solutions ensure your app is aligned with your brand and delivers the best results.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "User Experience",
+        text: "We focus on creating apps that are intuitive, responsive, and user-friendly. Whether using Flutter or React Native, we optimize the app’s performance to provide users with a seamless experience, helping drive engagement and customer satisfaction.",
+      },
+      {
+        image: "/advantages/6.svg",
+        title: "Long-Term Support",
+        text: "Our partnership doesn’t end with app deployment. We offer ongoing support and maintenance services, ensuring your app stays updated, secure, and optimized. With our continued assistance, your app will continue to perform well in the long run.",
+      },
+    ],
+    flow: [
+      {
+        mainheading: "App Development Process"
+      },
+      {
+        number: "01",
+        title: "Discovery and Requirement Gathering",
+        description: "We begin by understanding your business goals, target audience, and functional requirements. Through detailed discussions, we gather all necessary information to ensure the app aligns with your objectives and provides value to your users."
+      },
+      {
+        number: "02",
+        title: "Planning and Strategy",
+        description: "Based on the requirements, we create a comprehensive project plan and define milestones. We focus on selecting the right framework—whether Flutter or React Native—and outline the app’s features, functionalities, and user experience to ensure smooth execution."
+      },
+      {
+        number: "03",
+        title: "Design and Prototyping",
+        description: "Our design team creates wireframes and prototypes to bring your vision to life. We focus on a user-centered design, ensuring an intuitive interface, appealing visuals, and seamless navigation, enhancing the overall user experience while staying true to your brand."
+      },
+      {
+        number: "04",
+        title: "App Development",
+        description: "During the development phase, our team builds the app using Flutter or React Native based on your preferences. We implement all features, integrate necessary APIs, and ensure the app is optimized for both performance and scalability across multiple platforms."
+      },
+      {
+        number: "05",
+        title: "Testing and Quality Assurance",
+        description: "We conduct rigorous testing to identify and fix bugs and issues. Our QA team performs functional, usability, performance, and security tests to ensure the app works flawlessly, providing users with a smooth and reliable experience."
+      },
+      {
+        number: "06",
+        title: "Launch and Deployment",
+        description: "After thorough testing, we prepare your app for launch. We assist with deploying the app to the App Store, Google Play, or web platforms, ensuring it meets all platform requirements and functions smoothly across all devices."
+      },
+      {
+        number: "07",
+        title: "Ongoing Maintenance and Updates",
+        description: "Post-launch, we provide continuous maintenance, updates, and support to keep the app running smoothly. We address any technical issues, roll out improvements, and ensure the app evolves as per user feedback and emerging market trends."
+      }
+    ]
+  },
+
+  //flutter dev
+  {
+    slug: "Flutter-Development",
+    id: "3",
+    header: {
+      title: "Speed Up Your App Development Process with Flutter’s Power",
+      image: "/services-main/heroimg1.png",
+    },
+
+    services: [
+      {
+        mainheading: "Our Company’s App Development Service",
+      },
+      {
+        title: "Cross-Platform Development",
+        description:
+          "We specialize in Flutter to build apps that work seamlessly across multiple platforms, including iOS, Android, and web. Our expertise ensures a consistent and high-quality user experience, saving time and costs while maintaining top-tier performance on all devices."
+      },
+      {
+        title: "Fast and Scalable Solutions",
+        description:
+          "Flutter’s single codebase enables us to develop scalable apps quickly, without compromising quality. Our team leverages this advantage to deliver apps that are not only efficient but also scalable to handle growing user bases and increasing demands as your business expands."
+      },
+      {
+        title: "Custom App Designs",
+        description:
+          "We focus on creating custom, visually stunning apps that represent your brand and appeal to your target audience. Flutter's rich set of pre-built widgets and high customization options allow us to design unique, engaging user interfaces that ensure a smooth experience."
+      },
+      {
+        title: "Faster Time-to-Market",
+        description:
+          "With Flutter, we streamline the development process, ensuring a faster time-to-market. By using a single codebase for both iOS and Android, we can deliver high-quality apps more quickly, enabling you to meet your business objectives sooner and outperform competitors."
+      },
+      {
+        title: "Performance Optimization",
+        description:
+          "Our team leverages Flutter’s native performance capabilities to develop apps that run efficiently. We focus on optimizing performance for speed, smooth animations, and low memory usage, ensuring your app runs seamlessly across multiple devices and operating systems with minimal delays."
+      },
+      {
+        title: "Ongoing Support and Maintenance",
+        description:
+          "Our services don’t end with the launch of your app. We offer ongoing maintenance and support to ensure your Flutter app remains up-to-date and optimized. From bug fixes to feature updates, we provide continuous assistance to keep your app running smoothly."
+      }
+    
+      
+    ],
+
+    advantages: [
+      {
+        title: "Benefits Of Collaborating With Us",
+      },
+      {
+        title: "Cross-Platform Efficiency",
+        text: "By leveraging Flutter's powerful framework, we develop apps that run seamlessly on both iOS and Android with a single codebase. This reduces development time and cost while ensuring a consistent, high-quality user experience across platforms."
+      },
+      {
+        title: "Faster Time-to-Market",
+        text: "Our expertise in Flutter allows us to speed up the development process, delivering your app in a shorter timeframe. With Flutter’s efficiency, we ensure your product reaches the market faster, giving you a competitive edge and enabling quicker business growth."
+      },
+      {
+        title: "Custom Solutions Tailored to Your Needs",
+        text: "We work closely with you to understand your business goals and target audience, ensuring your app is customized to meet your specific requirements. Our Flutter development solutions are designed to align with your brand, enhancing user engagement and satisfaction."
+      },
+      {
+        title: "High Performance and Scalability",
+        text: "Flutter’s native-like performance enables us to create fast, smooth, and scalable apps. Whether you’re building a small app or a large enterprise solution, we ensure your app performs optimally, offering smooth animations and handling heavy traffic without compromising speed."
+      },
+      {
+        title: "Cost-Effective Development",
+        text: "Our Flutter development service offers a cost-effective solution by reducing the need to maintain separate codebases for iOS and Android. This approach minimizes development and maintenance costs, giving you a high-quality app at a more affordable price point."
+      },
+      {
+        title: "Ongoing Support and Updates",
+        text: "We provide continuous support even after the app launch, offering maintenance, updates, and improvements to keep your app fresh and optimized. Whether it’s bug fixes, performance enhancements, or new features, we’re here to ensure your app stays ahead of the curve."
+      }
+    ],
+    flow: [
+      {
+        mainheading: "Our Strategic Process"
+      },
+      {
+        number: "01",
+        title: "Consultation",
+        description: "We begin by discussing your goals, business objectives, and the features you want for your app. This step ensures we understand your vision and set clear expectations for the development process, laying a strong foundation for the project."
+      },
+      {
+        number: "02",
+        title: "Planning and Strategy",
+        description: "After gathering the requirements, we create a detailed roadmap that outlines milestones, timelines, and resource allocation. We also define the app’s architecture and ensure the selected Flutter tools and plugins align with your app’s needs."
+      },
+      {
+        number: "03",
+        title: "UI/UX Design and Prototyping",
+        description: "Our design team develops user-friendly wireframes and high-quality prototypes to visualize your app's flow. We focus on creating an intuitive and responsive design that offers a seamless user experience across iOS, Android, and web platforms."
+      },
+      {
+        number: "04",
+        title: "App Development",
+        description: "In this phase, our developers use Flutter to build your app with a single codebase for both iOS and Android platforms. We integrate the desired features, ensure smooth performance, and optimize the app for speed and scalability."
+      },
+      {
+        number: "05",
+        title: "Testing and Quality Assurance",
+        description: "Rigorous testing is conducted to ensure the app’s performance, functionality, and user experience are flawless. We test across multiple devices and platforms to identify any issues and ensure the app meets the highest standards before launch."
+      },
+      {
+        number: "06",
+        title: "Launch and Post-Launch Support",
+        description: "After final testing, we deploy your app to the App Store and Google Play. We provide post-launch support, including regular updates, bug fixes, and feature enhancements, ensuring the app remains up-to-date and performs at its best."
+      }
+    ]
+    
+  },
+  //
+  {
+    slug: "React-Native-Development",
+    id: "3",
+    header: {
+      title: "Create Scalable, High-Performance Apps with React Native",
+      image: "/services-main/heroimg1.png",
+    },
+
+    services: [
+      {
+        mainheading: "Our React Native App Development Service",
+      },
+      {
+        title: "Cross-Platform Development",
+        description: "We specialize in developing high-quality cross-platform apps using React Native, ensuring consistent performance across both iOS and Android. This approach saves time and resources while maintaining a seamless user experience, helping your business reach a broader audience."
+      },
+      {
+        title: "Custom App Solutions",
+        description: "Our team builds custom React Native apps that align with your specific business goals. We focus on creating unique, feature-rich apps that meet your requirements, ensuring each solution is tailored to enhance user engagement and business growth."
+      },
+      {
+        title: "Faster Development Cycle",
+        description: "By using React Native’s single codebase for multiple platforms, we significantly reduce development time. This enables us to deliver faster, allowing you to launch your app sooner, stay ahead of competitors, and capture market opportunities quickly."
+      },
+      {
+        title: "High-Performance Apps",
+        description: "We prioritize performance in every React Native app we build. Our team optimizes apps for speed, responsiveness, and smooth navigation, ensuring that your app functions flawlessly under various conditions, providing users with a seamless and enjoyable experience."
+      },
+      {
+        title: "User-Centric UI/UX Design",
+        description: "Our design team crafts intuitive, responsive, and visually appealing user interfaces using React Native. We focus on creating user-friendly designs that enhance the app’s usability, ensuring your users enjoy a smooth and engaging experience across devices."
+      },
+      {
+        title: "Post-Launch Support and Maintenance",
+        description: "We offer ongoing support and maintenance to ensure the long-term success of your React Native app. From troubleshooting and bug fixes to performance optimization and feature updates, our team ensures your app remains up-to-date and runs smoothly."
+      }
+    
+      
+    ],
+
+    advantages: [
+      {
+        title: "Benefits Of Collaborating With Us",
+      },
+      {
+        title: "Cost-Effective Solution",
+        text: "With React Native, we build apps using a single codebase for both iOS and Android, saving you time and money. This reduces development and maintenance costs while ensuring consistency across both platforms, making it an affordable choice for businesses."
+      },
+      {
+        title: "Faster Time-to-Market",
+        text: "Our expertise in React Native allows us to speed up the development process. We deliver high-quality apps faster by reusing code across platforms, ensuring that you can launch your app quickly and stay ahead of the competition."
+      },
+      {
+        title: "Scalability and Flexibility",
+        text: "React Native offers great scalability, making it easier to add new features and scale your app as your business grows. Whether you need to update functionality or expand to new platforms, we ensure your app evolves with your business needs."
+      },
+      {
+        title: "High Performance Across Platforms",
+        text: "We prioritize building high-performance apps with React Native, ensuring smooth and responsive user experiences on both iOS and Android. Our apps perform optimally, providing a native-like experience for users, regardless of the device or operating system."
+      },
+      {
+        title: "Custom-Tailored Development",
+        text: "We work closely with you to create a customized app that aligns with your business goals. From user interface design to functionality, we ensure that every feature is tailored to your specific requirements, providing a solution that meets your unique needs."
+      },
+      {
+        title: "Ongoing Support and Maintenance",
+        text: "We provide continuous support after your app is launched, including regular updates, bug fixes, and performance optimization. Our team is always ready to help ensure your app stays up-to-date, efficient, and ready to meet future business challenges."
+      }
+    ],
+    flow: [
+      {
+        mainheading: "Our Development Process"
+      },
+      {
+        number: "01",
+        title: "Requirement Gathering and Analysis",
+        description: "We begin by understanding your business goals and the app’s functionality. Through detailed discussions, we gather requirements to ensure that the project aligns with your objectives, target audience, and desired features, setting a clear path for development."
+      },
+      {
+        number: "02",
+        title: "Project Planning and Strategy",
+        description: "Our team creates a detailed roadmap, including milestones, timelines, and resource allocation. We define the app’s core features, establish a development approach, and select the right tools to ensure the app is built efficiently and within your budget."
+      },
+      {
+        number: "03",
+        title: "UI/UX Design",
+        description: "In this phase, our design team creates intuitive wireframes and prototypes, focusing on a user-friendly interface. We ensure the app is visually appealing and responsive, offering a seamless experience across both iOS and Android platforms to boost user engagement."
+      },
+      {
+        number: "04",
+        title: "App Development",
+        description: "Our React Native developers start building the app using a single codebase for iOS and Android. We integrate all necessary features, APIs, and third-party tools, ensuring the app meets your specifications while maintaining high performance and scalability."
+      },
+      {
+        number: "05",
+        title: "Testing and Quality Assurance",
+        description: "Rigorous testing is performed across different devices and platforms to identify and fix bugs, ensuring that the app is bug-free and performs optimally. We focus on usability, functionality, and compatibility to ensure the app delivers a smooth experience."
+      },
+      {
+        number: "06",
+        title: "Launch and Post-Launch Support",
+        description: "Once testing is complete, we deploy the app to the App Store and Google Play. After launch, we continue to offer ongoing support, including app updates, bug fixes, and performance improvements, ensuring the app’s continued success and optimal performance."
+      }
+    ]
+    
+  },
+
+  //webddev
+
+  {
+    slug: "Web-Development",
+    id: "3",
+    header: {
+      title: "Your Partner for Professional Website Creation",
+      image: "/services-main/heroimg1.png",
+    },
+
+    services: [
+      {
+        mainheading: "Our Web Development Services",
+      },
+      {
+        title: "Frontend Development",
+        description: "Frontend Development focuses on creating visually engaging, user-friendly websites using technologies like HTML, CSS, and JavaScript frameworks. We design responsive, interactive interfaces that ensure a smooth and consistent user experience across desktops, tablets, and mobile devices for maximum engagement."
+      },
+      {
+        title: "Backend Development",
+        description: "Backend Development focuses on building strong, secure server-side solutions for your website or application. This service includes database management, server-side scripting, and API integrations, ensuring reliable performance, seamless functionality, and smooth interaction between the front-end and server systems."
+      },
+      {
+        title: "WordPress Development",
+        description: "WordPress Development involves designing and building flexible websites using the world's most popular CMS. From custom themes to plugin integration, this service provides scalable, easy-to-manage solutions that help businesses create a strong online presence with minimal hassle."
+      },
+      {
+        title: "Shopify Development",
+        description: "Shopify Development specializes in building and customizing secure, feature-rich e-commerce stores. This service includes setting up product catalogs, integrating payment gateways, and optimizing the platform to provide businesses with a seamless, efficient online selling experience."
+      },
+      {
+        title: "Wix Development",
+        description: "Wix Development focuses on creating visually engaging websites, ideal for small businesses and personal projects. By customizing Wix’s drag-and-drop features, we deliver modern, responsive, and easy-to-navigate sites that ensure a seamless user experience across all devices."
+      },
+      {
+        title: "Custom Web Application Development",
+        description: "Custom Web Application Development creates tailored applications to meet unique business requirements. Using modern frameworks, we build feature-rich, scalable applications that deliver high performance, security, and smooth user experiences, ensuring your business operations run efficiently and effectively."
+      }
+    
+      
+    ],
+
+    advantages: [
+      {
+        title: "Benefits Of Collaborating With Us",
+      },
+      {
+        title: "Expertise in Diverse Platforms",
+        text: "Whether it’s Wix Development, WordPress, or Shopify, our team offers in-depth expertise across multiple platforms. This ensures we provide the best solution suited to your business needs, whether it’s an e-commerce store, personal website, or custom application."
+      },
+      {
+        title: "Customized Solutions",
+        text: "We offer tailored web development services, ensuring that your website or web application meets specific business requirements. Our focus on custom web application development allows you to stand out with a unique solution designed just for you."
+      },
+      {
+        title: "Seamless User Experience",
+        text: "With our Frontend and Backend Development services, we ensure that your website is not only visually appealing but also efficient and functional. From smooth navigation to fast load times, we optimize every aspect to keep users engaged."
+      },
+      {
+        title: "Scalable and Secure Platforms",
+        text: "Our Shopify and WordPress Development services ensure that your website is secure, scalable, and easy to manage. Whether it’s managing content or integrating advanced features, we provide the tools and support you need for long-term success."
+      },
+      {
+        title: "Responsive and Mobile-Friendly Design",
+        text: "We prioritize responsive design for all our projects, including Wix and custom applications. Your website will perform seamlessly across all devices, ensuring a positive user experience for visitors no matter what platform they use."
+      },
+      {
+        title: "End-to-End Service and Ongoing Support",
+        text: "From initial design to development and ongoing support, we’re here for the entire journey. Whether you need maintenance or updates, we’re committed to ensuring that your website or app continues to perform optimally and meets your evolving business needs."
+      }
+    ],
+    
+    flow: [
+      {
+        number: "01",
+        title: "Discovery & Planning",
+        description: "The first step involves understanding your business goals and objectives. We conduct meetings with stakeholders to gather requirements, define the project scope, and create a strategy for the web development process, ensuring the solution aligns with your vision."
+      },
+      {
+        number: "02",
+        title: "Design & Prototyping",
+        description: "After gathering insights, we move to designing the website or application. This phase involves creating wireframes, mockups, and prototypes to visualize the layout and user experience. Our team works closely with you to refine the design based on feedback."
+      },
+      {
+        number: "03",
+        title: "Development & Coding",
+        description: "Once the design is approved, our developers begin coding the website or application. This stage involves frontend and backend development using the latest technologies, ensuring your website is functional, responsive, and scalable across all devices."
+      },
+      {
+        number: "04",
+        title: "Testing & Quality Assurance",
+        description: "We conduct thorough testing to identify and fix any issues, ensuring your site is fully optimized. This phase includes functional testing, usability testing, cross-browser compatibility checks, and performance testing to ensure smooth operation and a positive user experience."
+      },
+      {
+        number: "05",
+        title: "Deployment & Launch",
+        description: "After successful testing, your website or app is ready for launch. We ensure a smooth deployment, making sure everything functions correctly in the live environment. Our team handles server configuration, domain setup, and any necessary post-launch optimizations."
+      },
+      {
+        number: "06",
+        title: "Maintenance & Support",
+        description: "Post-launch, we continue to provide ongoing maintenance and support. This ensures that your website or application remains up-to-date, secure, and optimized. We monitor performance, implement updates, and resolve any issues to ensure long-term success."
+      }
+    ]
+    
+    
   },
 ];
