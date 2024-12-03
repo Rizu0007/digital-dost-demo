@@ -21,7 +21,7 @@ const Header = ({ title, image }) => {
             
             {/* Button for mobile view */}
             <div className="lg:hidden mt-8">
-              <Link href="#" className="block">
+              <Link href="/calendly" className="block">
                 <button className="w-full md:w-auto px-8 py-4 rounded-md font-extrabold text-base bg-[#00729f] text-white">
                   Contact us
                 </button>
@@ -44,7 +44,7 @@ const Header = ({ title, image }) => {
 
       {/* Button for desktop view */}
       <div className="hidden lg:block -mt-24 ml-28">
-        <Link href="#">
+        <Link href="/calendly">
           <button className="px-20 py-3 xl:px-20 xl:py-3 2xl:px-28 2xl:py-5 rounded-md font-extrabold xl:text-[18px] bg-[#00729f] text-white">
             Contact us
           </button>

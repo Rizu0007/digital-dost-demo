@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Link from 'next/link';
 import React from 'react';
 
 const AboutUsHero = () => {
@@ -57,10 +58,14 @@ const AboutUsHero = () => {
             {/* CTA Buttons */}
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-[#00729f] text-white text-lg font-medium rounded-full shadow-lg hover:bg-[#005d7f] transform hover:scale-105 transition-all duration-300">
-                Book a Consultation
+                <Link href='/calendly'>                Book Meeting
+                </Link>
               </button>
               <button className="px-8 py-4 border-2 border-[#00729f] text-[#00729f] text-lg font-medium rounded-full hover:bg-[#00729f] hover:text-white transform hover:scale-105 transition-all duration-300">
-                View Our Work
+                <Link href='/casestudyall'>  
+                View Our Work              
+                </Link>
+              
               </button>
             </div>
           </div>
