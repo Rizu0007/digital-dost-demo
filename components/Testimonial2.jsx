@@ -8,7 +8,7 @@ const Testimonial2 = () => {
       title: "They're equipped with phenomenal design skills",
       feedback:
         "Equipped with phenomenal design skills, Linkup Studio has produced a design that's helped the client spark user engagement and raise capital. The team exhibits superb project management skills. Diligent and thorough, they back their skills up with research.",
-      authorName: "Matt Sherwood",
+      authorName: "David Fraunberger",
       authorDesignation: "CEO at WeVidit, Inc",
       img:"/testimonial/David Fraunberger.png",
     },
