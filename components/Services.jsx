@@ -10,11 +10,11 @@ import "slick-carousel/slick/slick-theme.css";
 // Service data array
 const Service = [
   {
-    imagesrc: "/Services/DigitalMarketingimg.png",
+    imagesrc: "/Services/Digital Marketing 1.jpg",
     title: "Digital Marketing",
     description:
       "We drive massive ROI from a custom revenue-generating approach. More traffic means more leads. More Leads create more sales, and the result is ultimately driving more revenue. Shopex will help your business reach beyond the desired goals with a personalized digital marketing strategy.",
-    cardimg: "/Services/DigitalMarketing1.png",
+    cardimg: "/Services/DigitalMarketing1.png.png",
     selectedCardimg: "/Services/Digital Marketingiconwhite.png",
   },
   {
@@ -171,7 +171,7 @@ export default function ServicesComponent() {
             alt={selectedService.title}
             height={517}
             width={625}
-            className=" xs:w-[500px] xs:h-[350px] md:h-[517px] md:w-[625px]"
+            className=" xs:w-[500px] xs:h-[350px] md:h-[450px] md:w-[625px]"
           />
         </div>
 

@@ -10,6 +10,7 @@ const Testimonial2 = () => {
         "Equipped with phenomenal design skills, Linkup Studio has produced a design that's helped the client spark user engagement and raise capital. The team exhibits superb project management skills. Diligent and thorough, they back their skills up with research.",
       authorName: "Matt Sherwood",
       authorDesignation: "CEO at WeVidit, Inc",
+      img:"/testimonial/David Fraunberger.png",
     },
     {
       title:
@@ -18,13 +19,15 @@ const Testimonial2 = () => {
         "I like the way the Linkup team was organized to work on the CashFlow project. Each team member was highly efficient, responsive, and always available. They all played their role very well.",
       authorName: "Michael Konrad",
       authorDesignation: "Founder & CEO at CashFlow",
+      img:"/testimonial/Brian Dunham.png",
     },
     {
       title: "Linkup Studio cares deeply about our products",
       feedback:
-        "Linkup Studio team cares deeply about our products and understands the intents behind them. Their talented and scalable team manages projects well via GitHub and Notion. They're also very responsive and vet designs to prevent bad development.",
-      authorName: "Naseem Makiya",
-      authorDesignation: "Founder & CEO at Impactive",
+        "SHOPEX  has been managing our Apparel brand from that 1 year and it has been an amazing journey with them. As our brand has been expanding exponentially on digital platforms and sales that we are getting is actually  more that our expectation.Team SHOPEX has been very cooperative and manage very good communication with our team.",
+      authorName: "Amna Hussain",
+      authorDesignation: "Brand Manager  ",
+      img:"/testimonial/amna Hussain.png",
     },
     {
       title: "They're equipped with phenomenal design skills",
@@ -32,6 +35,7 @@ const Testimonial2 = () => {
         "Equipped with phenomenal design skills, Linkup Studio has produced a design that's helped the client spark user engagement and raise capital. The team exhibits superb project management skills. Diligent and thorough, they back their skills up with research.",
       authorName: "Matt Sherwood",
       authorDesignation: "CEO at WeVidit, Inc",
+      img:"/testimonial/fatima naheed.png",
     },
     {
       title:
@@ -40,6 +44,7 @@ const Testimonial2 = () => {
         "I like the way the Linkup team was organized to work on the CashFlow project. Each team member was highly efficient, responsive, and always available. They all played their role very well.",
       authorName: "Michael Konrad",
       authorDesignation: "Founder & CEO at CashFlow",
+      img:"/testimonial/irum changaiz.png",
     },
     {
       title: "Linkup Studio cares deeply about our products",
@@ -47,6 +52,7 @@ const Testimonial2 = () => {
         "Linkup Studio team cares deeply about our products and understands the intents behind them. Their talented and scalable team manages projects well via GitHub and Notion. They're also very responsive and vet designs to prevent bad development.",
       authorName: "Naseem Makiya",
       authorDesignation: "Founder & CEO at Impactive",
+      img:"/testimonial/Maryana Kanda.png",
     },
   ];
   const scrollContainerRef = useRef(null);
@@ -110,7 +116,7 @@ const Testimonial2 = () => {
               <div className="flex justify-between mt-10 items-center">
                 <div>
                   <Image
-                    src="/Testimonialimg1.jpeg"
+                    src={test.img}
                     alt="pic"
                     width={96}
                     height={96}
