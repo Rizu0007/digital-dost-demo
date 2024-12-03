@@ -192,7 +192,7 @@ export default function ServicesComponent() {
             <div className="flex justify-between">
 
 
-              <Link href='/services' >
+              <Link href='/services/digital-marketing' >
                 <button className="bg-[#00729f]  xs:w-[150px] sm:w-[300px] h-14 xl:h-[45px] xl:w-40 lg:h-[45px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[16px] ">
                   <div className="flex justify-center">
                     <div >

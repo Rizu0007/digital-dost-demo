@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Video from "@/components/videoupload/Video";
 import "slick-carousel/slick/slick.css";        // Main Slick CSS
 import "slick-carousel/slick/slick-theme.css";
+import Booking from "@/components/callenderly/Booking";
 export default function Home() {
   return (
    <div className="overflow-hidden ">
@@ -16,6 +17,7 @@ export default function Home() {
     <Video/>
     <Testimonial2/>
     <CaseStudy/>
+    <Booking/>
     {/* <Podcast/> */}
    
     

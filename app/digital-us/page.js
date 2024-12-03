@@ -9,7 +9,7 @@ const page = () => {
   return (
     <div>
       <SHopexHero/>
-      <LogoSlider/>
+      {/* <LogoSlider/> */}
        <Approach/>
        <ServicesGrid/>
        <ModernFeatures/>

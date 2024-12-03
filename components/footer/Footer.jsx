@@ -3,30 +3,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
-  
+
   return (
-    <footer className="relative mt-52">
-      <div className="flex justify-center">
-        <div className="bg-box1 absolute h-80 p-10 flex items-center w-11/12 lg:w-5/6 rounded-3xl -top-44 mb-36">
-          <div className="text-center flex flex-col lg:flex-row justify-between items-center w-full">
-            <h2 className="font-semibold mb-4 lg:mb-0 text-white text-3xl sm:text-4xl lg:text-5xl">
-              Ready to get started?
-              <br />
-              <span className="text-white ">Talk to us today</span>
-            </h2>
+    <footer className="relative mt-20">
+    
 
-            <Link href='/calendly'>
-              <button className="bg-white text-[#00729F] rounded-lg h-12 sm:h-14 px-8 sm:px-12 lg:h-16 lg:px-16 text-lg sm:text-xl lg:text-2xl mt-4 lg:mt-0">
-                Book Meeting
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
+      <div className="bg-black text-white py-10 h-auto lg:h-[400px]">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between mt-12 px-6 md:mx-auto">
 
-      <div className="bg-black text-white py-10 h-auto lg:h-[600px]">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between mt-72 px-6 md:mx-auto">
-          
           <div>
             <Link href='/'>
               <div className="flex justify-center lg:flex">
@@ -46,87 +30,87 @@ const Footer = () => {
 
               <p className=" lg:text-center flex text-white space">Reviewed on
                 <span className='flex ml-3 items-end'>
-                <Image
-                  src="/footer/star.png" // Replace with the actual path of the image
-                  width={20}
-                  height={20}
-                  alt="Clutch Reviews"
-                  className='w-4 h-5'
-                />
-                <Image
-                  src="/footer/star.png" // Replace with the actual path of the image
-                  width={20}
-                  height={20}
-                  alt="Clutch Reviews"
-                  className='w-4 h-5'
+                  <Image
+                    src="/footer/star.png" // Replace with the actual path of the image
+                    width={20}
+                    height={20}
+                    alt="Clutch Reviews"
+                    className='w-4 h-5'
+                  />
+                  <Image
+                    src="/footer/star.png" // Replace with the actual path of the image
+                    width={20}
+                    height={20}
+                    alt="Clutch Reviews"
+                    className='w-4 h-5'
 
 
-                />
-                <Image
-                  src="/footer/star.png" // Replace with the actual path of the image
-                  width={20}
-                  height={20}
-                  alt="Clutch Reviews"
-                  className='w-4 h-5'
+                  />
+                  <Image
+                    src="/footer/star.png" // Replace with the actual path of the image
+                    width={20}
+                    height={20}
+                    alt="Clutch Reviews"
+                    className='w-4 h-5'
 
-                />
-                <Image
-                  src="/footer/star.png" // Replace with the actual path of the image
-                  width={20}
-                  height={20}
-                  alt="Clutch Reviews"
-                  className='w-4 h-5'
+                  />
+                  <Image
+                    src="/footer/star.png" // Replace with the actual path of the image
+                    width={20}
+                    height={20}
+                    alt="Clutch Reviews"
+                    className='w-4 h-5'
 
-                />
-                <Image
-                  src="/footer/star.png" // Replace with the actual path of the image
-                  width={20}
-                  height={20}
-                  alt="Clutch Reviews"
-                  className='w-4 h-5'
+                  />
+                  <Image
+                    src="/footer/star.png" // Replace with the actual path of the image
+                    width={20}
+                    height={20}
+                    alt="Clutch Reviews"
+                    className='w-4 h-5'
 
-                />
+                  />
                 </span>
               </p>
 
             </div>
             <div className='flex lg:justify-between lg:items-end'>
-            <Image
-              src="/footer/clutch.svg" // Replace with the actual path of the image
-              width={82}
-              height={23}
-              alt="Clutch Reviews"
-              className='mt-1 mb-[5px]'
-            />
+              <Image
+                src="/footer/clutch.svg" // Replace with the actual path of the image
+                width={82}
+                height={23}
+                alt="Clutch Reviews"
+                className='mt-1 mb-[5px]'
+              />
 
-            <p className="xs:ml-4 xs:flex xs:justify-center xs:items-end lg:text-center text-white lg:mr-2">1 Reviews</p>
+              <p className="xs:ml-4 xs:flex xs:justify-center xs:items-end lg:text-center text-white lg:mr-2">1 Reviews</p>
             </div>
 
             <div className='flex mt-5 space-x-0'>
-            <Image
-                  src="/footer/facebook.png" 
-                  width={60}
-                  height={40}
-                  alt="facebook"
-                  className='w-7 h-7'
+              <Image
+                src="/footer/facebook.png"
+                width={60}
+                height={40}
+                alt="facebook"
+                className='w-7 h-7'
 
-                />
-            <Image
-                  src="/footer/insta.png" 
-                  width={60}
-                  height={40}
-                  alt="insta"
-                  className='w-7 h-7'
+              />
+              <Image
+                src="/footer/insta.png"
+                width={60}
+                height={40}
+                alt="insta"
+                className='w-7 h-7'
 
-                />
-            <Image
-                  src="/footer/linkin.png" 
-                  width={60}
-                  height={40}
-                  alt="linkedin"
-                  className='w-7 h-7 '
+              />
+              <Image
+                src="/footer/linkin.png"
+                width={60}
+                height={40}
+                alt="linkedin"
+                className='w-7 h-7 '
 
-                />
+              />
             </div>
           </div>
 
@@ -135,21 +119,21 @@ const Footer = () => {
           <div className="mt-10 lg:mt-0">
             <h3 className="mb-7 font-semibold text-lg lg:text-xl tracking-wider">Services</h3>
             <ul className="space-y-4 lg:space-y-4 text-sm lg:text-base">
-              <li><a href="#">Digital Marketing</a></li>
-              <li><a href="#">Ecommerce</a></li>
-              <li><a href="#">Email Marketing </a></li>
-              <li><a href="#">Web Development</a></li>
-             
+              <li><Link href="/services/digital-marketing">Digital Marketing</Link></li>
+              <li><Link href="/services/Ecommerce">Ecommerce</Link></li>
+              <li><Link href="/services/Email-Marketing">Email Marketing</Link></li>
+              <li><Link href="/services/Web-Development">Web Development</Link></li>
+
             </ul>
           </div>
 
           <div className="mt-10 lg:mt-0">
             <h3 className="mb-7 font-semibold text-lg lg:text-xl tracking-widest">We Offer</h3>
             <ul className="space-y-4 lg:space-y-4 text-sm lg:text-base">
-              <li><a href="#">Lead Generation</a></li>
-              <li><a href="#">Landing Pages development</a></li>
-              <li><a href="#">App Development</a></li>
-              <li><a href="#">SEO</a></li>
+              <li><Link href="/services/Performance-Marketing">Performance Marketing</Link></li>
+              <li><Link href="/services/landing-pages">Landing Pages Development</Link></li>
+              <li><Link href="/services/App-Development">App Development</Link></li>
+              <li><Link href="/services/SEO">SEO</Link></li>
             </ul>
           </div>
 

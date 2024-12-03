@@ -396,9 +396,7 @@ export const servicedata = [
     ],
 
     advantages: [
-      {
-        title: "Advantages Of Working With Us",
-      },
+    
       {
         image: "/advantages/3.svg",
         title: "Tailored solutions",
@@ -525,9 +523,7 @@ export const servicedata = [
     ],
 
     advantages: [
-      {
-        title: "Advantages Of Working With Us",
-      },
+    
       {
         image: "/advantages/3.svg",
         title: "Tailored solutions",

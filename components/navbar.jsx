@@ -193,12 +193,15 @@ function Navbar() {
 
 
 
-          <Link href='/' className="lg:hidden xs:flex"  >
+          <Link href='/calendly' className="lg:hidden xs:flex"  >
             <button className="bg-[#00729f] xl:h-[45px] xl:w-40 lg:h-[45px] xs:h-[41px] xs:w-[130px] lg:w-[144px] rounded-lg text-white shadow-lg font-bold text-[14px] w-full h-11 mx-5">
               <div className="flex justify-center">
                 <div >
-                  <p>Get A Quote!</p>
+                  <p>Book Meeting</p>
                 </div>
+                {/* <div >
+                  <p>Get A Quote!</p>
+                </div> */}
                 <Image
                   src="/Services/arrowup.svg"
                   alt="arrow"

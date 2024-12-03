@@ -9,6 +9,8 @@ const Flow = ({flow}) => {
 
 
   return (
+
+    <>
     <div className="relative flex flex-col items-center bg-white py-12 " >
       <div className="flex xs:flex-col lg:flex-row w-full max-w-7xl mx-auto space-y-36 lg:space-y-0">
         {/* Left side: Sticky Button and Title */}
@@ -66,7 +68,23 @@ const Flow = ({flow}) => {
         </div>
 
       </div>
+
+      
     </div>
+
+    <div className="flex justify-center xs:my-12 lg:mt-12 lg:mb-0">
+        <div className="bg-box1 h-40 p-10 flex items-center w-11/12 lg:w-5/6 rounded-3xl -top-44">
+          <div className="text-center flex flex-col lg:flex-row justify-center items-center w-full">
+            <h2 className="font-semibold mb-4 lg:mb-0 text-white text-3xl sm:text-4xl lg:text-5xl">
+              Ready to get started?
+              <br />
+              <span className="text-white ">Talk to us today</span>
+            </h2>
+
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

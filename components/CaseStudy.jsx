@@ -31,12 +31,14 @@ const CaseStudy = () => {
   ];
 
   return (
+
+    <>
     <div className="flex flex-col justify-center items-center mb-">
       <section className="w-5/6  pb-[100px]">
         <div>
           <div className="w-full mb-24">
-            <p className="text-[16px] font-medium">PORTFOLIO</p>
             <h6 className="font-bold text-[48px]">Explore Our Case Studies</h6>
+            <p className="text-[16px] font-medium">PORTFOLIO</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 place-content-end">
@@ -101,7 +103,22 @@ const CaseStudy = () => {
              </div>
             </button>
             </Link>
+
+            
     </div>
+    <div className="flex justify-center xs:my-12 lg:mt-12 lg:mb-0">
+        <div className="bg-box1 h-40 p-10 flex items-center w-11/12 lg:w-5/6 rounded-3xl -top-44">
+          <div className="text-center flex flex-col lg:flex-row justify-center items-center w-full">
+            <h2 className="font-semibold mb-4 lg:mb-0 text-white text-3xl sm:text-4xl lg:text-5xl">
+              Ready to get started?
+              <br />
+              <span className="text-white ">Talk to us today</span>
+            </h2>
+
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
