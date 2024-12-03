@@ -26,13 +26,13 @@ const Testimonial2 = () => {
       feedback:
         "SHOPEX  has been managing our Apparel brand from that 1 year and it has been an amazing journey with them. As our brand has been expanding exponentially on digital platforms and sales that we are getting is actually  more that our expectation.Team SHOPEX has been very cooperative and manage very good communication with our team.",
       authorName: "Amna Hussain",
-      authorDesignation: "Brand Manager  ",
+      authorDesignation: "Founder & Brand Owner XOXO ",
       img:"/testimonial/amna Hussain.png",
     },
     {
       title: "They're equipped with phenomenal design skills",
       feedback:
-        "Equipped with phenomenal design skills, Linkup Studio has produced a design that's helped the client spark user engagement and raise capital. The team exhibits superb project management skills. Diligent and thorough, they back their skills up with research.",
+        "We have developed our lingerie brand XOXO as a leading and women's favorite online store and SHOPEX has been there all the time.We strongly recommend SHOPEX for your online e-commerce store. ",
       authorName: "Matt Sherwood",
       authorDesignation: "CEO at WeVidit, Inc",
       img:"/testimonial/fatima naheed.png",

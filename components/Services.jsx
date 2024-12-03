@@ -18,7 +18,7 @@ const Service = [
     selectedCardimg: "/Services/Digital Marketingiconwhite.png",
   },
   {
-    imagesrc: "/Services/Ecommerce img1.png",
+    imagesrc: "/Services/Ecommerce 222.jpg",
     title: "Ecommerce",
     description:
       "From E-commerce store creation to optimization to strong online presence and marketing, we are here to help your business. At Shopex, we have a team of intelligent business consultants and pro-coders to help our e-commerce clients with various business challenges.",
@@ -27,7 +27,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Email Marketing Page img.png",
+    imagesrc: "/Services/Email Marketing  1.jpg",
     title: "Email Marketing",
     description:
       "If you want to connect your brand with the right audience at the right time and increase sales, look no further than e-mail marketing. Shopex result-driven email marketing strategies will help you to fit your business objectives perfectly. Let us set up an email campaign. ",
@@ -36,7 +36,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Web Development.png",
+    imagesrc: "/Services/web development 1.jpg",
     title: "Web development",
     description:
       "When it comes to selling your brand, nothing beats your website. With ShopeX's help, your website may become an effective medium of professional communication, befitting the high caliber of your position. We use threat resistance, proven architectures, ongoing maintenance, and customized CMS solutions to increase efficiency.",
@@ -181,7 +181,7 @@ export default function ServicesComponent() {
             alt={selectedService.title}
             height={640}
             width={640}
-            className=" "
+            className="mt-3"
           />
         </div>
 
