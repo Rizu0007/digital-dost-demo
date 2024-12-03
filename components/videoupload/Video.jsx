@@ -21,7 +21,7 @@ const Video = () => {
           src="shopex video low.mp4"
           controls
           loop
-          
+          muted
           className="w-full h-full rounded-2xl"
         ></video>
       </div>

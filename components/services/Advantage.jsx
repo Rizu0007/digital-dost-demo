@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-const Advantage = ({advantages}) => {
+const Advantage = ({advantages,title}) => {
      
    
 
@@ -56,7 +56,8 @@ const Advantage = ({advantages}) => {
         <div className=' xl:flex xl:flex-col xl:items-center '>
           <div>
             <h1 className="text-[black] font-bold xs:text-4xl sm:text-5xl xl:text-[40px] 2xl:text-7xl leading-tight mb-16">
-              The Benefits Of Collaborating With Us            </h1>
+            {title}
+            </h1>
           </div>
 
 
