@@ -33,7 +33,7 @@ const digitalMarketing = [
   { sub: 'Performance Marketing', link: '#' },
   { sub: 'Social Media Management', link: '#' },
   { sub: 'SEO', link: '#' },
-  { sub: 'Graphic Design & UI/UX', link: '#' },
+  { sub: 'Graphic Design & UI/UX', link: '' },
   { sub: 'Content Writing', link: '#' },
   { sub: 'Affiliate Marketing', link: '#' },
   { sub: 'Influencer Marketing', link: '#' },
@@ -43,11 +43,11 @@ const digitalMarketing = [
 ];
 
 const webDevelopment = [
-  { sub: 'Frontend Development', link: 'Web-design' },
-  { sub: 'Backend Development', link: '#' },
-  { sub: 'WordPress Development', link: '#' },
-  { sub: 'Shopify Development', link: '#' },
-  { sub: 'Wix Development', link: '#' },
+  { sub: 'Frontend Development', link: '/services/Frontend-Development' },
+  { sub: 'Backend Development', link: '/services/Backend-Development' },
+  { sub: 'WordPress Development', link: '/services/Wordpress-Development' },
+  { sub: 'Shopify Development', link: '/services/Shopify-Development' },
+  { sub: 'Wix Development', link: '/services/Wix-Development' },
 ];
 
 const appDevelopment = [
@@ -459,7 +459,7 @@ function Navbar() {
                         ))}
                       </div>
                       <Link
-                        href="/"
+                        href="/services/UI-UXdesign"
                         className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-4 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
