@@ -281,6 +281,11 @@ export const servicedata = [
         description:
           "Our Conversion Rate Optimization (CRO) service enhances website effectiveness by converting more visitors into customers. We analyze user behavior, conduct A/B tests, and optimize elements like layout and CTAs. Our team improves UX, site speed, and mobile responsiveness, using data-driven insights to personalize content, increasing engagement and driving revenue growth.",
       },
+      {
+        title: "Content Management System (CMS) Development:",
+        description:
+          "Content Management System (CMS) Development enables businesses to manage website content effortlessly. We build robust platforms like WordPress or custom CMS solutions, allowing easy updates and content control, empowering users to maintain their site without requiring technical expertise.",
+      },
     ],
 
     advantages: [
