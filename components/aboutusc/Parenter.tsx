@@ -8,7 +8,7 @@ const LogoSlider = () => {
   const logos = [
     {
       name: 'Logo 1',
-      src: '/api/placeholder/120/60'
+      src: '/meta.jpg'
     },
     {
       name: 'Logo 2', 
@@ -35,13 +35,13 @@ const LogoSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setPosition((prev) => (prev - 1) % (logos.length * 200));
-    }, 50);
+    }, 200);
 
     return () => clearInterval(interval);
   }, [logos.length]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto py-12 overflow-hidden bg-gray-50">
+    <div className="w-full max-w-6xl mx-auto py-12 overflow-hidden ">
       <div className="mb-8 text-center">
         <h2 className="text-3xl font-bold">
           Strategic <span className="text-blue-500">Partnerships</span>
@@ -60,7 +60,7 @@ const LogoSlider = () => {
           {logos.map((logo, index) => (
             <div 
               key={index}
-              className="flex items-center justify-center min-w-[150px] h-20 bg-white p-4 rounded-lg shadow-sm"
+              className="flex items-center justify-center min-w-[150px] h-20  p-4 rounded-lg shadow-sm"
             >
               <img
                 src={logo.src}

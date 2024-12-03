@@ -598,15 +598,16 @@ function Navbar() {
                 <Link
                   href="/casestudyall"
                   className="w-full py-4 border-b-[1px] border-[#00729f] lg:border-0 lg:hover:border-b-2 lg:hover:border-b-[#00729f] flex justify-between"
-                  onClick={toggleMenu}
-                  // onClick={(e) => {
-                  //   if (isMobile) {
-                  //     e.preventDefault();
-                  //     toggleMegaMenu(e); // Call toggleMegaMenu here
-                  //   } else {
-                  //     setIsMenuOpen(false);
-                  //   }
-                  // }}
+                  
+                  onClick={(e) => {
+                    if (isMobile) {
+                      e.preventDefault();
+                      toggleMegaMenu(e); // Call toggleMegaMenu here
+                    } else {
+                      setIsMenuOpen(false);
+                    }
+                     
+                  }}
                 >
                   CASE STUDIES
                   {/* <Image

@@ -4,11 +4,10 @@ import React from 'react';
 
 const AboutUsHero = () => {
   return (
-    <div className="relative bg-white overflow-hidden">
+    <div className="relative bg-white overflow-hidden bg-custom-image11 bg-right-top bg-no-repeat">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
-        <div className="absolute -right-10 top-0 h-72 w-72 rounded-full bg-[#00729f]/5" />
-        <div className="absolute -left-10 bottom-0 h-96 w-96 rounded-full bg-[#00729f]/10" />
+       
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

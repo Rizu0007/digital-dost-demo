@@ -6,27 +6,27 @@ const CaseStudy = () => {
   const caseStudy = [
     {
       imageSrc: "/CaseStudy/GG bin Hire.jpg",
-      tag: "Pay10 | Saudi Arab",
-      title: "All-inclusive Digital Wallet App for Middle East",
-      category: [{ type: "Fintech" }, { type: "Finance" }, { type: "Banking" }]
+      tag: "GG bin Hire | Australia",
+      title: "Generated 5000 high-quality leads within 5 Months Through a Strategic Approach",
+      category: [{ type: "Environmental Services" }, { type: "Eco-friendly Services" }, ]
     },
     {
       imageSrc: "/CaseStudy/Leathershire.jpg",
-      tag: "Complibuddy | USA",
-      title: "Full-suite Management Software For Property Compliance in NYC",
-      category: [{ type: "Real Estate" }]
+      tag: "Leather Shire | UK",
+      title: "Boosted Organic Search & Generated High ROI Through Bespoke Digital Marketing ",
+       category: [{ type: "Fashion" },{ type: "Apparel" }]
     },
     {
       imageSrc: "/CaseStudy/Mcd Sports.jpg",
-      tag: "Toto | Canada",
-      title: "AI-Powered Community Platform for Social Change",
-      category: [{ type: "Government & public service" }]
+      tag: "Mcd Sports | UK",
+      title: "Boosted Organic Search Results Within a Challenging Time",
+      category: [{ type: "Sports" },{ type: "Fitness gear" }]
     },
     {
-      imageSrc: "/CaseStudy/MobileCiti.jpg",
-      tag: "Dexfolio | USA",
-      title: "Decentralized Portfolio Tracking Application",
-      category: [{ type: "Cryptocurrency" }, { type: "Finance" }, { type: "Banking" }]
+      imageSrc: "/CaseStudy/Some Slight.jpg",
+      tag: "Some Slight | USA",
+      title: "Boosted Online Presence to Increase Sales and Improve Customer Acquisition",
+      category: [{ type: "Fashion" },{ type: "Apparel" }]
     }
   ];
 
