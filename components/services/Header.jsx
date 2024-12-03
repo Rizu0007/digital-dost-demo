@@ -36,14 +36,14 @@ const Header = ({ title, image }) => {
               alt="hero"
               width={600}
               height={600}
-              className="mx-auto w-full max-w-[500px] lg:max-w-none xl:w-[700px] 2xl:w-[800px] 2xl:h-[400px]"
+              className="mx-auto w-full max-w-[500px] lg:max-w-none xl:w-[500px] 2xl:w-[800px] 2xl:h-[400px]"
             />
           </div>
         </div>
       </section>
 
       {/* Button for desktop view */}
-      <div className="hidden lg:block -mt-16 ml-28">
+      <div className="hidden lg:block -mt-24 ml-28">
         <Link href="#">
           <button className="px-20 py-3 xl:px-20 xl:py-3 2xl:px-28 2xl:py-5 rounded-md font-extrabold xl:text-[18px] bg-[#00729f] text-white">
             Contact us

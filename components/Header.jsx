@@ -100,18 +100,13 @@ function Header() {
 
 
       <div className="xs:-mt-24 sm:-mt-28 lg:-mt-40 text-white p-4 w-full flex justify-start md:ml-20 ">
-        <div className="flex w-full md:w-1/2">
-          <input
-            type="text"
-            placeholder="Enter your website"
-            className="w-full bg-white text-gray-700 border border-gray-300 rounded-l-md py-2 px-4"
-          />
-          <button
-            className="bg-[#00729f] hover:bg-[#3d8dad] text-white font-bold py-2 px-4 rounded-r-md"
-          >
-            Send a proposal
-          </button>
-        </div>
+      <div className="">
+              <Link href="/calendly" className="block">
+                <button className="w-full md:w-auto px-8 py-4 rounded-md font-extrabold text-base bg-[#00729f] text-white">
+                  Contact us
+                </button>
+              </Link>
+            </div>
       </div>
     </>
 

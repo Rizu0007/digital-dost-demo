@@ -165,15 +165,7 @@ export default function ServicesComponent() {
       {/* Main Service Display */}
       <div className="w-full flex xs:flex-col-reverse lg:flex-row justify-between ">
         {/* Main Image */}
-        {/* <div className="xs:flex xs:justify-center" >
-          <Image
-            src={selectedService.imagesrc}
-            alt={selectedService.title}
-            height={517}
-            width={625}
-            className=" xs:w-[500px] xs:h-[350px] md:h-[450px] md:w-[625px]"
-          />
-        </div> */}
+       
 
         <div className="xs:flex xs:justify-center" >
           <Image
@@ -276,6 +268,6 @@ export default function ServicesComponent() {
       </div>
 
 
-    </div>
-  );
+    </div>
+  );
 }
