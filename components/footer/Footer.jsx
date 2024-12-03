@@ -135,25 +135,27 @@ const Footer = () => {
           <div className="mt-10 lg:mt-0">
             <h3 className="mb-7 font-semibold text-lg lg:text-xl tracking-wider">Services</h3>
             <ul className="space-y-4 lg:space-y-4 text-sm lg:text-base">
-              <li><a href="#">Performance marketing</a></li>
-              <li><a href="#">Email Marketing</a></li>
-              <li><a href="#">Graphic Designing</a></li>
-              <li><a href="#">SEO</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Ecommerce</a></li>
+              <li><a href="#">Email Marketing </a></li>
+              <li><a href="#">Web Development</a></li>
+             
             </ul>
           </div>
 
           <div className="mt-10 lg:mt-0">
-            <h3 className="mb-7 font-semibold text-lg lg:text-xl tracking-widest">Product</h3>
+            <h3 className="mb-7 font-semibold text-lg lg:text-xl tracking-widest">We Offer</h3>
             <ul className="space-y-4 lg:space-y-4 text-sm lg:text-base">
               <li><a href="#">Lead Generation</a></li>
-              <li><a href="#">Web development</a></li>
-              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Landing Pages development</a></li>
+              <li><a href="#">App Development</a></li>
+              <li><a href="#">SEO</a></li>
             </ul>
           </div>
 
           <div className="mt-10 lg:mt-0 text-sm  lg:text-xl">
-            <h3 className="mb-7 font-semibold">Not quite ready for Shopex?</h3>
-            <p>Join our online no-code community for free. No spam. Ever.</p>
+            {/* <h3 className="mb-7 font-semibold">Not quite ready for Shopex?</h3> */}
+            {/* <p>Join our online no-code community for free. No spam. Ever.</p> */}
             <div className="mt-4 flex flex-col sm:flex-row items-center sm:items-start">
               <input
                 type="email"
