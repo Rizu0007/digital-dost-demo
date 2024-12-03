@@ -619,23 +619,23 @@ function Navbar() {
                 </Link>
                 {/* Mega menu hover */}
 
-                <div
+                {/* <div
                   id="mega-menu-full-dropdown"
                   className={`lg:absolute xs:-ml[240px]  lg:-ml-[220px]  ${isMobile ? (isMegaMenuOpen ? 'block' : 'hidden') : 'hidden group-hover:flex'
                     }  lg:mb-6 `}
                 >
                   <div className="grid xs:w-[72vw] sm:w-[76vw] lg:w-[550px] lg:px-5 lg:py-3 mx-auto bg-white  lg:shadow-md rounded-xl text-gray-900 dark:text-black xs:grid-cols-1 lg:grid-cols-2 ">
 
-                    {/* Left Column: Industry */}
+                
                     <ul className="flex flex-col space-y-0 lg:w-1/2">
-                      {/* Heading */}
+                     
                       <Link
                         href="/"
                         className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-3 lg:p-0 2xl:text-[20px]"
                         onClick={(e) => {
                           if (isMobile) {
-                            e.preventDefault(); // Prevent navigation on mobile
-                            dropDownMenu(e, "industries"); // Toggle dropdown state
+                            e.preventDefault(); 
+                            dropDownMenu(e, "industries");
                           }
                         }}
                       >
@@ -657,7 +657,7 @@ function Navbar() {
                           ? dropMenuState.industries.visible
                             ? "block text-[#6B7280]"
                             : "hidden"
-                          : "lg:flex text-[#6B7280]" // Always visible on larger screens
+                          : "lg:flex text-[#6B7280]" 
                           } flex flex-col `}
                       >
                         {industries.map((industry, index) => (
@@ -674,16 +674,16 @@ function Navbar() {
 
                     </ul>
 
-                    {/* Right Column: Services */}
+                   
                     <ul className="flex flex-col space-y-0 lgcommi:w-1/2">
-                      {/* Heading */}
+                 
                       <Link
                         href="/"
                         className="flex xs:justify-between lg:justify-start items-center  text-[#444444] mt-0 lg:mt-2 xs:font-medium lg:font-semibold xs:text-[16px] lg:text-[14px] xs:p-3 lg:p-0 2xl:text-[20px] "
                         onClick={(e) => {
                           if (isMobile) {
-                            e.preventDefault(); // Prevent navigation on mobile
-                            dropDownMenu(e, "services1"); // Toggle dropdown state
+                            e.preventDefault();
+                            dropDownMenu(e, "services1"); 
                           }
                         }}
                       >
@@ -700,14 +700,14 @@ function Navbar() {
                         />
                       </Link>
 
-                      {/* Services List */}
+               
 
                       <div
                         className={`${isMobile
                           ? dropMenuState.services1.visible
                             ? "block text-[#6B7280] "
                             : "hidden"
-                          : "lg:flex text-[#6B7280]" // Always visible on larger screens
+                          : "lg:flex text-[#6B7280]" 
                           } flex flex-col `}
                       >
                         {Services1.map((service, index) => (
@@ -729,7 +729,7 @@ function Navbar() {
                       </div>
                     </ul>
                   </div>
-                </div>
+                </div> */}
 
 
 

@@ -14,8 +14,9 @@ const Video = () => {
           </h6>
         </div>
         
-      <div className="relative rounded-2xl overflow-hidden shadow-lg max-w-4xl w-full mx-24">
-     
+      <div className="relative rounded-2xl overflow-hidden shadow-lg max-w-4xl w-full">
+   
+
         <video
           
           src="shopex video low.mp4"

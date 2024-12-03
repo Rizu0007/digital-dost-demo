@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Service data array
 const Service = [
   {
-    imagesrc: "/Services/DigitalMarketingimg.png",
+    imagesrc: "/Services/Digital Marketing 1.jpg",
     title: "Digital Marketing",
     description:
       "We drive massive ROI from a custom revenue-generating approach. More traffic means more leads. More Leads create more sales, and the result is ultimately driving more revenue. Shopex will help your business reach beyond the desired goals with a personalized digital marketing strategy.",
@@ -18,7 +18,7 @@ const Service = [
     selectedCardimg: "/Services/Digital Marketingiconwhite.png",
   },
   {
-    imagesrc: "/Services/Ecommerce img1.png",
+    imagesrc: "/Services/Ecommerce 222.jpg",
     title: "Ecommerce",
     description:
       "From E-commerce store creation to optimization to strong online presence and marketing, we are here to help your business. At Shopex, we have a team of intelligent business consultants and pro-coders to help our e-commerce clients with various business challenges.",
@@ -27,7 +27,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Email Marketing Page img.png",
+    imagesrc: "/Services/Email Marketing  1.jpg",
     title: "Email Marketing",
     description:
       "If you want to connect your brand with the right audience at the right time and increase sales, look no further than e-mail marketing. Shopex result-driven email marketing strategies will help you to fit your business objectives perfectly. Let us set up an email campaign. ",
@@ -36,7 +36,7 @@ const Service = [
 
   },
   {
-    imagesrc: "/Services/Web Development.png",
+    imagesrc: "/Services/web development 1.jpg",
     title: "Web development",
     description:
       "When it comes to selling your brand, nothing beats your website. With ShopeX's help, your website may become an effective medium of professional communication, befitting the high caliber of your position. We use threat resistance, proven architectures, ongoing maintenance, and customized CMS solutions to increase efficiency.",
@@ -161,17 +161,19 @@ export default function ServicesComponent() {
 
   }
   return (
-    <div className="md:-mt-1 mt-28 md:px-[60px] lg:px-[100px] xl:px-[124.5px] xs:pt-[150px] pt-[274px] pb-[10px] md:pb-[100px] xs:px-4">
+    <div className="mt-20 md:px-[60px] lg:px-[100px] xl:px-[124.5px] xs:pt-[150px] pt-[274px] pb-[230px] xs:px-4">
       {/* Main Service Display */}
-      <div className="w-full flex xs:flex-col-reverse lg:flex-row justify-between h-[500px]">
+      <div className="w-full flex xs:flex-col-reverse lg:flex-row justify-between ">
         {/* Main Image */}
-        <div className="xs:flex xs:justify-center pt-10" >
+       
+
+        <div className="xs:flex xs:justify-center" >
           <Image
             src={selectedService.imagesrc}
             alt={selectedService.title}
-            height={517}
-            width={625}
-            className=" xs:w-full xs:h-[350px] md:h-[517px] md:w-[625px]"
+            height={640}
+            width={640}
+            className="mt-3"
           />
         </div>
 
@@ -228,7 +230,7 @@ export default function ServicesComponent() {
       </div>
 
       {/* Service Cards */}
-      <div className="flex mt-16 justify-center ">
+      <div className="flex mt-10 justify-center ">
         <Slider
           {...settings}
           className="w-[80vw] lg:min-w-[700px] xl:min-w-[1150px] 2xl:max-w-[1300px]  " // Fixed the class syntax
@@ -266,6 +268,6 @@ export default function ServicesComponent() {
       </div>
 
 
-    </div>
-  );
+    </div>
+  );
 }
