@@ -31,7 +31,7 @@ const CaseStudy = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center mb-20">
+    <div className="flex flex-col justify-center items-center mb-">
       <section className="w-5/6  pb-[100px]">
         <div>
           <div className="w-full mb-24">

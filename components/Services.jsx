@@ -161,17 +161,17 @@ export default function ServicesComponent() {
 
   }
   return (
-    <div className="mt-20 md:px-[60px] lg:px-[100px] xl:px-[124.5px] xs:pt-[150px] pt-[274px] pb-[230px] xs:px-4">
+    <div className="md:-mt-1 mt-28 md:px-[60px] lg:px-[100px] xl:px-[124.5px] xs:pt-[150px] pt-[274px] pb-[10px] md:pb-[100px] xs:px-4">
       {/* Main Service Display */}
       <div className="w-full flex xs:flex-col-reverse lg:flex-row justify-between h-[500px]">
         {/* Main Image */}
-        <div className="xs:flex xs:justify-center" >
+        <div className="xs:flex xs:justify-center pt-10" >
           <Image
             src={selectedService.imagesrc}
             alt={selectedService.title}
             height={517}
             width={625}
-            className=" xs:w-[500px] xs:h-[350px] md:h-[517px] md:w-[625px]"
+            className=" xs:w-full xs:h-[350px] md:h-[517px] md:w-[625px]"
           />
         </div>
 
@@ -228,7 +228,7 @@ export default function ServicesComponent() {
       </div>
 
       {/* Service Cards */}
-      <div className="flex mt-10 justify-center ">
+      <div className="flex mt-16 justify-center ">
         <Slider
           {...settings}
           className="w-[80vw] lg:min-w-[700px] xl:min-w-[1150px] 2xl:max-w-[1300px]  " // Fixed the class syntax

@@ -5,7 +5,7 @@ const Video = () => {
   
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center py-24 md:py-1 mx-3">
       {/* Video Container */}
       <div className="w-full mb-12 flex justify-center">
           <h6 className="font-bold xs:text-[36px] md:text-[48px]">
@@ -14,7 +14,7 @@ const Video = () => {
           </h6>
         </div>
         
-      <div className="relative rounded-2xl overflow-hidden shadow-lg max-w-4xl w-full">
+      <div className="relative rounded-2xl overflow-hidden shadow-lg max-w-4xl w-full mx-24">
      
         <video
           
@@ -22,7 +22,7 @@ const Video = () => {
           controls
           loop
           muted
-          className="w-full h-full rounded-2xl"
+          className="w-full h-full rounded-2xl "
         ></video>
       </div>
 
