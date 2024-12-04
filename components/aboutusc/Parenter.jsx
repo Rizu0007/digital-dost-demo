@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const LogoSlider = () => {
@@ -64,7 +65,7 @@ const LogoSlider = () => {
       <div className="max-w-7xl mx-auto py-16 px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
-            Strategic <span className="text-blue-600">Partnerships</span>
+            Strategic <span className="text-[#00729f]">Partnerships</span>
           </h2>
           <p className="text-xl text-gray-600">
             Elevate your Business Ecosystem
@@ -95,8 +96,10 @@ const LogoSlider = () => {
                   key={index}
                   className="flex items-center justify-center min-w-[200px] h-24 px-"
                 >
-                  <div className="hover:scale-110 transition-transform duration-300 p-4">
-                    <img
+                  <div className="hover:scale-110 transition-transform duration-300 ">
+                    <Image
+                    height={140}
+                    width={140}
                       src={logo.src}
                       alt={logo.name}
                       className="max-w-[140px] max-h-[70px] object-contain  hover:grayscale-0 transition-all duration-300"

@@ -8,14 +8,21 @@ import Link from 'next/link'
 function Header() {
   return (
     <>
-      <div className='flex xs:flex-col md:flex-row bg-white bg-custom-image8  bg-no-repeat bg-right-top pt-5 pb-60'>
+      <div className='flex xs:flex-col md:flex-row bg-white  bg-no-repeat bg-right-top pt-5 pb-60'>
+      <div className="absolute md:top-48 top-32 right-9  md:right-16 ">
+        <Image src="/Header/final-arrow.png" width={350} height={300}  alt="About"
+        
+        className='md:w-[350px] md:h-[400px]  w-[200px] h-[200px]'/>
+      </div>
 
-        <div className='xs:w-full md:w-[60%] xs:pb-20 xs:pt-10 sm:py-20 xs:pl-5 md:pl-20 space-y-16 py-10 mt-10 mx-5'>
+
+        <div className='xs:w-full md:w-[60%] xs:pb-20 xs:pt-10 sm:py-20 xs:pl-0 md:pl-20 md:space-y-16 space-y-4 py-10 mt-3 mx-5'>
           <div className='flex items-center justify-between'>
-            <p className="text-black font-bold leading-[80px]  w-full xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <p className="text-black font-bold leading-[80px]  w-full xs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl ">
             Unlock Business Growth Through ROI-Focused Digital Marketing
 
             </p>
+            
 
             {/* Rotating Image for Mobile */}
             <Link href='/calendly'>
@@ -52,7 +59,7 @@ function Header() {
             </Link>
           </div>
 
-          <p className='h-1 text-[#333333] text-2xl font-extralight mr-7'>
+          <p className='h-1 text-[#333333] md:text-2xl text-xl font-extralight mr-7'>
           Shopex specialists are among the most accomplished in the digital sector. They have a history of proven experiences expanding their clients' businesses through high-quality work and outstanding customer service.           </p>
 
         </div>
@@ -99,7 +106,7 @@ function Header() {
       </div>
 
 
-      <div className="xs:-mt-24 sm:-mt-28 lg:-mt-40 text-white p-4 w-full flex justify-start md:ml-20 ">
+      <div className="xs:-mt-44 sm:-mt-28 lg:-mt-40 text-white p-4 w-full flex justify-start md:ml-20 ">
       <div className="">
               <Link href="/calendly" className="block">
                 <button className="w-full md:w-auto px-8 py-4 rounded-md font-extrabold text-base bg-[#00729f] text-white">

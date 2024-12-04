@@ -8,8 +8,8 @@ const Header = ({ title, image }) => {
       <section className="bg-white min-w-full min-h-full bg-custom-image10 bg-no-repeat bg-left-top lg:pt-32 md:pb-32 pt-16 px-4 md:px-10">
         <div className="flex flex-col lg:flex-row">
           {/* Text Content */}
-          <div className="flex flex-col space-y-6 lg:space-y-10 w-full lg:w-[550px] xl:w-[700px] lg:pl-20">
-            <h1 className="text-black font-bold text-3xl sm:text-5xl xl:text-6xl leading-tight">
+          <div className="flex flex-col space-y-6 lg:space-y-10 w-full lg:w-[700px] xl:w-[800px] lg:pl-20">
+            <h1 className="text-black font-bold text-3xl sm:text-5xl xl:text-5xl leading-tight">
               {title}
             </h1>
             <p className="text-[#333333] text-lg sm:text-2xl font-extralight">
@@ -30,13 +30,13 @@ const Header = ({ title, image }) => {
           </div>
 
           {/* Image */}
-          <div className="mt-12 lg:mt-0 lg:ml-28 lg:-mt-20">
+          <div className="mt-12 lg:mt-0 lg:ml-36 ">
             <Image
               src={image}
               alt="hero"
               width={600}
               height={600}
-              className="mx-auto w-full max-w-[500px] lg:max-w-none xl:w-[500px] 2xl:w-[800px] 2xl:h-[400px]"
+              className="mx-auto w-full max-w-[500px]  xl:w-[500px] 2xl:w-[800px] 2xl:h-[400px]"
             />
           </div>
         </div>
