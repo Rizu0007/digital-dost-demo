@@ -225,66 +225,6 @@ export const caseStudiesData = [
         
       ]
     },
-    {
-      id: 5,
-      slug: "some-slight",
-      imageSrc: "/CaseStudy/Some Slight.jpg",
-      tag: "Some Slight | USA",
-      title: "Boosted Online Presence to Increase Sales and Improve Customer Acquisition",
-      category: [{ type: "Fashion" }, { type: "Apparel" }],
-      headerPoints: [
-        "Limited online sales and stagnant growth",
-        "Limited brand awareness beyond physical locations",
-        "Inefficient digital advertising expertise"
-      ],
-      challenges: [
-        {
-          title: "Limited Sales Online",
-          description: "Online sales were stagnant despite a solid physical presence with luxury items."
-        },
-        {
-          title: "Limited Brand Awareness",
-          description: "Needed to attract a broader national and global audience."
-        },
-        {
-          title: "Inefficient Digital Advertising Expertise",
-          description: "Struggled with digital marketing, particularly in social media and paid advertising."
-        }
-      ],
-      solutions: [
-        {
-          title: "PPC Advertising",
-          description: "Launched Google Ads campaigns with distinct product categories and relevant keywords."
-        },
-        {
-          title: "Social Media Advertising",
-          description: "Utilized platforms like TikTok, Facebook, and Instagram to connect with younger audiences."
-        },
-        {
-          title: "Audience Retargeting",
-          description: "Placed retargeting ads for visitors who abandoned purchases on the website."
-        },
-        {
-          title: "Conversion Rate Optimization",
-          description: "Conducted A/B testing to optimize landing pages and checkout processes."
-        }
-      ],
-      results: [
-       
-        {
-          metric: "45%",
-          description: "Increase in online sales within three months.",
-        },
-        {
-          metric: "300,000",
-          description: "New prospective clients reached across platforms."
-        },
-        {
-          metric: "50%",
-          description: "Increase in return on ad spend due to campaign optimization."
-        }
-        
-      ]
-    }
+   
   ];
   
