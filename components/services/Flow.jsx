@@ -52,7 +52,7 @@ const Flow = ({ flow }) => {
 
           {/* Right side: Steps Content */}
           <div className="px-2 lg:px-0 lg:ml-12 w-full lg:w-2/3 ">
-            <div className="flex flex-col mt-52 md:mt-1">
+            <div className="flex flex-col mt-60 md:mt-1">
               {flow.slice(1, flow.length).map((step, index) => (
                 <div
                   key={index}
