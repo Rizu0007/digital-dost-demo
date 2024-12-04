@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { caseStudiesData } from "@/servicedata/caseStudy";
 
 // Data for industries, case studies, and countries
 const industries = [
@@ -28,37 +29,6 @@ const services = [
 ];
 const countries = ["UK", "USA", "Australia"];
 
-const caseStudies = [
-  {
-    id: 1,
-    imageSrc: "/CaseStudy/GG bin Hire.jpg",
-    tag: "GG bin Hire | Australia",
-    title: "Generated 5000 high-quality leads within 5 Months Through a Strategic Approach",
-    category: [{ type: "Environmental Services" }, { type: "Eco-friendly Services" }]
-  },
-  {
-    id: 2,
-    imageSrc: "/CaseStudy/Leathershire.jpg",
-    tag: "Leather Shire | UK",
-    title: "Boosted Organic Search & Generated High ROI Through Bespoke Digital Marketing",
-    category: [{ type: "Fashion" }, { type: "Apparel" }]
-  },
-  {
-    id: 3,
-    imageSrc: "/CaseStudy/Mcd Sports.jpg",
-    tag: "Mcd Sports | UK",
-    title: "Boosted Organic Search Results Within a Challenging Time",
-    category: [{ type: "Sports" }, { type: "Fitness gear" }]
-  },
-  {
-    id: 4,
-    imageSrc: "/CaseStudy/Some Slight.jpg",
-    tag: "Some Slight | USA",
-    title: "Boosted Online Presence to Increase Sales and Improve Customer Acquisition",
-    category: [{ type: "Fashion" }, { type: "Apparel" }]
-  }
-  
-];
 
 const View = () => {
   const [selectedIndustry, setSelectedIndustry] = useState("");
@@ -68,11 +38,7 @@ const View = () => {
   const [isServiceOpen, setIsServiceOpen] = useState(false);
   const [isCountryOpen, setIsCountryOpen] = useState(false);
 
-  const handleClickOutside = () => {
-    setIsIndustryOpen(false);
-    setIsServiceOpen(false);
-    setIsCountryOpen(false);
-  };
+ 
 
   // Handlers for industry and country filters
   const handleIndustryChange = (e) => {
@@ -87,7 +53,7 @@ const View = () => {
   };
 
   // Filter case studies based on selected industry and country
-  const filteredCaseStudies = caseStudies.filter((study) => {
+  const filteredCaseStudies = caseStudiesData.filter((study) => {
     const industryMatch =
       !selectedIndustry ||
       study.category.some((cat) => cat.type === selectedIndustry);
@@ -101,11 +67,11 @@ const View = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <section className="w-5/6 pt-[185px] pb-[230px]">
+      <section className="w-5/6 md:pt-[95px] pt-20 pb-[30px]">
         <div>
           {/* Heading */}
-          <div className="w-full mb-24">
-            <h1 className="font-bold text-[48px] lg:text-[70px]">
+          <div className="w-full md:mb-24 mb-7">
+            <h1 className="font-bold text-[38px] lg:text-[70px]">
               Explore Our Craft
             </h1>
           </div>
@@ -293,44 +259,44 @@ const View = () => {
           {/* Case Study Cards */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {filteredCaseStudies.map((study, index) => (
-              <div
-                key={index}
-                className={`flex flex-col ${index % 2 === 0 ? "mt-20" : ""}`}
-              >
-                <Link href="/case-study">
-                  <div>
-                    <Image
-                      src={study.imageSrc}
-                      alt={study.title}
-                      width={507}
-                      height={280}
-                      className="rounded-lg object-cover"
-                    />
-                  </div>
-                  <div className="inline-flex flex-col space-y-4 mt-5">
-                    <span className="text-[18px] text-[#858c9f]">
-                      {study.tag}
-                    </span>
-                    <h4 className="text-[28px] font-bold text-black">
-                      {study.title}
-                    </h4>
-                    {study.category && (
-                      <div className="flex flex-wrap gap-2">
-                        {study.category.map((type) => (
-                          <button
-                            key={type.type}
-                            className="font-semibold text-black text-[14px] bg-[#e8e9ed] py-[10px] px-[20px] rounded-[20px]"
-                          >
-                            {type.type}
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </Link>
-              </div>
-            ))}
+          {filteredCaseStudies.map((study, index) => (
+        <div
+          key={index}
+          className={`flex flex-col ${index % 2 === 0 ? "mt-0 md:mt-20" : ""}`}
+        >
+          <Link href={`/case-study/${study.slug}`}>
+            <div>
+              <Image
+                src={study.imageSrc}
+                alt={study.title}
+                width={507}
+                height={280}
+                className="rounded-lg object-cover"
+              />
+            </div>
+            <div className="inline-flex flex-col space-y-4 mt-5">
+              <span className="text-[18px] text-[#858c9f]">
+                {study.tag}
+              </span>
+              <h4 className="text-[28px] font-bold text-black">
+                {study.title}
+              </h4>
+              {study.category && (
+                <div className="flex flex-wrap gap-2">
+                  {study.category.map((type) => (
+                    <button
+                      key={type.type}
+                      className="font-semibold text-black text-[14px] bg-[#e8e9ed] py-[10px] px-[20px] rounded-[20px]"
+                    >
+                      {type.type}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          </Link>
+        </div>
+      ))}
           </div>
         </div>
       </section>

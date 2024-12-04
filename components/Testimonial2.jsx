@@ -80,7 +80,7 @@ const Testimonial2 = () => {
   };
 
   return (
-    <section className="xs:px-5 md:px-32 pt-[274px] pb-[230px] xs:pt-10 xs:pb-32 overflow-hidden -mt-20 md:-mt-0">
+    <section className="xs:px-5 md:px-32 pt-[274px] pb-[230px] xs:pt-10 xs:pb-32 overflow-hidden -mt-3 md:-mt-0">
       {/* Inner container start */}
 
       {/* Heading container start */}

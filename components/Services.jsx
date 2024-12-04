@@ -161,7 +161,7 @@ export default function ServicesComponent() {
 
   }
   return (
-    <div className="mt-20 md:px-[60px] lg:px-[100px] xl:px-[124.5px] xs:pt-[150px] pt-[274px] pb-[230px] xs:px-4">
+    <div className="mt-2 md:px-[60px] lg:px-[100px] xl:px-[124.5px] xs:pt-[40px] pt-[74px] pb-[130px] xs:px-4">
       {/* Main Service Display */}
       <div className="w-full flex xs:flex-col-reverse lg:flex-row justify-between ">
         {/* Main Image */}

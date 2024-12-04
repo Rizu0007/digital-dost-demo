@@ -3,7 +3,7 @@ export const caseStudiesData = [
       id: 1,
       slug: "gg-bin-hire",
       imageSrc: "/CaseStudy/GG bin Hire.jpg",
-      tag: "GG bin Hir | Australia",
+      tag: "GG bin Hire | Australia",
       title: "Generated 5000 high-quality leads within 5 Months Through a Strategic Approach",
       category: [{ type: "Environmental Services" }, { type: "Eco-friendly Services" }],
       headerPoints: [
@@ -209,9 +209,10 @@ export const caseStudiesData = [
         }
       ],
       results: [
+       
         {
           metric: "45%",
-          description: "Increase in online sales within three months."
+          description: "Increase in online sales within three months.",
         },
         {
           metric: "300,000",
@@ -221,6 +222,7 @@ export const caseStudiesData = [
           metric: "50%",
           description: "Increase in return on ad spend due to campaign optimization."
         }
+        
       ]
     }
   ];
