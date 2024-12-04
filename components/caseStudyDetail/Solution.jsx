@@ -32,7 +32,7 @@ const Solution = ({ solutions }) => {
         </div>
 
         {/* Text Column */}
-        <div className="md:w-3/4 text-black xs:px-4 sm:px-8 h-full flex flex-col justify-center xs:space-y-4 md:space-y-4 lg:space-y-10 xs:py-5  mx-12 md:-mt-24">
+        <div className="md:w-3/4 text-black xs:px-4 sm:px-8 h-full flex flex-col justify-center xs:space-y-4 md:space-y-4 lg:space-y-10 xs:py-5  mx-12 ">
           <h2 className="text-xl font-light italic">
             Some of our deliverables included:
           </h2>
