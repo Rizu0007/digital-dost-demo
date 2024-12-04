@@ -13,7 +13,7 @@ function Header() {
         <div className='xs:w-full md:w-[60%] xs:pb-20 xs:pt-10 sm:py-20 xs:pl-5 md:pl-20 space-y-16 py-10 mt-10 mx-5'>
           <div className='flex items-center justify-between'>
             <p className="text-black font-bold leading-[80px]  w-full xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-            Unlock Business Growth Through ROI-Focused Digital Marketing
+            Unlock Business Growth Through ROI-Focused Digital Marketing!
 
             </p>
 
