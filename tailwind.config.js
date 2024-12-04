@@ -42,7 +42,7 @@ module.exports = {
         'custom-image5':"url('/Header/arrow3.png')",
         'custom-image6':"url('/Header/arrow 4.png')",
         'custom-image7':"url('/Header/arrow5.png')",
-        'custom-image8':"url('/Header/final arrow.png')",
+        'custom-image8':"url('/Header/final-arrow.png')",
         'custom-image9':"url('/Header/finalarrow2.png')",
         'custom-image10':"url('/Header/finalarrow3.png')",
       },

@@ -7,12 +7,14 @@ import Video from "@/components/videoupload/Video";
 import "slick-carousel/slick/slick.css";        // Main Slick CSS
 import "slick-carousel/slick/slick-theme.css";
 import Booking from "@/components/callenderly/Booking";
+import LogoSlider from "@/components/aboutusc/Parenter";
 export default function Home() {
   return (
    <div className="overflow-hidden ">
     
    
     <Header/>
+    <LogoSlider/>
     <Services/>
     <Video/>
     <Testimonial2/>

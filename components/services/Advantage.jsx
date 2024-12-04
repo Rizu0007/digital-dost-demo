@@ -52,10 +52,10 @@ const Advantage = ({advantages}) => {
     // </section>
 
     <>
-        <section className='lg:px-20  py-40 xs:px-8   relative ' >
+        <section className='lg:px-20  md:py-40 xs:px-8  p  relative ' >
         <div className=' xl:flex xl:flex-col xl:items-center '>
           <div>
-            <h1 className="text-[black] font-bold xs:text-4xl sm:text-5xl xl:text-[40px] 2xl:text-7xl leading-tight mb-16">
+            <h1 className="text-[black] font-bold xs:text-3xl sm:text-5xl xl:text-[40px] 2xl:text-7xl leading-tight mb-16">
             Benefits Of Collaborating With Us
 
             {/* {advantages[0].title} */}

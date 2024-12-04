@@ -1,34 +1,32 @@
-'use client'
-import React, {  useRef } from "react";
+"use client";
+import React from "react";
 
 const Video = () => {
-  
-
   return (
-    <div className="flex flex-col items-center justify-center py-24 md:py-1 mx-3">
-      {/* Video Container */}
-      <div className="w-full mb-12 flex justify-center">
-          <h6 className="font-bold xs:text-[36px] md:text-[48px]">
+    <div className="flex flex-col items-center justify-center py-6 md:py-12 px-4 max-w-7xl mx-auto">
+      <div className="w-full mb-8 text-center">
+        <h2 className="font-bold text-3xl md:text-5xl">
           Inspire and be Inspired
+        </h2>
+      </div>
 
-          </h6>
-        </div>
-        
-      <div className="relative rounded-2xl overflow-hidden shadow-lg max-w-4xl w-full mx-24">
-     
+      <div className="relative rounded-2xl overflow-hidden shadow-lg w-full md:w-4/5 lg:w-3/4 aspect-video">
         <video
-          
-          src="shopex video low.mp4"
+          preload="metadata"
+          playsInline
           controls
           loop
           muted
-          className="w-full h-full rounded-2xl "
-        ></video>
+          className="w-full h-full rounded-2xl object-cover"
+        >
+          <source src="/Shopexvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
-      <p className="text-[16px] font-medium mt-4">Discover your next inspiration in our wide array of advanced solutions.
+      <p className="text-base md:text-lg font-medium mt-6 text-center max-w-2xl">
+        Discover your next inspiration in our wide array of advanced solutions.
       </p>
-
     </div>
   );
 };
