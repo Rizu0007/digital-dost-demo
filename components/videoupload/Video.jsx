@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 
 const Video = () => {
@@ -9,7 +9,7 @@ const Video = () => {
           Inspire and be Inspired
         </h2>
       </div>
-        
+
       <div className="relative rounded-2xl overflow-hidden shadow-lg w-full md:w-4/5 lg:w-3/4 aspect-video">
         <video
           preload="metadata"
