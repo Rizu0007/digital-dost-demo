@@ -216,7 +216,7 @@ function Navbar() {
           <div className=" hidden lg:flex mr-5 space-x-2 ">
             <div className="mr-5">
               <p className="font-semibold text-[14px]">Generated Revenue <br />
-                <span className="tracking-wide "> For Clients.</span></p>
+                <span className="tracking-wide "> For Clients</span></p>
               <p className="text-[#00729f] font-bold text-[20px]">$100,000,000+</p>
 
 

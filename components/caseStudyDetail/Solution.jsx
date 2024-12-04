@@ -11,12 +11,10 @@ const Solution = ({ solutions }) => {
       {/* Header Section */}
       <div className="mb-10 invert-0 flex flex-col items-center">
         <h1 className="text-black font-bold xs:text-4xl md:text-5xl text-center mb-5 pt-10">
-          THE SOLUTION
+        {solutions[0].main}
         </h1>
         <p className="font-medium text-black text-xl text-center ">
-          <span className="text-black">Digital Silk</span> revamped messaging,
-          navigation, and <span className="text-black">Web Design</span> to
-          overcome challenges and grow traffic.
+        {solutions[0].title}
         </p>
       </div>
 
@@ -41,7 +39,7 @@ const Solution = ({ solutions }) => {
 
           {/* Dynamically Rendered Solution Points */}
           <div className="space-y-3">
-            {solutions.map((solution, index) => (
+            {solutions.slice(1,solutions.lenght).map((solution, index) => (
               <div
                 key={index}
                 className="flex items-start md:font-semibold md:text-lg"
