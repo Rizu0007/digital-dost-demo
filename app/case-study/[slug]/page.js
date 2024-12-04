@@ -13,8 +13,8 @@ export default function CaseStudyPage({ params }) {
   return (
     <div className="overflow-hidden">
       <Header caseStudy={caseStudy} />
-      <Challenge challenges={caseStudy.challenges} />
-      <Solution solutions={caseStudy.solutions} />
+      <Challenge challenges={caseStudy.challenges} challengestitle={caseStudy.challengetitle} />
+      <Solution solutions={caseStudy.solutions}  />
       <Result results={caseStudy.results} />
     </div>
   );

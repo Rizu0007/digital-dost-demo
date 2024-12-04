@@ -24,7 +24,7 @@ const Header = ({ caseStudy }) => {
 
           <div className="space-y-3">
             {caseStudy.headerPoints.map((point, index) => (
-              <p key={index} className="md:text-lg flex font-semibold">
+              <p key={index} className="md:text-lg flex font-normal">
                 <span className="mr-3 mt-1">
                   <Image
                     src={base64Image}

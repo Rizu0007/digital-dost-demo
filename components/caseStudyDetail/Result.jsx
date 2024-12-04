@@ -17,10 +17,10 @@ const Result = ({results}) => {
         <div>
           <div className='mb-10 flex flex-col items-center'>
             <h1 className='font-bold xs:text-4xl md:text-5xl text-center mb-5 pt-10'>
-              The Result
+            Our Outcomes
             </h1>
             <p className='font-medium text-xl text-center'>
-              {results.title}
+              {results[0].title}
             </p>
           </div>
           <div className='w-full flex flex-wrap justify-center gap-6 md:gap-10 shadow-black'>
@@ -31,6 +31,9 @@ const Result = ({results}) => {
                   key={index}
                   className='text-black flex flex-col justify-start items-center space-y-4 xs:w-full sm:w-[45%] md:w-[30%] lg:w-[20%] h-auto shadow-black'
                 >
+                  <p className='font-bold text-black text-xl text-center'>
+                    {item.heading}
+                  </p>
                   <p className='text-5xl xs:text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-[#00729f]'>
                     <CountUp 
                       start={0} 

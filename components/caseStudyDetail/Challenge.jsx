@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { caseStudiesData } from "@/servicedata/caseStudy";
 
 const Challenge = ({challenges}) => {
 
 
   const mainHeading = "The Challenge";
-  const subHeading = "Messaging obstacles, navigation issues and conversion barriers prevented the brand from conveying their unique value proposition, offering and engaging user experience and driving B2B leads.";
+  
 
   return (
     <section className="w-full xs:max-h-full lg:max-h-[809px] opacity-80 shadow-sm">
@@ -14,7 +15,7 @@ const Challenge = ({challenges}) => {
           {/* Mapping the main heading */}
           <h1 className="text-black font-bold text-5xl text-center mb-5">{mainHeading}</h1>
           <p className="text-black font-medium md:text-xl text-center md:mx-16 mx-3">
-            {subHeading}
+           {challenges[0].challengetitle}
           </p>
         </div>
         <div className="w-full px-4 pt-3">
@@ -34,7 +35,7 @@ const Challenge = ({challenges}) => {
                 <div className="h-96 bg-[#00729f]"></div>
               </div>
               <div className="text-black">
-                {challenges.map((item, index) => (
+                {challenges.slice(1,challenges.length).map((item, index) => (
                   <div key={index} className="ml-8">
                     <h1 className="font-bold text-3xl md:mb-3">{item.title}</h1>
                     <p className="text-xl font-normal mb-1.5 mt-2">{item.description}</p>
