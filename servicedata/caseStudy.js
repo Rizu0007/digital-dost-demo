@@ -305,15 +305,175 @@ export const caseStudiesData = [
         heading: "Reached an extra",
 
         metric: "300,000",
-        description: "prospective clients on several platforms to raise brand awareness.",
+        description:
+          "prospective clients on several platforms to raise brand awareness.",
       },
       {
         heading: "Campaign optimization resulted in a ",
 
         metric: "50%",
-        description:
-          "Increase in overall return on ad spend.",
+        description: "Increase in overall return on ad spend.",
       },
+    ],
+  },
+  {
+    id: 5,
+    slug: "BCI-landscaping",
+    imageSrc: "/CaseStudy/BCI Landscaping.jpg",
+    tag: "BCI Landscaping | Canada",
+    title:
+      "Our Tailored Strategy Unlocked Massive Business Growth Through Social Media Marketing",
+    category: [{ type: "Landscaping" }],
+    headerPoints: [
+      "BCI Landscaping is the leading hardscaping company that creates beautiful outdoor spaces in Guelph.",
+      "We know that social media is a hub for clients now, but the company needs a solid reputation on social media.",
+      "Our tailored strategy helped them achieve solid success and presence on social media.",
+    ],
+    challenges: [
+      {
+        challengetitle:
+          "BCI Landscaping had a steady customer base in its local area but faced challenges in the competitive online market.",
+      },
+      {
+        title: "Limited Brand Awareness",
+        description: "BCI Landscaping relied on physical referrals and traditional marketing channels like flyers and local print ads and had no presence on social media.",
+      },
+      {
+        title: "Need to Build Trust and Showcase Expertise",
+        description: "They wanted to showcase their expertise and build trust by providing educational and visually appealing content.",
+      },
+      {
+        title: "Online Leads Generation",
+        description: "They aimed to generate high-quality leads and convert them into customers for both residential and commercial services.",
+      },
+      
+    ],
+    solutions: [
+      {
+        main: "Recent Shopex Approach",
+        title: "BCI Landscaping partnered with Shopex to craft a comprehensive social media strategy. Here's how we did it:",
+      },
+      {
+        title: "Social Media Marketing",
+        description: "We targeted local homeowners and businesses through Facebook, TikTok, and Instagram ad campaigns, as well as Google My Business, to generate high-quality leads.",
+      },
+      {
+        title: "Appealing Visual Content",
+        description: "We developed captivating images that highlighted gardening strategies, seasonal guidance, and environmentally conscious landscaping methods.",
+      },
+      {
+        title: "Hosted Q&A Sessions",
+        description: "The question-and-answer sessions aimed to engage the audience in local groups and forums related to home improvement and landscaping.",
+      },
+      {
+        title: "Posting Consistently",
+        description: "Over three months, we consistently posted content to maintain visibility in followers' feeds and regularly monitored the metrics.",
+      },
+      
+    ],
+    results: [
+      {
+        title: "Our Outcomes",
+        metric: "300%",
+        description: "Increase in followers on Instagram and Facebook within three months of the ad campaign.",
+        heading: "Followers increased by",
+      },
+      {
+        heading: "Generated an extra",
+        metric: "1000",
+        description: "high-quality leads through paid marketing with a 30% conversion rate.",
+      },
+      {
+        heading: "Google My Business saw ",
+        metric: "50%",
+        description: "increase in views, engagement, and local search visibility.",
+      },
+      
+    ],
+  },
+  {
+    id: 6,
+    slug: "Mobile-citi",
+    imageSrc: "/CaseStudy/MobileCiti.jpg",
+    tag: "MobileCiti | Australia",
+
+    category: [{ type: "Electronics" }],
+    
+      title: "Shopex Tailored Fashion E-commerce Services Successfully Transformed Mobile Citi's Online Business Operations",
+      headerPoints: [
+        "Mobile Citi is an Australian fashion tech brand selling mobile phones, tablets, smartwatches, and more.",
+        "Mobile Citi contacted us to build its brand, increase visibility, broaden its customer base, and improve sales.",
+        "Team Shopex helped them optimize their online presence and drive growth with higher ROI.",
+      ],
+    
+    
+     
+        challenges: [
+          {
+            challengetitle: "Mobile Citi is a startup in the tech industry offering a luxury product range but faced challenges in scaling up operations.",
+          },
+          {
+            title: "Inappropriate User Interface",
+            description: "The previous website had an unattractive design, slow load times, and limited mobile optimization, making it difficult for users to navigate.",
+          },
+          {
+            title: "Inventory and Order Management",
+            description: "The inefficient inventory management system lacked real-time updates, leading to unhappy customers and lost sales opportunities.",
+          },
+          {
+            title: "Limited Online Presence",
+            description: "Despite offering high-quality products, Mobile Citi struggled to maintain a strong web presence and lacked an efficient e-commerce plan.",
+          },
+          {
+            title: "Lack of Brand Awareness",
+            description: "Mobile Citi, a relatively new brand, faced limited reach and sales potential due to its limited recognition beyond the local market.",
+          }
+        ],
+      
+      
+    solutions: [
+      {
+        main: "Recent Shopex Approach",
+        title: "Shopex provided a comprehensive suite of solutions for Mobile Citi, including website redesign, digital marketing, and overall management. Here's how we did it:",
+      },
+      {
+        title: "Redesigned UX and Mobile Responsiveness",
+        description: "The Mobile Citi website underwent a comprehensive revamp, with a strong focus on mobile responsiveness to enhance user experience.",
+      },
+      {
+        title: "An Integrated Platform for Order Management",
+        description: "We implemented an advanced inventory management system to track real-time stock, streamline order processing, and improve efficiency.",
+      },
+      {
+        title: "Digital Marketing and Brand Awareness Campaign",
+        description: "We executed SEO, social media, email, and influencer marketing campaigns, creating a solid presence across channels and boosting revenue through paid ads.",
+      },
+      {
+        title: "Customer Support and Retention",
+        description: "We added a live chat feature on the website to assist customers immediately during their purchasing journey, improving customer satisfaction and retention.",
+      },
+      
+      
+    ],
+    results: [
+      {
+        title: "Our Outcomes",
+        metric: "200%",
+        description: "Increase in brand awareness within the first three months of marketing.",
+        heading: "Brand awareness increased by",
+      },
+      {
+        heading: "Website redesign and digital marketing resulted in",
+        metric: "130%",
+        description: "Increase in online sales after the website redesign and digital marketing efforts.",
+      },
+      {
+        heading: "Customer satisfaction increased by",
+        metric: "90%",
+        description: "Improvement in customer satisfaction due to the website's design and ease of use.",
+      },
+      
+      
     ],
   },
 ];
