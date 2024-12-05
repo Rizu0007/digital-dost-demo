@@ -16,13 +16,13 @@ function Header() {
       </div>
 
 
-        <div className='xs:w-full md:w-[60%] xs:pb-20 xs:pt-10 sm:py-20 xs:pl-0 md:pl-20 md:space-y-16 space-y-4 py-10 mt-3 mx-5'>
+        <div className='xs:w-full md:w-[60%] xs:pb-20 xs:pt-0 sm:py-20 xs:pl-0 md:pl-20 md:space-y-16 space-y-4 py-10 mt-3 mx-5'>
           <div className='flex items-center justify-between'>
 
-            <p className="text-black font-bold leading-[80px]  w-full xs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl ">
+            <h1 className="text-black font-bold leading-[80px]  w-full xs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl ">
             Unlock Business Growth Through ROI-Focused Digital Marketing
 
-            </p>
+            </h1>
             
 
             {/* Rotating Image for Mobile */}
