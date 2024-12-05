@@ -81,14 +81,14 @@ export const caseStudiesData = [
   },
   {
     id: 2,
-    slug: "leather-shier",
+    slug: "leather-shire",
     imageSrc: "/CaseStudy/Leathershire.jpg",
     tag: "Leather Shire | UK",
     title:
       "Generated High Return On Investment  (ROI) Through Bespoke Digital Marketing Services",
     category: [{ type: "Fashion" }, { type: "Apparel" }],
     headerPoints: [
-      "Leather Shier, known for high-quality luxury leather products, struggled with search engine rankings.",
+      "Leather Shire, known for high-quality luxury leather products, struggled with search engine rankings.",
       "They contacted us to scale up their business and build a solid online presence.",
       "Our customized approach scaled up their business in 6 months with higher ROI.",
     ],
@@ -100,7 +100,7 @@ export const caseStudiesData = [
       {
         title: "Low Search Engine Rankings",
         description:
-          "Leather Shier, having good quality products, was facing rankings problems in search engines despite having key terms related to luxury leather items.",
+          "Leather Shire, having good quality products, was facing rankings problems in search engines despite having key terms related to luxury leather items.",
       },
       {
         title: "Low ROI on Paid Media",
@@ -117,7 +117,7 @@ export const caseStudiesData = [
       {
         main: "Team Shopex Approach",
         title:
-          "Team Shopex developed a personalized approach to Leather Shier challenges. Have a look!",
+          "Team Shopex developed a personalized approach to Leather Shire challenges. Have a look!",
       },
       {
         title: "Search Engine Optimization (SEO)",
@@ -137,17 +137,17 @@ export const caseStudiesData = [
     ],
     results: [
       {
-        heading: "Organic traffic increased by",
+        heading: "Organic rankings increased by",
 
         metric: "40%",
         description: " within the first three months",
         title:
-          "Leather Shier got extensive results after six months of implementing our personalized strategy.",
+          "Leather Shire got extensive results after six months of implementing our personalized strategy.",
       },
       {
-        heading: "ROI from paid media increased",
+        heading: "ROI from paid media increased by",
         metric: "35%",
-        description: " within the first three months",
+        description: " within the first Four months",
       },
       {
         heading: "Conversion rates increased by",
@@ -219,7 +219,7 @@ export const caseStudiesData = [
         heading: "Organic traffic increased by",
 
         metric: "50%",
-        description: "Increase in organic traffic",
+        description: " through improved search engine rankings.",
       },
       {
         heading: "An increase in engagement on site by ",
@@ -298,13 +298,13 @@ export const caseStudiesData = [
       {
         title: "We overcome the above challenges within 5 months.",
         metric: "45%",
-        description: "Increase in online sales within three months.",
-        heading: "Online sales increased by",
+        description: "in the first three months.",
+        heading: "Online sales increased by ",
       },
       {
         heading: "Reached an extra",
 
-        metric: "300,000",
+        metric: "300000",
         description:
           "prospective clients on several platforms to raise brand awareness.",
       },
@@ -312,7 +312,7 @@ export const caseStudiesData = [
         heading: "Campaign optimization resulted in a ",
 
         metric: "50%",
-        description: "Increase in overall return on ad spend.",
+        description: "increase in overall return on ad spend.",
       },
     ],
   },
@@ -373,18 +373,18 @@ export const caseStudiesData = [
     ],
     results: [
       {
-        title: "Our Outcomes",
+        title: "The results were exceptional within three months of strategy implementation.",
         metric: "300%",
-        description: "Increase in followers on Instagram and Facebook within three months of the ad campaign.",
+        description: "on Instagram and Facebook within three months of the ad campaign.",
         heading: "Followers increased by",
       },
       {
-        heading: "Generated an extra",
-        metric: "1000",
-        description: "high-quality leads through paid marketing with a 30% conversion rate.",
+        heading: "Paid marketing generates 1000 high-quality leads with a ",
+        metric: "30%",
+        description: " conversion rate.",
       },
       {
-        heading: "Google My Business saw ",
+        heading: "Google My Business saw a",
         metric: "50%",
         description: "increase in views, engagement, and local search visibility.",
       },
@@ -457,20 +457,20 @@ export const caseStudiesData = [
     ],
     results: [
       {
-        title: "Our Outcomes",
+        title: "Here's how we achieved substantial growth across multiple areas of their business.",
         metric: "200%",
-        description: "Increase in brand awareness within the first three months of marketing.",
+        description: "within the first three months of marketing.",
         heading: "Brand awareness increased by",
       },
       {
-        heading: "Website redesign and digital marketing resulted in",
+        heading: "The website redesign and digital marketing led to a ",
         metric: "130%",
-        description: "Increase in online sales after the website redesign and digital marketing efforts.",
+        description: "increase in online sales.",
       },
       {
         heading: "Customer satisfaction increased by",
         metric: "90%",
-        description: "Improvement in customer satisfaction due to the website's design and ease of use.",
+        description: "with the website's design and ease of use",
       },
       
       
