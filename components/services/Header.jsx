@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Header = ({ title, image }) => {
+const Header = ({ title, image ,description }) => {
   return (
     <>
       <section className="bg-white min-w-full min-h-full bg-custom-image10 bg-no-repeat bg-left-top lg:pt-32 md:pb-32 pt-16 px-4 md:px-10">
@@ -13,10 +13,7 @@ const Header = ({ title, image }) => {
               {title}
             </h1>
             <p className="text-[#333333] text-lg sm:text-2xl font-extralight">
-              Shopex specialists are among the most accomplished in the digital
-              sector. They have a history of proven experiences expanding their
-              clients businesses through high-quality work and outstanding
-              customer service.
+          {description}
             </p>
             
             {/* Button for mobile view */}

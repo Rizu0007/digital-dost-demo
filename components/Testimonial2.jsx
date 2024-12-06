@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 
 const Testimonial2 = () => {
+
   const testimonials = [
     {
       title: "Friendly, Fast, and Focused on Success",
@@ -54,7 +55,6 @@ const Testimonial2 = () => {
       img: "/Testimonial/kanda.png",
     },
   ];
-
   const scrollContainerRef = useRef(null);
 
   // State for controlling the black line width
@@ -87,7 +87,7 @@ const Testimonial2 = () => {
       <div className="w-full mb-12">
         <h6 className="font-bold xs:text-[36px] md:text-[48px]">Testimonial</h6>
         <p className="text-[16px] font-medium ml-2">
-          {" "}
+      
           Clients About Our Cooperation
         </p>
       </div>
