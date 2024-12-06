@@ -16,7 +16,7 @@ const page = ({ params }) => {
   if (!service) return null;
   return (
     <div className="min-w-full overflow-hidden">
-      <Header title={service.header.title} image={service.header.image} />
+      <Header title={service.header.title} image={service.header.image}   description={service.header.description}/>
       <Service services={service.services} />
       <Advantage advantages={service.advantages} />
       <Flow flow={service.flow}/>

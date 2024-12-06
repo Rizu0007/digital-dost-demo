@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 
 const Testimonial2 = () => {
+
   const testimonials = [
     {
       title: "Friendly, Fast, and Focused on Success",
@@ -26,7 +27,7 @@ const Testimonial2 = () => {
         "We've had an amazing year with SHOPEX managing our apparel brand. Their expertise has driven exponential growth on digital platforms, and our sales have exceeded expectations. The team is highly cooperative and maintains excellent communication throughout.",
       authorName: "Amna Hussain",
       authorDesignation: "Brand Manager at Vanya",
-      img: "/Testimonial/david-fraunberger.png",
+      img: "/Testimonial/hussain.png",
     },
     {
       title: "Trusted Support in Building Our Leading Online Brand",
@@ -38,9 +39,9 @@ const Testimonial2 = () => {
     },
     {
       title:
-        "Each team member was highly efficient, responsive, and always available",
+        "Each team member was exceptional and always available",
       feedback:
-        "I have truly enjoyed working with the SHOPEX team! They are incredibly professional, reliable, and always deliver top-notch service. Their dedication to understanding our brand's needs and providing tailored solutions has been invaluable. With their expertise, we've seen great improvements in our online presence and overall business performance.",
+        "I have truly enjoyed working with the SHOPEX team! They are incredibly professional, reliable, and always deliver top-notch service. With their expertise, we've seen great improvements in our online presence and overall business performance.",
       authorName: "Irum Changaiz",
       authorDesignation: "Marketing Head,Nureh",
       img: "/Testimonial/changaiz.png",
@@ -49,12 +50,11 @@ const Testimonial2 = () => {
       title: "Professional, Effective, and a Pleasure to Work With",
       feedback:
         "SHOPEX helped to develop my website. They did a great job and I noticed the positive results almost immediately. They are very professional and very pleasant to work with. I am very happy with the services provided and I highly recommend SHOPEX to everyone.",
-      authorName: "Kanda.png",
+      authorName: "Maryana Kanda",
       authorDesignation: "NEW JERSY MEDIATION",
-      img: "/Testimonial/david-fraunberger.png",
+      img: "/Testimonial/kanda.png",
     },
   ];
-
   const scrollContainerRef = useRef(null);
 
   // State for controlling the black line width
@@ -87,7 +87,7 @@ const Testimonial2 = () => {
       <div className="w-full mb-12">
         <h6 className="font-bold xs:text-[36px] md:text-[48px]">Testimonial</h6>
         <p className="text-[16px] font-medium ml-2">
-          {" "}
+      
           Clients About Our Cooperation
         </p>
       </div>
