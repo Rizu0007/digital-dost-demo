@@ -1,4 +1,5 @@
 export const servicedata = [
+  //digital marketing
   {
     id: "1",
     slug: "digital-marketing",
@@ -113,47 +114,47 @@ export const servicedata = [
     ],
     flow: [
       {
-        mainheading: "The Steps of Digital Marketing as a service",
+        mainheading: "How Our Tailored Digital Marketing Strategy Works?",
       },
       {
         number: 1,
         title: "Detailed Analysis",
         description:
-          "We begin by conducting a comprehensive analysis of your business, competitors, target audience, and industry trends. This helps us identify strengths, weaknesses, opportunities, and threats (SWOT analysis) to inform our strategy.",
+          "Once you collaborate with us, we will do a detailed analysis of your new or existing business. You will be asked for your choices, target audience, and competitive market. As we complete our details to start the project, we will develop a strategy to proceed with your business marketing.",
       },
       {
         number: 2,
         title: "Strategy Development",
         description:
-          "Based on the insights from the analysis, we create a tailored digital marketing strategy. This includes defining clear goals, selecting the right channels (social media, SEO, PPC, etc.), and determining key performance indicators (KPIs) to track progress.",
+          "A detailed strategy always helps in creating a successful marketing campaign. At Shopex, our digital marketing strategist will partner with you as an in-house marketing director to analyze your existing marketing platform, competitors, industry, target market, and user behavior.",
       },
       {
         number: 3,
         title: "Implementation Process",
         description:
-          "Our team executes the digital marketing strategy, which may include content creation, campaign management, SEO optimization, paid advertising, and social media management. We ensure that every action aligns with the established goals and objectives.",
+          "After a solid strategy development with data-backed insights, we will provide you with recommendations for a marketing campaign that will deliver results. If you agree with the recommendations, we will implement the process in our way. We ensure our strategy is result-oriented.",
       },
       {
         number: 4,
         title: "Real-Time Reporting",
         description:
-          "We provide real-time performance monitoring and reporting using analytics tools to track key metrics such as traffic, engagement, conversions, and ROI. These reports help you stay informed and adjust strategies as necessary.",
+          "We will continuously monitor the progress and report to you as the marketing campaign drives enough visitors to the desired platform, like the website. Our team analyzes the website like a piece of marketing surety.",
       },
       {
         number: 5,
         title: "Final Success",
         description:
-          "After implementing the strategy and tracking progress, we assess the results against the defined KPIs. Success is determined by how well the goals have been met, and we provide recommendations for future campaigns to build on that success.",
+          "We will keep sharing the success as we achieve the desired results. We optimize each landing page for strategic conversion funnels and maximize the number of secured conversions. It includes proper designing for user journeys, increased website speed and loading time, and compelling copywriting that guides your customers to the goal we need to achieve. ",
       },
     ],
   },
-
+// branding
   {
     header: {
       title: "Where Marketing Ends, Branding Commences",
       image: "/services-main/heroimg1.png",
       description:
-      'Shopex specialists are highly accomplished in the digital sector, with a proven track record of expanding clients\' businesses through high-quality work and exceptional customer service.',
+      'Branding is all about strategy. With the correct brand and marketing plan, you can completely change the market and have everyone look at you rather than your competitors. At Shopex branding services, you may engage with your target audience in a captivating and organic way.',
     },
 
     slug: "Branding",
@@ -161,114 +162,347 @@ export const servicedata = [
 
     services: [
       {
-        mainheading: "Bespoke Branding Services",
+        mainheading: "Win The Market Competition With Our Bespoke Branding Services",
+      },
+      {
+        title: "Branding Strategy",
+        description:
+          "Consider your brand strategy to be your compass. It helps you decide what you do and, more crucially, what you don't do. A successful brand strategy is essential to long-term business success, whether you are a startup or an established brand with a strong following of dedicated customers. Let's test the Shopex brand's approach.",
       },
       {
         title: "Brand Identity",
         description:
-          "A carefully considered brand name can elevate your company and establish an emotional bond with your target audience. There are several approaches to brand naming. Every strategy has its charm and goals, whether the founder's name, symbolic terms, places, inventive combinations, or humorous names. However, what impact does this have on your business? With our careful, wise, and market-driven approach to brand naming, you may create a distinctive and memorable name for your company. We consider critical factors like memorability, resonance, differentiation, and impact in our strategic brand naming process to give you a name that represents your personality and appeals to your target market.",
+          "A carefully considered brand name can elevate your company and establish an emotional bond with your target audience. With our careful, wise, and market-driven approach to brand naming, you may create a distinctive and memorable name for your company. Our strategic brand-naming process considers critical factors like memorability, resonance, differentiation, and impact.",
       },
       {
         title: "Logo Design",
         description:
-          "An essential component of your brand's identification is its logo. It's a straightforward yet powerful sign that defines your values and identity. From font style to color selection, every aspect counts when designing a logo. It involves creating something unique and significant to your brand. We aim to push the boundaries of creativity and establish new standards for every logo design. Instead of limiting ourselves, we use rough ideas to reenergize our minds and spirits. We will assist you in creating brand standards to guarantee that your brand's visual identity is applied accurately, consistently, and effectively across platforms and channels.",
+          "An essential component of your brand's identification is its logo. It's a straightforward yet powerful sign that defines your values and identity. From font style to color selection, every aspect counts when designing a logo. We will assist you in creating brand standards to guarantee that your brand's identity is applied accurately, consistently, and effectively across channels.",
       },
       {
         title: "Brand Book and Style Guide",
         description:
-          "You need a brand book and style guide to maintain consistency in your branding. This document offers a thorough set of rules and specifications for applying logos, recognizable fonts, and visual components across various platforms. A branding agency can provide these instructions directly, tailoring them to your requirements. After creating it, you may share it with your staff, stakeholders, influencers, and other brand ambassadors. Its main goal is to guarantee visual coherence in all marketing and communication products, including printed items like business cards and brochures, social media postings, and website designs.",
+          "At Shopex, we will give you a brand book and style guide to maintain consistency in your branding. This copy offers a thorough set of rules and specifications for applying logos, recognizable fonts, and visual components across various platforms. You may share it with your team, stakeholders, influencers, and other brand ambassadors. ",
       },
       {
         title: "Rebranding",
         description:
-          "Rebranding is a process that involves updating logos, shaping color schemes, or redefining a brand's message and values to keep your business appealing to both current and potential customers. It can boost your company's image and give it a fresh look and feel. Utilize our expert rebranding services to update or revamp your brand. From a new logo to a whole brand toolkit, our exceptional brand design talents and professional brand strategy services will help you navigate rebranding. Under your new brand initiatives, our team will suggest strategies and methods to guarantee a seamless transition and consistency across channels.",
-      },
-      {
-        title: "Brand Strategy",
-        description:
-          "Brand Strategy is the foundation for building a successful and impactful brand. This service involves understanding your business goals, target audience, and market positioning to craft a strategic approach for your brand’s growth. From defining your unique value proposition and competitive edge to mapping out brand touchpoints and customer journeys, our expert team will help you create a roadmap for long-term success. With a well-thought-out brand strategy, you can ensure consistency, relevance, and a stronger connection with your audience across all platforms and channels.",
+          "Rebranding is a process that involves updating logos, shaping color schemes, or redefining a brand's message and values to keep your business appealing to both current and potential customers. It can boost your company's image and give it a fresh look and feel. Our exceptional brand design talents and professional brand strategy services will help you navigate rebranding.",
       },
 
       {
         title: "Marketing Material",
         description:
-          "Reaching out to your clients where they are most engaged is essential for effective business marketing. Marketing services concentrate on discovering efficient channels for maximum reach and audience engagement to establish the best plan for content generation. Professionals can obtain insightful knowledge by following consumer replies, evaluating data, and monitoring key performance indicators (KPIs",
+          "Reaching out to your clients where they are most engaged is essential for effective business marketing. Our marketing services concentrate on discovering efficient channels for maximum reach and audience engagement to establish the best plan for content generation. Our experts will obtain insightful knowledge by following customer replies, evaluating data, and monitoring KPIs.",
       },
     ],
 
     advantages: [
       {
-        mainheading:"Benefits of working with us"
+        mainheading:"How do Our Branding Services Help You?"
        },
       {
-        title: "Strong Brand Identity",
-        text: "We create a unique and memorable brand identity that sets you apart from the competition. Our expertise ensures your brand speaks clearly to your target audience and leaves a lasting impression.",
+        title: "Building Brand Recognition",
+        text: "Having a well-known brand guarantees that customers will notice and recognize your company. Remarkable visuals are produced by using consistent logos, colors, and messaging. We help your company be recognizable through all marketing channels if you have a strong brand identity.",
       },
       {
-        title: "Consistency Across Channels",
-        text: "Our branding services provide a consistent visual and messaging experience across all platforms. Whether online or offline, your brand will have a cohesive look and feel that strengthens its credibility.",
+        title: "Increase Customer Loyalty",
+        text: "Branding encourages dependability and trust, which increases consumer loyalty. Building a devoted customer base takes time and frequently results naturally from different experiences with your business. At Shipex, we help you convert new customers to returning buyers.",
+      },
+  
+      {
+        title: "Power to Scale Business",
+        text: "Branding gives you the power to scale your business. Scaling your business as you grow is crucial because it enables you to reach a wider audience and enter new areas. In an overflowing market, we help you stand out from the crowd. ",
       },
       {
-        title: "Increased Brand Recognition",
-        text: "Our tailored strategies enhance your brand’s visibility and recognition. We focus on making your brand easy to identify, which leads to greater consumer trust and loyalty.",
+        title: "Support Marketing Efforts",
+        text: "You'll spend more time making sure you continuously provide clients with high-quality experiences, goods, and information rather than as much as thinking of new ways to market yourself. Our solid branding services will provide your company's future endeavors with a clear course to follow.",
       },
       {
-        title: "Targeted Brand Positioning",
-        text: "We position your brand in a way that resonates with your ideal customers. By analyzing your market and audience, we ensure your brand speaks directly to their needs and desires.",
+        title: "Give You Competitive Edge",
+        text: "You stand out from the competition with a powerful brand. Customer attraction comes from distinctive features like a memorable brand, a compelling story, or particular values. We'll help you to develop a strong brand that reduces the possibility of clients moving to other businesses. ",
       },
       {
-        title: "Creative Solutions",
-        text: "Our team offers fresh, innovative approaches to branding, delivering designs and strategies that are both visually appealing and impactful. We help your brand stay ahead of the trends and in tune with your audience’s preferences.",
-      },
-      {
-        title: "Long-Term Brand Growth",
-        text: "By collaborating with us, you’re investing in your brand’s future. Our comprehensive branding strategies foster long-term growth, building a solid foundation for continued success in your industry.",
+        title: "Help You Bring High ROI",
+        text: "It makes sense to invest in branding since it is a key component of attaining a high return on investment. Every business wants to be profitable, and we are here to support you in maintaining operations, innovating constantly, and offering the enjoyable experiences that clients want and expect.",
       },
     ],
 
     flow: [
       {
-        mainheading: "Our Strategic Process",
+        mainheading: "Our Strategic Approach To Your Branding Process",
       },
       {
         number: 1,
-        title: "Discovery and Research",
+        title: "Brand Research",
         description:
-          "We start by understanding your business, target audience, and market landscape. In-depth research helps us define your brand's core values, mission, and vision, setting the foundation for a strong brand strategy.",
+          "We learn everything there is to know about your brand throughout the brand discovery phase. After knowing about you, your target market, the goal of your brand, project objectives, and your requirements, we assist you in determining the best place for your brand in the market. We will continue to collaborate with you during the research phase. ",
       },
       {
         number: 2,
-        title: "Brand Strategy Development",
+        title: "Branding Approaches",
         description:
-          "We craft a strategic plan that aligns your brand's identity with business goals. This includes defining your brand’s voice, messaging, target audience, and positioning to ensure it resonates effectively in the market.",
+          "Our brand strategy specialists provide a thorough strategic framework to expand your brand across channels at this point. Using this practical roadmap, we can lay out the course to quantifiable outcomes for your project. We collaborate with you during this period to develop KPIs, analyze opportunities for your brand, and develop powerful messages.",
       },
       {
         number: 3,
-        title: "Logo and Visual Identity Design",
+        title: "Visual Identity and Brand Logo",
         description:
-          "Our designers create memorable logos and visual elements, including color schemes, typography, and graphic styles. These elements help communicate your brand’s personality and ensure consistency across all touchpoints.",
+          "Our brand designers start working when you consult with us to discuss your visual identity. Brainstorming, sketching, and producing several logo concepts are all part of our design process. We also create accompanying visual identity components for offline and online platforms. We cooperate with you to make ongoing branding components that appeal to your target market.",
       },
       {
         number: 4,
-        title: "Brand Messaging and Voice",
+        title: "Style Guide & Brand Book",
         description:
-          "We develop compelling brand messaging and a unique voice that reflects your business ethos. This helps build trust and connect emotionally with your audience across all communications, whether online or offline.",
+          "All your essential brand information is kept in a brand book and style guide in one location, making it easily accessible to stakeholders and workers. We help you to use your brand's aspects correctly. The time has come for you to step up your marketing efforts. Let's expand your audience and strengthen your brand together. ",
       },
       {
         number: 5,
-        title: "Brand Implementation and Consistency",
+        title: "Finalization",
         description:
-          "We ensure that the new brand identity is consistently implemented across all channels, from websites to social media and marketing materials. Consistency is key in strengthening your brand’s recognition and building credibility.",
+          "We will create a complete brand bundle and polish and finalize your selected brand concept. This includes a document outlining your brand standards and all required assets in industry-standard formats. As needed, our team will produce more branded company assets. Additionally, we'll ensure you get all the brand documents and instructions you need for future use. ",
       },
-      {
-        number: 6,
-        title: "Brand Monitoring and Evolution",
-        description:
-          "Our work doesn’t stop after launch. We continuously monitor your brand’s performance, gather feedback, and refine strategies to adapt to changing market conditions and consumer preferences, ensuring sustainable long-term growth.",
-      },
+  
     ],
   },
 
+  //Performance Marketing
+
+  {
+    header: {
+      title: "World-Class Performance Marketing to Unlock ROI",
+      image: "/services-main/heroimg1.png",
+      description:
+      'Advanced performance marketing strategies focus on cost-effective, result-driven solutions to help your business expand in the present market by meeting KPIs and maximizing your ROI. Our dedicated team at Shopex helps e-commerce brands drive measurable results with bespoke strategies that align with their primary objectives.  ',
+    },
+
+    slug: "Performance-Marketing",
+    id: "2",
+
+    services: [
+      {
+        mainheading:
+          "Our Bespoke Performance Marketing Services",
+      },
+      {
+        title: "Website Design Optimization",
+        description:
+          "Whether a customer is new to marketing or wants to make precise adjustments and enhancements to an established website, Shopex works with them at every point of their lifecycle. With the help of our award-winning web designers, create a website that engages visitors, reflects your brand, and ranks highly in search results.",
+      },
+      {
+        title: "Social Media Marketing (SMM)",
+        description:
+          "When you set a goal, we help you achieve it. We partner with Google, Meta, and Shopify Plus for growth and beyond. We use a variety of social media channels to perform sponsored advertising campaigns for millions of users in your target audience. Advertisements are tailored to particular demographics, behaviors, and interests for optimum reach and impact.",
+      },
+      {
+        title: "Search Engine Optimization (SEO)",
+        description:
+          "You are missing a major if you are not performing SEO on your website to rank higher on search engine result pages (SERPs). With the help of our performance marketing strategies, you can create a unique plan that will help you rank higher than your competitors in search engine results and attract more targeted visitors to your website.",
+      },
+      {
+        title: "E-Commerce Sales Campaigns",
+        description:
+         " We know how to create a successful marketing strategy for e-commerce brands. We create innovative and effective e-commerce sales campaigns specifically designed to increase the revenue of your online store. At Shopex, our marketing strategy enables brands to garner thousands of new subscribers for their subscription services and more. ",
+      },
+      {
+        title: "Email Marketing",
+        description:
+          "We know when a business or brand needs to connect with the right audience at the right time. As a component of performance marketing services, our email marketing strategy includes sending emails to all possible clients and prospects to promote services, engage customers, raise brand awareness, turning leads into actual clients.",
+      },
+      {
+        title: "Leads Generation",
+        description:
+          "Relevant leads matter for your business. Our goal is to facilitate the process of reaching potential buyers by offering comprehensive performance marketing services. Companies can understand their target audience better, identify their market, and increase sales because of the abundance of data, website traffic analysis, and other information.",
+      },
+    ],
+
+    advantages: [
+      {
+        mainheading:"How Does Our Performance Marketing Help You"
+       },
+      {
+        title: "Grow Audience & Brand Awareness",
+        text: "Unlock infinite opportunities, encounter the world, attract new clients, and see your company grow as we assist you in boosting your reach through a variety of digital marketing sources. Our excellent performance marketing services enable you to boost brand awareness, business traffic, and conversion rates.",
+      },
+      {
+        title: "Cost-Effective Strategies",
+        text: "We make optimal and efficient use of all available resources, including time, money, labor, and technology. By meeting KPIs and optimizing your return on investment (ROI), our advanced performance strategies will help your organization grow in the current market at a reasonable cost using data-driven solutions.",
+      },
+      {
+        title: "Increase Sales & Leads",
+        text: "We are your partner for accelerating the growth and revenue of your company. Our team of dedicated experts maximizes conversion, applies leading lead generation strategies, and focuses on maximizing lead results. Take advantage of our customized processes, engaging content, and data-driven campaigns to see your leads and revenues reach new standards.",
+      },
+      {
+        title: "Keep Communications Personalized ",
+        text: "With our personalization services, you can learn about your customer's habits, behavior, preferences, and importance. We help you personalize your communications with them to understand your audience better and increase your brand visibility, customer loyalty, and engagement.",
+      },
+      {
+        title: "Data Analysis Approaches",
+        text: "We use data analysis approaches to find improvement areas, adjust our plans, and make decisions to improve the outcome. We analyze customer behavior in depth, market trends, and campaign performance and use the results to achieve marketing goals.",
+      },
+      {
+        title: "Monitor & Measure Performance",
+        text: "To give you a live view of your performance, identify areas to improve, and see how efforts work towards your goals, our performance marketing services use various tools, including monitoring, analyzing, and optimizing KPIs.",
+      },
+    ],
+
+    flow: [
+      {
+        mainheading: "Get Prompt Results with Our Performance Marketing Strategy",
+      },
+      {
+        number: 1,
+        title: "Setting Objectives & Competitor Analysis ",
+        description:
+          "As the best performance marketing agency, we establish the campaign's goals, including increased brand awareness, sales, lead generation, and website traffic. To search campaigns, we do keyword research to identify meaningful search phrases. Additionally, we write ad copy that reflects the user's search term intent. Our marketers research the target audience's demographics, interests, and behavior to determine which demographic data is best suited for successful performance marketing.",
+      },
+      {
+        number: 2,
+        title: "Developing a Campaign Strategy and Budgeting",
+        description:
+          "Our marketers create a thorough marketing plan and strategy based on the objectives, target audience, and selected channels. Budget, KPIs, creatives, and messaging to measure success. Our team manages budget allocation plans for performance marketing services across media and campaigns.",
+      },
+      {
+        number: 3,
+        title: "Innovative Research and Development",
+        description:
+          "Creatives are the backbone of performance marketing campaigns as they create data-driven ad elements like copy and images to achieve objectives like more clicks and conversions. We personalize content, do A/B tests on variations, and update continuously with creatives based on the outcomes.",
+      },
+      {
+        number: 4,
+        title: "Organize Events & Campaign Launch",
+        description:
+          "Since creatives provide data-driven ad elements like content and visuals, they are essential to performance marketing campaigns to achieve goals like more clicks and conversions. We update creatives based on results, tailor content, and do A/B testing on variations. We monitor the campaigns from day one to ensure they run well. At Shopex, we frame projects that suit you and launch performance marketing campaigns using your preferred media.",
+      },
+      {
+        number: 5,
+        title: "Retargeting and Expand ROAS",
+        description:
+          "Remarketing is a strategic way to target people who interact with the brand. We motivate them to re-engage and do the required actions by focusing on them. People who may have yet to complete or abandon the transaction are also included. Marketers want to increase ad efficiency and effectiveness by focusing on resources for these required audiences, which will give high ROI.",
+      },
+      {
+        number: 6,
+        title: "Reporting and Scaling-Up",
+        description:
+          "Through matching reports, our performance marketing team reviews the campaigns and reviews key metrics like cost per acquisition (CPA), ROI, click-through rates (CTR), and conversion rates. We increase budgets, open new channels, and target younger audience segments after campaign optimization and increased ROI to scale up.",
+      },
+  
+    ],
+  },
+
+   //Social Media Management
+   {
+    slug: "Social-Media-Management",
+    id: "3",
+    header: {
+      title: "Amplify Your Message with Social Media Management Services",
+      image: "/services-main/heroimg1.png",
+      description:
+      'Most businesses know social media is an excellent way to promote their brands, and you can derive high ROI with a valuable social media management strategy. Shopex provides social media management services from account handling to advertising that simplify social media for business owners, allowing them to focus on their core competencies.',
+    },
+
+    services: [
+      {
+        mainheading: "Elevate Your Business with Our Social Media Marketing Services ",
+      },
+      {
+        title: "Social Media Management",
+        description:
+          "Social media platforms manage and optimize a brand's online presence to accomplish particular marketing and communication goals. Our social media management services include account handling, profile management, creating content, planning posts, engaging audiences, social listening, analytics and monitoring, advertising, and strategy development. ",
+      },
+      {
+        title: "Facebook Advertising",
+        description:
+          "More than 700 billion minutes are spent on Facebook each month by its more than 900 million unique users. Facebook advertising campaigns enable you to display text and images on your ad to maximize audience interaction. Shopex has been a Meta Business partner agency for the past 15 years and has solid hands-on experience generating more likes, followers, and revenue from Facebook.",
+      },
+      {
+        title: "Instagram Advertising",
+        description:
+          "Instagram marketing, carried out via the Facebook ad network, is essential for any company that sells visual goods and services. 74% of users log on daily, making it the second most popular social media network. Whether you choose pay-per-click or cost-per-mile, our award-winning team will help you tailor your audience according to their interests, demographics, and location. ",
+      },
+      {
+        title: "Twitter Advertising",
+        description:
+          "Tweet engagements (retweets, favorites, replies), website clicks, app installs or engagements, followers, or even leads are among the campaign objectives that Twitter lets you set. You are only charged when the desired action is taken. Twitter also permits a limited cost per action and a maximum daily expenditure. Here at Shopex, we will help you get the maximum benefits from Twitter advertising",
+      },
+      {
+        title: "LinkedIn Advertising",
+        description:
+          "You can interact with more business-to-business (B2B) clients by using LinkedIn advertising services. Approximately 4/5 LinkedIn users influence business choices, and their purchasing power is double that of users on other social media sites. Our dedicated LinkedIn advertising experts team will help you reach potential clients on LinkedIn.",
+      },
+      {
+        title: "TikTok Advertising",
+        description:
+          "With more than 1 billion daily active users, TikTok is still expanding quickly. TikTok advertising helps brands increase their visibility and attract new clients. The TikTok audience rewards genuine and innovative brands. Your customers will want the advertising strategies that Shopex develops and executes. Contact us now to receive a complimentary TikTok advertising plan.",
+      },
+    ],
+
+    advantages: [
+      {
+        mainheading:"How Does Social Media Management Services Benefit You? "
+       },
+      {
+        title: "Increase Brand Visibility",
+        text: "Customers will find you more easily online if you set up social media accounts for your small business. Our social media management services offer the ideal setting for establishing your online presence and gaining the trust of potential leads, whether they want social proof that your business is authentic or are looking for answers to their issues.",
+      },
+      {
+        title: "Improves Customer Engagement ",
+        text: "Customers desire a sense of belonging to a brand. Social media management is one strategy to enhance communication and client engagement. Our dedicated team regularly engages with the audience by replying to messages, mentions, and comments. Social media interaction with consumers humanizes the brand and increases its approachability. ",
+      },
+      {
+        title: "Customer Loyalty and Trust",
+        text: "Authenticity is what customers seek before they become loyal. Regular, open contact on social media promotes client loyalty and helps build a strong brand image. Positive word-of-mouth advertising and recurring business can result from establishing trust on social media. Our committed social media team shares client endorsements, curates accurate material, and quickly resolves issues.",
+      },
+      {
+        title: "Following Industry Trends",
+        text: "The landscape of social media platforms is ever-evolving. Brands require a committed social media manager who can stay up-to-date and keep up with changes in audience behavior, competitor activity, and industry trends. Here, we help companies modify their tactics to stay ahead of the competition and be relevant.",
+      },
+      {
+        title: "Monitoring Valuable Insights",
+        text: "Social networking sites offer a wealth of helpful information about users' demographics, tastes, and habits. Our social media managers use analytics tools to collect information, better understand their target audience, and create content that meets audience expectations. Marketing techniques are more successful as a result of this focused strategy.",
+      },
+      {
+        title: "Informed Decision Making ",
+        text: "Facebook and Instagram are both feature-built-in shopping platforms, and they're essential for product promotion because of the link-sharing that drives visitors to your website. Companies can showcase capabilities and use cases by utilizing photos, videos, and other multimedia assets. Our visual storytelling lets potential buyers better comprehend your offerings and are inspired to make wise purchasing selections.",
+      },
+    ],
+
+    flow: [
+      {
+        mainheading: "Our Tailored Social Media Management Strategy",
+      },
+      {
+        number: 1,
+        title: "Integrated Process",
+        description:
+          "More integrated procedures are needed for social media marketing to guarantee that your customers, your content, and your business are all connected. You need to do more than post links to your content or web pages on your channels to get results from your social media efforts. All of this would be part of our social media management services.",
+      },
+      {
+        number: 2,
+        title: "Coming up with a Strategy",
+        description:
+          "The plan or map includes your social media objectives, how to reach them, a schedule for achieving them, and metrics to monitor your success. With mentioning strategy, the definition of social media management is complete. The overall strategy helps you see how you want to manage social media for your organization. Some important considerations are choosing which platforms to use, identifying your audience, creating content, determining which key performance indicators (KPIs) to track, and selecting social media management software.",
+      },
+      {
+        number: 3,
+        title: "Tracking Inbound Engagement",
+        description:
+          "The process of answering queries, comments, and interactions with all social media profiles and content while carrying on discussions started by followers. According to studies, two-thirds of consumers, on average, want a relationship with brands. Therefore, it makes sense to make every effort to enable two-way communication. Even when implementing Instagram management services or investigating TikTok management solutions with primarily video content, this holds for all your social media sites.",
+      },
+      {
+        number: 4,
+        title: "Tracking Analytics",
+        description:
+          "Collect data and compare it to metrics to ensure results are achieved. Your social media management initiatives for your franchise, corporate, or multi-location business should be driven by data. On the platforms of your choice, you may track key performance indicators, including impressions, click-through rates (for targeted social advertisements), and engagement analytics (likes, shares, and comments).",
+      },
+      {
+        number: 5,
+        title: "Performance Monitoring and Reporting",
+        description:
+          "We track the performance of your social media campaigns and analyze key metrics such as reach, engagement, and conversion rates. Regular reports help refine strategies and ensure continuous growth, adjusting tactics based on data-driven insights.",
+      },
+    ],
+  },
   //SEO
   {
     slug: "SEO",
@@ -283,10 +517,11 @@ export const servicedata = [
 
     services: [
       {
-        mainheading: "Top-Notch ROI Driving SEO Services Revolutionizing the Code of SEO ",
+        mainheading: "Top-Notch ROI Driving SEO Services Revolutionizing the Code of SEO",
       },
       {
         title: "SEO Audits",
+        subheading:"Top-Notch ROI Driving SEO Services Revolutionizing the Code of SEO",
         description:
           "We will analyze your website as part of our SEO services to see what needs to be improved or added, such as title tags, meta descriptions, page titles, page copy, alt text, URL structure, navigation structure, duplicate copy check, A/B and multivariate testing, and backlink review.",
       },
@@ -404,137 +639,399 @@ export const servicedata = [
       },
     ],
   },
-
-  //written by us
-
-  //Performance Marketing
-
+  //Graphic Design & UI/UX
   {
+    slug: "graphic-design-ui-ux",
+    id: "3",
     header: {
-      title: "Result-Driven Performance Marketing",
+      title: "Unlock Your Brand Growth Through Result-Driven Graphic Design & UI/UX Services",
       image: "/services-main/heroimg1.png",
       description:
-      'Shopex specialists are highly accomplished in the digital sector, with a proven track record of expanding clients\' businesses through high-quality work and exceptional customer service.',
+        'At Shopex, you will find a team of professional designers to boost your brand recognition. Once we realize your idea, whether a beautiful logo, a user-oriented website, or a good-looking app, we will proceed with our customized strategy to attract your audience.',
+        
     },
-
-    slug: "Performance-Marketing",
-    id: "2",
 
     services: [
       {
-        mainheading:
-          "Pay When Targets Are Met with Our Performance Marketing Services",
+        mainheading: "Our Innovative Graphic Design & User-Oriented UI/UX Services",
       },
       {
-        title: "Website Design Optimization",
+        title: "Logo Design",
+        subheading:"Top-Notch ROI Driving SEO Services Revolutionizing the Code of SEO",
         description:
-          "With the help of our award-winning web designers, create a website that engages visitors, reflects your brand, and ranks highly in search results.",
+          "Your brand's logo serves as its initial impression, so we make it memorable. Our graphic design services include distinctive and well-created logos that convey your company's identity and create a strong brand presence among your target market.",
       },
       {
-        title: "Social Media Marketing (SMM)",
+        title: "Web & App UI/UX Design",
         description:
-          "We use a variety of social media channels to perform sponsored advertising campaigns for millions of users in your target audience. Advertisements are tailored to particular demographics, behaviors, and interests for optimum reach and impact.",
+          "At Shopex, user experience is everything we do. Our UI/UX designers create intuitive and beautiful designs that deliver great experiences for your users to increase engagement, conversions, and customer satisfaction.",
       },
       {
-        title: "Search Engine Optimization (SEO)",
+        title: "Brand Identity",
         description:
-          "With the help of our performance marketing strategies, you can create a unique plan that will help you rank higher than your competitors in search engine results and attract more targeted visitors to your website.",
+          "Your brand's visual identity is key to recognition. From color schemes to typography and imagery, we ensure your brand's visuals are consistent, and on message so your audience remembers you and stands out from the competition.",
       },
       {
-        title: "E-Commerce Sales Campaigns",
+        title: "Print Design",
         description:
-          "We create innovative and effective e-commerce sales campaigns specifically designed to increase the revenue of your online store.",
+          "From brochures to business cards, we offer print design services that match your online presence. Our print designs are beautiful, structured, and designed to communicate your message in the physical world and extend your brand offline.",
       },
       {
-        title: "Email Marketing",
+        title: "UI/UX Audits",
         description:
-          "As a component of performance marketing services, our email marketing strategy involves the following: Sending emails to all possible clients and prospects to promote services, engaging consumers, raising brand awareness, and turning leads into actual clients.",
+          "We conduct in-depth audits of your current website or app design to find areas for improvement. Whether it's simplifying navigation or improving interaction design, our audits give you the insights to improve the overall user experience, usability, and engagement.",
       },
       {
-        title: "Leads Generation",
+        title: "Wireframing and Prototyping",
         description:
-          "Our goal is to facilitate the process of reaching potential buyers by offering comprehensive performance marketing services. Companies are able to better understand their target audience, identify their market, and increase sales because of the abundance of data, website traffic analysis, and other information.",
+          "We created detailed wireframes and prototypes before starting the entire design process. It allows you to visualize the layout and function of your website or app so that your vision aligns with the final product and minimizes design errors.",
+      },
+      {
+        title: "Creative Design",
+        description:
+          "As mobile traffic increases, we ensure your designs look excellent on every device. Our responsive designs are customized to all screen sizes to improve user experience and engagement on all desktop and smartphone platforms.",
+      },
+      {
+        title: "UX Research & Testing",
+        description:
+          "We conduct in-depth UX research to understand user behavior and preferences. We perform A/B testing with usability analysis that helps us optimize the design to maximize your user journey, success, and customer satisfaction.",
+      },
+      {
+        title: "Packaging Design",
+        description:
+          "Collaborate with our designers to produce distinctive packaging that will sparkle on store shelves and wow customers at the door. We have assisted companies in various industries in creating memorable product experiences, from biotech to food and beverage.",
       },
     ],
-
+    
     advantages: [
       {
-        mainheading:"Benefits of working with us"
-       },
-      {
-        title: "Data-Driven Strategy",
-        text: "We use comprehensive data analysis to craft targeted campaigns that ensure every marketing dollar is spent efficiently. Our approach ensures high conversion rates by focusing on performance metrics that matter.",
+       mainheading:"Benefits of Shopex's Graphic Design & UI/UX Services"
       },
       {
-        title: "Optimized ROI",
-        text: "We continuously optimize campaigns based on performance data, ensuring that your marketing budget generates the best possible return on investment. Our strategies are designed to scale and grow your business over time.",
+        title: "Experience Matter",
+        text: "We have a proven track record of over 15 years in the digital world and help businesses stand out from the crowd with our creative design approach. Our portfolio of delighted clients is proof of that.",
       },
       {
-        title: "Multi-Channel Expertise",
-        text: "With expertise across various marketing channels including search, display, social, and email marketing, we ensure your message reaches your audience where they are most active and likely to convert.",
+        title: "Personalized Design Specialists",
+        text: "Dedicated graphic design and UI/UX specialists will handle your project, understanding your business goals and delivering solutions that align with your brand. We are here to give a personal touch at every step.",
       },
       {
-        title: "Comprehensive Analytics & Reporting",
-        text: "We provide detailed reports that track key performance indicators (KPIs), giving you real-time insights into the effectiveness of your campaigns. This helps in making informed decisions and refining strategies for continuous growth.",
+        title: "Your Brand, Your Tone",
+        text: "We love capturing your brand's tone through visuals. Our design team works closely with you to ensure every design element talks to your audience and amplifies your brand. So, you stand out from the crowd.",
       },
       {
-        title: "Targeted Campaigns",
-        text: "Our performance marketing campaigns are highly targeted, ensuring that your message is delivered to the most relevant audience, increasing the chances of achieving the desired outcome.",
+        title: "Innovating Techniques",
+        text: "Design trends change regularly, and so do we. Our team updates you with the latest techniques and tools so your design always feels current and new. Our innovative design techniques will help you to shine your brand.",
       },
       {
-        title: "Expert Team",
-        text: "Our team consists of experienced professionals who are experts in performance marketing. We stay updated with the latest trends and strategies to ensure your business stays ahead of the competition.",
+        title: "No Bull, No Shortcuts",
+        text: "We believe in outstanding design without compromise. Our process is based on a simple strategy, and we use ethical practices so the designs we create match your brand values and vision. Here, you can relax during the project.",
+      },
+      {
+        title: "Real-Time Feedback",
+        text: "We keep you involved throughout the design process. Real-time feedback and multiple design iterations make the final product better than you expected. We adjust based on your input to get the final design right.",
       },
     ],
 
     flow: [
       {
-        mainheading: "Our Strategic Process",
+        mainheading: "How Does Our Strategy Work?",
       },
       {
         number: 1,
-        title: "Initial Consultation & Research",
+        title: "Initial Meeting",
         description:
-          "We begin with a deep dive into understanding your business, target audience, goals, and current marketing efforts. This helps us identify opportunities and craft a tailored performance marketing strategy.",
+          "We will arrange a mutual meeting for an initial consultation of your business. After the discussion, team Shopex will personally analyze your business, goals, and target audience to shape a design strategy compatible with your vision.",
       },
       {
         number: 2,
-        title: "Strategy Development",
+        title: "Basic Strategy",
         description:
-          "Based on research, we develop a customized strategy that aligns with your objectives, whether it’s increasing traffic, generating leads, or driving sales. This strategy is built to optimize performance across all channels.",
+          "The second step is essential business strategy development. We create a design brief that includes mood boards, design concepts, and wireframes. This outlines the design direction, visual style, color palette, judgments, and functionality to match your objectives.",
       },
       {
         number: 3,
-        title: "Campaign Design & Setup",
+        title: "Design Identity",
         description:
-          "Once the strategy is approved, we design and set up your campaigns across multiple channels, including paid search, social media, display ads, and email marketing, with a focus on maximizing conversion and ROI.",
+          "When we develop a strategy, our design team gets to work on turning your ideas into visuals. We will keep you informed throughout the process. We make everything possible so the design meets the basic needs, and we will update you to make judgments.",
       },
       {
         number: 4,
-        title: "Launch & Monitor",
+        title: "Final Delivery",
         description:
-          "We launch your campaigns and closely monitor their performance in real-time. Our team adjusts bids, budgets, and targeting to ensure optimal performance.",
+          "After approval of the design from your side, we will implement the design across your website, print media, and app. Team Shopex will look at everything working fine, such as the UI/UX design and printing files for your preferred platform.",
       },
       {
         number: 5,
-        title: "Continuous Optimization",
+        title: "Continuous Improvement",
         description:
-          "We continuously optimize campaigns based on performance data, refining ads, keywords, and targeting to ensure higher conversion rates and better overall performance.",
+          "Continued improvement ensures quality. Designs need to adapt as trends and technology change. Our team monitors performance and user feedback and adjusts it so your digital presence remains effective, engaging, and user-friendly.",
       },
       {
         number: 6,
-        title: "Reporting & Analysis",
+        title: "Ongoing Support",
         description:
-          "We provide detailed reports that track key metrics, such as click-through rates, conversion rates, and ROI. This helps us assess the effectiveness of the campaigns and refine the strategy for sustained growth.",
-      },
-      {
-        number: 7,
-        title: "Scale & Expand",
-        description:
-          "After assessing the campaign results, we identify opportunities for scaling. We expand high-performing campaigns and explore new channels to continue driving growth.",
+          "We believe in long-term relationships. After delivery, we offer ongoing support so your designs evolve with your brand. Whether you need updates, additions, or tweaks, we're here to help. Let's schedule a meeting today.",
       },
     ],
   },
+
+
+ //content writing
+ {
+  slug: "Content-Writing",
+  id: "3",
+  header: {
+    title: "Rank Higher with Our ROI-Driving Content Writing Services",
+    image: "/services-main/heroimg1.png",
+    description:
+    "If you want to boost your brand with powerful content, you have come to the right place. Our expert writers write excellent SEO content to connect with the right audience and build your brand's voice. We make words that inform and inspire your audience, from blog posts to website content, and drive higher ROI.",
+  },
+
+  services: [
+    {
+      mainheading: "Content Writing Services That Enhance Your Brand Voice",
+    },
+    {
+      title: "SEO Content Writing",
+      description:
+        "Rankings depend on SEO content. Our content writing service is designed to create SEO-friendly articles, blog posts, and website copy that boosts your search engine rankings. We do detailed research and find relevant keywords to ensure your content engages and captivates your audience and attracts organic traffic.",
+    },
+    {
+      title: "Website Content Creation",
+      description:
+        "Website content is crucial to guide your audience. We create outstanding SEO-optimized website copy that is clear, explanatory, concise, and fits your business objective. Our writing improves user experience, strengthens your messaging, and helps you convert guests into loyal customers by delivering your customized, unique offering well.",
+    },
+    {
+      title: "SEO Blog writing",
+      description:
+        "We create insightful and engaging SEO blog posts that your target audience needs. We want to create content rich in information that should be informative and interesting enough to likely enhance the chances of your audience sharing it with other people. We aim to produce articles and insights that drive more traffic, which will help you build customer loyalty.",
+    },
+    {
+      title: "Product Descriptions",
+      description:
+        "The description is more than the products. Clear, compelling, and effective product descriptions can hugely influence your sales. We develop descriptions that effectively bold your product features and benefits to motivate and inform a buyer, make the customers feel comfortable at purchase, and boost conversion.",
+    },
+    {
+      title: "Social Media Content",
+      description:
+        "Social Media has the power to boost your business. Engage your followers with interesting social media posts representing your brand's personality. We develop relevant and impactful content across social media platforms that help connect you to your audience, drive traffic, and increase their engagement.",
+    },
+    {
+      title: "Case Studies and White Papers",
+      description:
+        "We prepare well-designed, informative case studies and white papers so that you can build confidence in your client. Such documents expose the achievements of your clients and success stories that they experienced because of you and your expertise, thus proving your brand to be the best leader in your respective industries.",
+    },
+    {
+      title: "Email Campaigns",
+      description:
+        "Compelling email copy inspires your audience at the right time. We inspire your subscribers even to act when sending an email campaign. We prepare emails on newsletters, new products, and special deals that capture people's attention and make more visitors with increased sales.",
+    },
+    {
+      title: "Copy Editing And Proofreading",
+      description:
+        "Our content writing services are more than words; they are developed strategies that can connect, engage, and drive results. We also do editing and proofreading so your content will be perfect, faultless, attractive, and professional. Our focus is on the clear message of your writing, with no grammatical errors, and consistent with the tone.",
+    },
+    {
+      title: "Copywriting That Sells",
+      description:
+        "You need to explain your products and services in a way that individuals who might buy them and search engines can understand. We at Shopex can write compelling copy for your website, titles that are good for SEO to help your items rank, strong email campaigns with brief phrases, or blog posts that make you more visible and establish your credibility.",
+    },
+  ],
+
+  advantages: [
+    {
+      mainheading:"Benefits of Our Outstanding Content Writing Services"
+     },
+    {
+      title: "Expert Content Writers",
+      text: "We have a team of the most experienced writers with several years of experience in diverse fields. We write content in a remarkable and captivating way that appeals to your targeted audience. We need help to come up with excellent original copies that respond to your brand voice and purpose.",
+    },
+    {
+      title: "Personalized Content Plan",
+      text: "We don't apply the same method for all content, as we know that every business is different and unique. We, therefore, take ample time to understand your needs, audience, and brand before content writing. Both your short-term and long-term needs and goals will be reflected in our plans.",
+    },
+    {
+      title: "SEO Expertise With Communication Style",
+      text: "We make sure our content is SEO-optimized all the time. We will use very advanced techniques for keyword research to ensure your content is placed in the high ranks of Google, with organic traffic flowing to you, hence better business growth. Each piece then ensures that it reflects your brand's unique style, voice, and message.",
+    },
+    {
+      title: "Creates Engaging Content",
+      text: "We know that readers must be engaged, and their interest in the content must be increased. Our content is created to get people's attention, provide them with real value, and influence them to take action, whether subscribing to your newsletter, buying something, or sharing your content with others.",
+    },
+    {
+      title: "Timely Completion",
+      text: "We know that time is money. Deadlines carry significant value for us, and we respect delivery time; that's why we are passionate and energetic about producing quality content within the deadlines so that we can ensure that your marketing is on schedule.",
+    },
+    {
+      title: "Continuous Assisting",
+      text: "A constant tone for your content builds trust. Our partnership does not end with content delivery. We provide consistent and continuous support to help your content grow with your brand. We are always here for updates, changes, or new content plans.",
+    },
+  ],
+
+  flow: [
+    {
+      mainheading: "Our Content Writing Strategy",
+    },
+    {
+      number: 1,
+      title: "Initial Consultation",
+      description:
+        "We learn about the business, its goals, and the target audience. This consultancy will help us understand what vision your business is reflecting, which is why content strategies are formulated to be customized to your brand and objectives.",
+    },
+    {
+      number: 2,
+      title: "Content Development",
+      description:
+        "Finally, we will get a clear understanding of your brand. We will develop a more detailed and broad content plan that includes keyword research, content topics, and a publishing schedule that aligns with marketing goals to boost online presence.",
+    },
+    {
+      number: 3,
+      title: "Content Creation",
+      description:
+        "Our writers then begin writing high-quality content as per your strategy. Whether it be a blog post, web copy, or product description, all our written words are ensured to sound like your brand and speak directly to your target market.",
+    },
+    {
+      number: 4,
+      title: "Review & Feedback",
+      description:
+        "We believe in teamwork. Throughout the whole process of content creation, we give you samples of content for review. Your feedback is critical to make minor adjustments and improvements to the content and ensure it meets your expectations before final approval.",
+    },
+    {
+      number: 5,
+      title: "Implementation and Publishing",
+      description:
+        "Once the content is approved and ultimately okay, we will help you implement it. We will facilitate publishing it to your blog, social media, or website so that it can reach the relevant audience at the right time.",
+    },
+    {
+      number: 6,
+      title: "Performance Monitoring",
+      description:
+        "Our content success is about more than just writing. We monitor the performance of the content through analytics and feedback to refine strategies, ensuring that the content continues to drive traffic and engagement over time.",
+    },
+  ],
+},
+
+
+
+  //Affiliate Marketing
+  {
+    slug: "Affiliate-Marketing",
+    id: "3",
+    header: {
+      title: "Earn More Profit with Our Proven Affiliate Marketing Services",
+      image: "/services-main/heroimg1.png",
+      description:
+      'The essence of affiliate marketing services is about building and managing a very effective affiliate program. It helps companies attract the right affiliates and keeps track of their performance to optimize strategies that can drive high conversions. Whether you start your affiliate program or improve an existing one, our team is ready to expand your affiliate sales.',
+    },
+
+    services: [
+      {
+        mainheading: "What We Offer Through Our Affiliate Marketing Services",
+      },
+      {
+        title: "Affiliate Program Setup",
+        description:
+          "Establishing a successful affiliate marketing program requires meticulous and strategic following. We help you with our expert services to choose the right platform and create the correct offers by selecting the best affiliates and offering the appropriate commission plans.",
+      },
+      {
+        title: "Affiliate Recruitment",
+        description:
+          "Success lies in finding the right affiliates. We take care of the recruitment by connecting you to the best quality partners in our broad network. In choosing the right affiliates according to your niche and audience, we help you reach more people and drive more traffic to your site.",
+      },
+      {
+        title: "Affiliate Program Management",
+        description:
+          "We take complete care of your affiliate programs from beginning to completion. It includes tracking your affiliates, correct payment, keeping affiliates motivated, creating attractive offers, managing your payments, and providing marketing materials for the affiliates.",
+      },
+      {
+        title: "Performance Optimization",
+        description:
+          "We keep looking at and improving your affiliate marketing to get better results. We test different offers to improve conversion processes and improve each affiliate's performance, which in turn brings in more money with less effort.",
+      },
+      {
+        title: "Affiliate Reporting and Analytics",
+        description:
+          "We will give you detailed reports and analyses of how your affiliates, campaigns, and sales are doing. Advanced tools allow us to offer data on affiliate marketing efforts so you can understand what's working and what should be adjusted and improved for better results.",
+      },
+      {
+        title: "Email and Marketing Automation",
+        description:
+          "We use email campaigns and automation to develop stronger relationships with your affiliates by maintaining regular communication to keep them motivated and informed regarding your objectives. This develops their performance over time.",
+      },
+    ],
+
+    advantages: [
+      {
+        mainheading:"How Does Our Affiliate Marketing Services Help You"
+       },
+      {
+        title: "Custom Strategies for Growth",
+        text: "No two businesses are the same, so we have created affiliate marketing strategies for your needs. We design from niche market focus to global campaigns, ensuring maximum reach and conversion for your business goals.",
+      },
+      {
+        title: "Cost-Effective & Scaleable",
+        text: "Affiliate marketing programs can grow without adding much extra cost and are based on performance, so you pay affiliates only when they bring in a sale or lead. As more affiliates join, your revenue increases, making it easy to scale at your speed and run it according to your desire.",
+      },
+      {
+        title: "Global Reach",
+        text: "Affiliate marketing gets you closer to the world. Affiliates worldwide put your brand in front of new global audiences for almost zero advertising cost. That's global brand reach and multiple customer segments.",
+      },
+      {
+        title: "Full Transparency & Control",
+        text: "We make everything transparent. With detailed reports and real-time updates, you can see how your affiliate program is performing and traffic, sales, and affiliate activity. You have complete control over your marketing.",
+      },
+      {
+        title: "Long-Term Earnings",
+        text: "Affiliate marketing provides ongoing income because, after the setup, affiliates continue to generate traffic and sales. If a strong affiliate network and strategy exist, this is a long-term source of income. We help you achieve your long-term earnings goals.",
+      },
+      {
+        title: "Ongoing Support & Optimization",
+        text: "Affiliate marketing is an activity that requires continuous effort. We continually support and update your program to keep it fresh and healthy. Through analysis of performance and planned adjustments, we ensure that it stays effective and profitable with time.",
+      },
+    ],
+
+    flow: [
+      {
+        mainheading: "Our Working Strategies for Affiliate Marketing ",
+      },
+      {
+        number: 1,
+        title: "Consultation & Strategy Development",
+        description:
+          "We make sure we understand your business objectives, target market, and marketing strategy in and out. From there, we develop an individualized affiliate marketing solution suitable and customized to your brand, setting your business up for growth. We make a comprehensive affiliate marketing plan for recruiting affiliates, setting up commission structures, creating affiliate offers, and tracking performance. This prepares your affiliate program for success from the very beginning.",
+      },
+      {
+        number: 2,
+        title: "Content Marketing & Campaigns Based on Incentive",
+        description:
+          "Through quality content, affiliates attract customers. Content is always the king in marketing, whether blog posts, product reviews, or educational guides. Giving affiliates unique content drives organic traffic and more conversions​. Bonuses like bonus offers or special offers will make your affiliate work better. Better commission by offering limited time with high performance will make your affiliates hit higher sales goals, making your program more successful.",
+      },
+      {
+        number: 3,
+        title: "Email Marketing & Influencer Partnerships",
+        description:
+          "Stay connected with your affiliates to inform and motivate them. We use automated emails in our system that update their lists on new products, offers, or promotions, so the affiliates are kept informed and have access to the resources that guarantee success. Working with an influencer will help you reach a wider audience and enable more vigorous affiliate campaigns. The affiliates shall market your products to their social media followers, increasing opportunities to reach potential clients.",
+      },
+      {
+        number: 4,
+        title: "A/B Testing & Performance Tracking",
+        description:
+          "Test different affiliate offers and strategies regularly to increase conversions. A/B testing will show you which offers, commission plans or landing pages work better for your audience and enable you to improve your results with a more innovative approach. The latest analytics tools monitor our affiliate program's performance and continuously analyze data, test strategies, and perfect commission models to make campaigns work better for you.",
+      },
+      {
+        number: 5,
+        title: "Continuous Support and Growth",
+        description:
+          "We do not just launch your affiliate program and then disappear. We will support you practically and strategically. We will find more affiliates, improve and optimize your campaigns, and scale your affiliate program up to the level of new business.",
+      },
+  
+    ],
+  },
+
+
+  //written by us
+
 
   //landing pages
   {
@@ -3142,363 +3639,7 @@ export const servicedata = [
     ],
   },
 
-  //Affiliate Marketing
-  {
-    slug: "Affiliate-Marketing",
-    id: "3",
-    header: {
-      title: "Grow Your Brand and Revenue with Affiliate Marketing Expertise",
-      image: "/services-main/heroimg1.png",
-      description:
-      'Shopex specialists are highly accomplished in the digital sector, with a proven track record of expanding clients\' businesses through high-quality work and exceptional customer service.',
-    },
+ 
 
-    services: [
-      {
-        mainheading: "Our Company's Affiliate Marketing service ",
-      },
-      {
-        title: "Tailored Affiliate Strategy",
-        description:
-          "We develop customized affiliate marketing strategies designed to align with your brand's goals, driving growth and revenue. By selecting the best affiliate partners and targeting the right audience, we ensure your business thrives in the affiliate space.",
-      },
-      {
-        title: "Affiliate Program Management",
-        description:
-          "Our team handles the complete management of your affiliate program, from partner recruitment to performance tracking. We streamline every step to ensure smooth operations, maximizing your potential for success and long-term partnerships with top affiliates.",
-      },
-      {
-        title: "Comprehensive Affiliate Tracking",
-        description:
-          "We implement advanced tracking systems to measure the success of each affiliate campaign. By monitoring clicks, conversions, and overall ROI, we provide you with actionable insights to optimize performance and increase your earnings.",
-      },
-      {
-        title: "Affiliate Recruitment",
-        description:
-          "Our experts use a strategic approach to recruit high-performing affiliates that fit your brand. We build and nurture relationships with influencers, bloggers, and content creators, ensuring you work with the best to boost your online presence and sales.",
-      },
-      {
-        title: "Creative Campaign Design",
-        description:
-          "We design compelling and engaging affiliate marketing campaigns that resonate with your audience. From eye-catching banners to persuasive call-to-action content, we create campaigns that drive conversions and enhance affiliate performance.",
-      },
-      {
-        title: "Continuous Optimization & Support",
-        description:
-          "Our team continually analyzes data and makes real-time adjustments to maximize affiliate marketing results. With regular performance reviews, campaign enhancements, and ongoing support, we ensure your program remains profitable and effective.",
-      },
-    ],
-
-    advantages: [
-      {
-        mainheading:"Benefits of working with us"
-       },
-      {
-        title: "Boosted Revenue Streams",
-        text: "By partnering with us, you'll access a wider network of high-performing affiliates, resulting in increased sales and revenue. Our strategic approach ensures that every affiliate marketing campaign generates significant returns while reducing customer acquisition costs.",
-      },
-      {
-        title: "Customized Affiliate Strategies",
-        text: "We craft tailored affiliate marketing strategies that align with your specific business goals. Whether you're aiming for brand awareness, lead generation, or sales conversions, our strategies are designed to deliver maximum impact and long-term success.",
-      },
-      {
-        title: "Expert Affiliate Recruitment",
-        text: "With our extensive industry connections, we recruit top-tier affiliates who are well-suited to your brand. We ensure that your affiliate partners have the expertise and influence to drive relevant traffic and generate quality leads for your business.",
-      },
-      {
-        title: "Comprehensive Performance Tracking",
-        text: "We use advanced tracking tools to measure every aspect of your affiliate marketing campaigns. From impressions to conversions, you’ll gain valuable insights into the effectiveness of each affiliate and campaign, allowing for data-driven decisions.",
-      },
-      {
-        title: "Ongoing Optimization for Better Results",
-        text: "We continuously optimize your affiliate marketing efforts based on performance data. Our team monitors trends, analyzes metrics, and fine-tunes strategies to ensure that your affiliate program continues to drive higher engagement and sustained growth.",
-      },
-      {
-        title: "Scalable Affiliate Program Management",
-        text: "Our team manages all aspects of your affiliate program, from recruitment to payment processing. As your program grows, we scale operations efficiently, handling increasing demand while ensuring smooth affiliate relationships and program success.",
-      },
-    ],
-
-    flow: [
-      {
-        mainheading: "Our Strategic Process",
-      },
-      {
-        number: 1,
-        title: "Initial Consultation & Goal Setting",
-        description:
-          "We start by understanding your business objectives and marketing goals. During this phase, we discuss your target audience, key performance indicators (KPIs), and desired outcomes to ensure that our affiliate marketing strategy aligns with your overall vision.",
-      },
-      {
-        number: 2,
-        title: "Affiliate Program Design & Strategy",
-        description:
-          "We craft a customized affiliate program based on your business needs. This includes selecting suitable commission structures, defining the affiliate onboarding process, and determining how affiliates will promote your products or services for maximum impact.",
-      },
-      {
-        number: 3,
-        title: "Affiliate Recruitment & Partnership Building",
-        description:
-          "We actively source and recruit high-quality affiliates who align with your brand values and target audience. Our network of established influencers and niche affiliates ensures we find the best-fit partners to boost your sales and brand visibility.",
-      },
-      {
-        number: 4,
-        title: "Campaign Launch & Promotion",
-        description:
-          "After selecting the ideal affiliates, we launch your affiliate marketing campaign. Our team provides affiliates with engaging marketing materials, tracking links, and promotional guidelines, ensuring they have everything needed to effectively promote your brand.",
-      },
-      {
-        number: 5,
-        title: "Performance Monitoring & Analytics",
-        description:
-          "We closely track the performance of each affiliate campaign in real time, analyzing key metrics such as clicks, conversions, and overall ROI. Detailed reports and insights are shared with you regularly to ensure you’re informed and able to make data-driven decisions.",
-      },
-      {
-        number: 6,
-        title: "Optimization & Scaling",
-        description:
-          "Based on performance data, we optimize affiliate marketing efforts, refining strategies, testing new approaches, and scaling successful campaigns. As your affiliate program grows, we handle increased complexity, ensuring that it continues to deliver top-notch results.",
-      },
-    ],
-  },
-
-  //contetn
-  {
-    slug: "Content-Writing",
-    id: "3",
-    header: {
-      title: "SEO-Optimized Content That Ranks and Engages",
-      image: "/services-main/heroimg1.png",
-      description:
-      'Shopex specialists are highly accomplished in the digital sector, with a proven track record of expanding clients\' businesses through high-quality work and exceptional customer service.',
-    },
-
-    services: [
-      {
-        mainheading: "Our Company's content writing service  ",
-      },
-      {
-        title: "Tailored Content Creation",
-        description:
-          "Our expert writers craft content specifically designed to align with your brand’s voice and goals, ensuring it resonates with your target audience.",
-      },
-      {
-        title: "SEO-Optimized Writing",
-        description:
-          "We provide SEO-focused content that improves your website’s visibility on search engines, driving more organic traffic to your site.",
-      },
-      {
-        title: "Engaging Blog Posts & Articles",
-        description:
-          "Our team specializes in writing informative, engaging, and high-quality blog posts and articles that establish your authority and keep readers coming back.",
-      },
-      {
-        title: "Website Copywriting",
-        description:
-          "We create compelling, persuasive web copy that grabs attention, communicates your value proposition, and converts visitors into loyal customers.",
-      },
-      {
-        title: "Social Media Content",
-        description:
-          "Enhance your social media presence with unique and engaging content designed to boost interactions and grow your audience.",
-      },
-      {
-        title: "Product Descriptions & Reviews",
-        description:
-          "We deliver clear and enticing product descriptions that increase conversions, along with well-researched reviews that establish trust and credibility.",
-      },
-    ],
-
-    advantages: [
-      {
-        mainheading:"Benefits of working with us"
-       },
-      {
-        title: "High-Quality, Customized Content",
-        text: "Our team delivers well-researched, high-quality content tailored to your business needs, ensuring your message is clear and impactful to your target audience.",
-      },
-      {
-        title: "SEO-Focused Writing",
-        text: "We produce content optimized for search engines, helping improve your rankings and visibility online, driving more organic traffic to your site.",
-      },
-      {
-        title: "Engaging and Persuasive Copy",
-        text: "We create content that not only informs but also engages and persuades, encouraging your audience to take action and fostering long-term relationships.",
-      },
-      {
-        title: "Consistent Brand Voice",
-        text: "Our writers maintain a consistent brand voice across all content, helping you establish a strong, cohesive identity that resonates with your audience.",
-      },
-      {
-        title: "Timely Delivery and Flexibility",
-        text: "We understand the importance of deadlines and offer flexible timelines, ensuring your content is delivered on time without compromising quality.",
-      },
-      {
-        title: "Expert Writers with Industry Knowledge",
-        text: "Our team comprises experienced writers with expertise across various industries, ensuring your content is not only well-written but also authoritative and relevant.",
-      },
-    ],
-
-    flow: [
-      {
-        mainheading: "Our Strategic Process",
-      },
-      {
-        number: 1,
-        title: "Initial Consultation and Research",
-        description:
-          "We begin by understanding your brand, goals, target audience, and project requirements. This helps us gather relevant information and research your industry to create tailored content that aligns with your objectives.",
-      },
-      {
-        number: 2,
-        title: "Content Strategy Development",
-        description:
-          "Our team works with you to craft a content strategy that includes tone, style, and key messaging. We identify the right content types (blogs, articles, website copy, etc.) and create a roadmap to achieve your goals.",
-      },
-      {
-        number: 3,
-        title: "Content Creation",
-        description:
-          "Our expert writers create high-quality, engaging, and SEO-optimized content based on the strategy. Each piece is designed to resonate with your audience and meet your specific needs, whether it’s informative, persuasive, or promotional.",
-      },
-      {
-        number: 4,
-        title: "Editing and Proofreading",
-        description:
-          "After writing, our editorial team meticulously reviews the content to ensure it is error-free, concise, and aligns with your brand’s voice. We also optimize it for readability and SEO to maximize its impact.",
-      },
-      {
-        number: 5,
-        title: "Client Review and Feedback",
-        description:
-          "Once the content is ready, we present it to you for review. We encourage feedback and make any necessary revisions to ensure the final content meets your expectations and requirements.",
-      },
-      {
-        number: 6,
-        title: "Final Delivery and Optimization",
-        description:
-          "After final approval, we deliver the content in your preferred format. If applicable, we also help with content publishing and provide ongoing optimization tips to enhance performance and engagement.",
-      },
-    ],
-  },
-
-  //Social Media Management
-  {
-    slug: "Social-Media-Management",
-    id: "3",
-    header: {
-      title: "From Posts to Profits: Social Media That Works for You",
-      image: "/services-main/heroimg1.png",
-      description:
-      'Shopex specialists are highly accomplished in the digital sector, with a proven track record of expanding clients\' businesses through high-quality work and exceptional customer service.',
-    },
-
-    services: [
-      {
-        mainheading: "Our Company's social media management service ",
-      },
-      {
-        title: "Strategy Development",
-        description:
-          "We create personalized strategies for your brand, focusing on your goals and audience to maximize engagement across platforms like Facebook, Instagram, LinkedIn, and Twitter, ensuring your social media presence drives results.",
-      },
-      {
-        title: "Content Creation & Curation",
-        description:
-          "Our team produces engaging and relevant content, including graphics, videos, and posts, designed to resonate with your audience and maintain consistent brand messaging across all channels to build a loyal community.",
-      },
-      {
-        title: "Social Media Optimization",
-        description:
-          "We optimize your social media profiles for increased visibility and user engagement. From bio optimization to strategic posting schedules, we ensure your brand stands out on every platform.",
-      },
-      {
-        title: "Audience Engagement & Community Building",
-        description:
-          "We interact with your followers, respond to comments, and engage in conversations to create an active and loyal online community. This fosters brand loyalty and encourages positive word-of-mouth marketing.",
-      },
-      {
-        title: "Performance Analytics & Reporting",
-        description:
-          "Our team tracks key performance metrics such as reach, engagement, and conversions to evaluate the success of campaigns. Regular reports help fine-tune strategies for continuous improvement and better results.",
-      },
-      {
-        title: "Paid Advertising Campaigns",
-        description:
-          "We manage targeted social media ad campaigns to boost your reach, drive traffic, and generate leads. Our team optimizes ad spend for maximum ROI and measurable results, focusing on conversions and engagement.",
-      },
-    ],
-
-    advantages: [
-      {
-        mainheading:"Benefits of working with us"
-       },
-      {
-        title: "Expert Strategy Tailoring",
-        text: "We develop a customized strategy based on your brand’s goals and target audience, ensuring all social media efforts are aligned with your business objectives and maximizing engagement and reach.",
-      },
-      {
-        title: "Consistent Brand Presence",
-        text: "Our team ensures your brand maintains a consistent voice across all social platforms, creating cohesive messaging that enhances recognition and trust among your followers, fostering long-term customer loyalty.",
-      },
-      {
-        title: "Engaged Community Building",
-        text: "By actively engaging with your followers, responding to comments, and creating interactive content, we help build a loyal and active online community that supports your brand and advocates for your products or services.",
-      },
-      {
-        title: "Data-Driven Results",
-        text: "We provide detailed analytics to track performance, helping you make informed decisions and refine strategies. Our reports ensure transparency and provide insight into the effectiveness of social media campaigns, leading to better ROI.",
-      },
-      {
-        title: "Creative Content Creation",
-        text: "Our creative team crafts high-quality content tailored to your audience’s interests, ensuring maximum engagement. From visuals to video content, we keep your social media fresh and appealing to capture attention.",
-      },
-      {
-        title: "Targeted Ad Campaigns",
-        text: "We design and run highly targeted paid social media campaigns, ensuring your ads reach the right audience. With data-backed strategies, we maximize your ad spend to drive traffic, increase conversions, and boost sales.",
-      },
-    ],
-
-    flow: [
-      {
-        mainheading: "Our Strategic Process",
-      },
-      {
-        number: 1,
-        title: "Understanding Your Brand and Goals",
-        description:
-          "We begin by thoroughly understanding your business, goals, and target audience. This helps us craft a tailored social media strategy that aligns with your brand's vision and objectives, ensuring impactful engagement.",
-      },
-      {
-        number: 2,
-        title: "Strategy Development and Planning",
-        description:
-          "Our team designs a comprehensive social media strategy based on your goals, whether it's brand awareness, lead generation, or community building. We plan content, posting schedules, and engagement tactics to maximize reach and engagement.",
-      },
-      {
-        number: 3,
-        title: "Content Creation and Curation",
-        description:
-          "We create high-quality content tailored to your audience’s preferences. This includes graphics, videos, blog posts, and other engaging content that resonates with your followers and boosts your brand's online presence.",
-      },
-      {
-        number: 4,
-        title: "Scheduling and Posting",
-        description:
-          "Using advanced tools, we schedule and automate posts at optimal times to ensure consistent activity on your social media platforms. We keep your profiles fresh and active with relevant, timely updates.",
-      },
-      {
-        number: 5,
-        title: "Engagement and Community Management",
-        description:
-          "Our team actively interacts with your audience by responding to comments, messages, and mentions. We foster positive relationships and encourage interaction to build a loyal community around your brand.",
-      },
-      {
-        number: 6,
-        title: "Performance Monitoring and Reporting",
-        description:
-          "We track the performance of your social media campaigns and analyze key metrics such as reach, engagement, and conversion rates. Regular reports help refine strategies and ensure continuous growth, adjusting tactics based on data-driven insights.",
-      },
-    ],
-  },
+ 
 ];

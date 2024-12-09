@@ -60,7 +60,7 @@ function Header() {
             </Link>
           </div>
 
-          <p className='h-1 text-[#333333] md:text-2xl text-xl font-extralight mr-7'>
+          <p className='h-1 text-[#333333] md:text-2xl text-[18px] font-extralight mr-7'>
           Shopex specialists are among the most accomplished in the digital sector. They have a history of proven experiences expanding their clients' businesses through high-quality work and outstanding customer service.           </p>
 
         </div>

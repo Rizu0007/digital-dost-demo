@@ -82,11 +82,11 @@ const Footer = () => {
                 alt="Clutch Reviews"
                 className='mt-1 mb-[5px]'
               />
-
               <p className="xs:ml-4 xs:flex xs:justify-center xs:items-end lg:text-center text-white lg:mr-2">1 Reviews</p>
             </div>
 
             <div className='flex mt-5 space-x-0'>
+              <Link href="https://www.facebook.com/shopex.agency">
               <Image
                 src="/footer/facebook.png"
                 width={60}
@@ -95,6 +95,8 @@ const Footer = () => {
                 className='w-7 h-7'
 
               />
+              </Link>
+              <Link href="https://www.instagram.com/agency.shopex/profilecard/?igsh=MWRjc21vbWNoZWFldA==">
               <Image
                 src="/footer/insta.png"
                 width={60}
@@ -103,6 +105,8 @@ const Footer = () => {
                 className='w-7 h-7'
 
               />
+              </Link>
+              <Link href="https://www.linkedin.com/company/shopexagency">
               <Image
                 src="/footer/linkin.png"
                 width={60}
@@ -111,6 +115,7 @@ const Footer = () => {
                 className='w-7 h-7 '
 
               />
+              </Link>
             </div>
           </div>
 
