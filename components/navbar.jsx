@@ -33,7 +33,7 @@ const digitalMarketing = [
   { sub: 'Performance Marketing', link: '/services/Performance-Marketing' },
   { sub: 'Social Media Management', link: '/services/Social-Media-Management' },
   { sub: 'SEO', link: '/services/SEO' },
-  { sub: 'Graphic Design & UI/UX', link: '/services/UI-UXdesign' },
+  { sub: 'Graphic Design & UI/UX', link: '/services/graphic-design-ui-ux' },
   { sub: 'Content Writing', link: 'Content-Writing' },
   { sub: 'Affiliate Marketing', link: '/services/Affiliate-Marketing' },
   { sub: 'Influencer Marketing', link: '/services/Influencer-Marketing' },
