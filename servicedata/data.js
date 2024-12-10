@@ -465,6 +465,10 @@ export const servicedata = [
         title: "Informed Decision Making ",
         text: "Facebook and Instagram are both feature-built-in shopping platforms, and they're essential for product promotion because of the link-sharing that drives visitors to your website. Companies can showcase capabilities and use cases by utilizing photos, videos, and other multimedia assets. Our visual storytelling lets potential buyers better comprehend your offerings and are inspired to make wise purchasing selections.",
       },
+      {
+        title: "Ongoing Support",
+        text: "As social media is a significant source of news and information and a crucial factor in digital marketing as well as search engine rankings, we do not just build and schedule social media strategies but maintain ongoing support. We made regular check-ins, ongoing optimization, and updated and refreshed content daily. Let's schedule a meeting today!",
+      },
     ],
 
     flow: [
@@ -503,6 +507,8 @@ export const servicedata = [
       },
     ],
   },
+
+
   //SEO
   {
     slug: "SEO",
@@ -1029,6 +1035,124 @@ export const servicedata = [
     ],
   },
 
+
+    //Influencer Marketing
+
+    {
+      slug: "Influencer-Marketing",
+      id: "3",
+      header: {
+        title: "Amplify Your Brand Reach 2X Through Influencer Marketing Services",
+        image: "/services-main/heroimg1.png",
+        description:
+        'Shopex has proudly served clients with influencer marketing services for decades. We understand their KPIs, select the right influencers, focus on the campaign narrative, manage the execution, and finalize the work with tracking, monitoring, and in-depth reporting.',
+      },
+  
+      services: [
+        {
+          mainheading: "Our Tailored Influencer Marketing Services",
+        },
+        {
+          title: "Influencer Campaign Strategy",
+          description:
+            "Our bespoke creative strategy brings a game-changing commercial performance. At Shopex, we design impactful campaigns that capture audience attention, inspire actions, boost CTR, and increase views and conversions. We develop strategies with long-term potential and influencers at their core, work with you to determine which KPIs matter most, and refocus your efforts there.",
+        },
+        {
+          title: "Social Influencer Selection",
+          description:
+            "Every brand needs a perfect influencer; we always know the tactics and where to find them. Our influencer selection strategy is incredible, as we focus on the narrative of influencer marketing by uniting your brand with dedicated creators who align with your purpose. We connect you with influencers who get people talking and acting.",
+        },
+        {
+          title: "Influencer Content Creation",
+          description:
+            "We elevate your content to the next level. To ensure your brand receives the most favorable attention possible, our influencer outreach specialists work with the top influencers to create the best influencer content marketing strategy. We also find, maintain, and improve creative schedules to support genuine, continuous creative cooperation and community involvement.",
+        },
+        {
+          title: "Influencer Campaign Management",
+          description:
+            "Our committed group of influencer and campaign managers provides practical assistance. End-to-end campaigns for creator marketing that leverage Shopex's platform and dedicated team to produce quantifiable and memorable content. As a trusted partner of your brand, we build and execute campaigns across every timeline, scope, and requirement.",
+        },
+        {
+          title: "Paid Media Amplification",
+          description:
+            "At Shopex, we offer social media advertising. Our full-service paid media offering can help you boost authenticity and maximize the natural power of creative content. To ensure the most significant outcomes for your business, our digital marketing team supports your influencer marketing strategy with sponsored media.",
+        },
+        {
+          title: "Campaign Measurement & Tracking",
+          description:
+            "At Shopex, we transform data into growth and bring it to life. Our industry leaders look at full-funnel creator performance, including direct sales attribution, engagement, and impressions. From the beginning to the end of your influencer marketing campaign, we monitor and evaluate results and provide precise, measurable data.",
+        },
+      ],
+  
+      advantages: [
+        {
+          mainheading:"How Does Our Influencer Marketing Services Help You"
+         },
+        {
+          title: "Consider Your Objectives",
+          text: "We want to know your objectives before we begin developing an influencer marketing plan for your company. We need to know the goals to develop a plan to help your company reach its growth objectives.",
+        },
+        {
+          title: "Analyze Your Sector",
+          text: "No matter your industry, we only post a single social media update once we know what your competitors are doing. While we are interested in what other companies are doing, what matters most to us is what your target audience is doing.",
+        },
+        {
+          title: "Study Your Competitors",
+          text: "Now that we know what your audience is interested in, we'll discuss how your competitors interact with them. At Shopex, we compile a list of the strengths and shortcomings of your influencer marketing initiatives that we can take advantage of.",
+        },
+        {
+          title: "Strategy for Influencer Marketing  ",
+          text: "We develop a process to know about your target audience, their language, the influencers they admire, and your competitors' actions. We will now assemble your plan. We'll develop an influencer marketing plan solely concerned with reaching your objectives.",
+        },
+        {
+          title: "Help You Build Your Brand",
+          text: "At that point, the influencers are the main attraction. Although we've tried to find influencers to support your companies, the influencers will be responsible for creating and promoting the content. Shopex's influencers will become your brand voice.",
+        },
+        {
+          title: "Reach Your Dreams",
+          text: "With our strategy, your brand will be noticed, and more individuals will consider purchasing your goods and services. Although there might be immediate effects, influencer marketing gradually strengthens brand relationships and eventually leads to repeat business.",
+        },
+      ],
+  
+      flow: [
+        {
+          mainheading: "How Does Our Influencer Marketing Strategy Work?",
+        },
+        {
+          number: 1,
+          title: "Free Initial Consultation",
+          description:
+            "First, we will conduct a free consultation meeting to understand your company or brand, target audience, and campaign goals. This will help us understand your key preferences, such as whether you want to increase brand awareness, boost engagement, or drive sales. ",
+        },
+        {
+          number: 2,
+          title: "Setting Objectives & Competitors Analysis",
+          description:
+            "When we consult with your team, Shopex will do an in-depth analysis of your competitors and current marketing trends to identify possibilities for your business or brand to stand out. After the analysis, we will discuss and create a customized campaign that will guide us in determining measurable and goal-oriented key performance indicators (KPIs).",
+        },
+        {
+          number: 3,
+          title: "Influencer Selection Strategy",
+          description:
+            "The most crucial thing is to select the influencer at the right time for the relevant business. At Shopex, we have a team of dedicated experts who identify influencers who align with your target market and maximize campaign impact. While selecting the influencer, we consider key factors like authenticity, audience demographics, engagement rates, and quality content. Our selected influencers will become your brand voice. ",
+        },
+        {
+          number: 4,
+          title: "Campaign Planning & Execution",
+          description:
+           " We craft compelling campaigns that align with your target audience and contact influencers to create unique concepts for the content, which we customize to your brand message and objectives. We then build the campaign structure for social media channels like Facebook, Instagram, and YouTube. After essential planning and direction, we come to your vision of reality. Before executing the campaigns, we analyze their quality and alignment with the message and schedule them for the selected channels at the optimal time. ",
+        },
+        {
+          number: 5,
+          title: "Monitoring & Tracking Performance ",
+          description:
+            "Once the campaigns are executed, our dedicated team monitors the content performance regularly and notices how our campaigns engage with our target audience. We track results to ensure maximum return on investment (ROI). We will share weekly reports that include details about the campaign. Reports help us to analyze insights and refine strategies for future growth.",
+        },
+    
+      ],
+    },
+  
+   
 
   //written by us
 
@@ -3518,128 +3642,7 @@ export const servicedata = [
       },
     ],
   },
-  //Influencer Marketing
 
-  {
-    slug: "Influencer-Marketing",
-    id: "3",
-    header: {
-      title: "Maximize Your Reach with Expert Influencer Marketing Strategies",
-      image: "/services-main/heroimg1.png",
-      description:
-      'Shopex specialists are highly accomplished in the digital sector, with a proven track record of expanding clients\' businesses through high-quality work and exceptional customer service.',
-    },
-
-    services: [
-      {
-        mainheading: "Our Company's Influencer Marketing service",
-      },
-      {
-        title: "Influencer Campaign Strategy",
-        description:
-          "We develop customized strategies that align with your brand’s goals, identifying the right influencers and creating content that resonates with your target audience to maximize engagement and drive conversions.",
-      },
-      {
-        title: "Influencer Selection & Vetting",
-        description:
-          "Our team carefully selects influencers who match your brand’s identity and values, ensuring authenticity and relevance. We assess their reach, audience engagement, and previous campaign performance to ensure the perfect fit.",
-      },
-      {
-        title: "Content Creation & Collaboration",
-        description:
-          "We work with influencers to create compelling content that resonates with their followers while aligning with your brand’s voice. From blog posts to videos, we ensure content is both engaging and on-brand.",
-      },
-      {
-        title: "Campaign Management & Monitoring",
-        description:
-          "We manage the entire campaign lifecycle from start to finish. Our team tracks influencer activities, engagement metrics, and audience feedback in real-time, ensuring your campaign stays on track and delivers measurable results.",
-      },
-      {
-        title: "Performance Analytics & Reporting",
-        description:
-          "Post-campaign, we provide detailed reports that analyze key performance indicators (KPIs) such as reach, engagement, conversions, and ROI. Our insights help refine future strategies for improved results.",
-      },
-      {
-        title: "Influencer Relationship Management",
-        description:
-          "We focus on long-term relationships with influencers, fostering trust and collaboration. Our team ensures consistent communication, loyalty-building strategies, and collaboration opportunities to maintain a strong brand presence across multiple campaigns.",
-      },
-    ],
-
-    advantages: [
-      {
-        mainheading:"Benefits of working with us"
-       },
-      {
-        title: "Targeted Audience Reach",
-        text: "By working with us, you gain access to influencers who align perfectly with your brand, ensuring that your message reaches a highly engaged and relevant audience, increasing your chances of conversion.",
-      },
-      {
-        title: "Authentic Brand Advocacy",
-        text: "Our carefully chosen influencers genuinely connect with their followers. Their authentic endorsements foster trust in your brand, which drives higher customer loyalty and increases the effectiveness of your marketing campaigns.",
-      },
-      {
-        title: "Customized Campaigns for Maximum Impact",
-        text: "We design influencer campaigns tailored to your specific objectives. Whether you aim to boost brand awareness, drive sales, or build long-term customer relationships, our personalized strategies ensure optimal results.",
-      },
-      {
-        title: "Comprehensive Analytics & Reporting",
-        text: "Our detailed reports provide you with valuable insights into campaign performance, including reach, engagement, and ROI. This data-driven approach helps refine your future strategies for even greater success.",
-      },
-      {
-        title: "Cost-Effective Marketing",
-        text: "Influencer marketing offers an excellent return on investment. By collaborating with influencers, you can achieve broader visibility and a more targeted approach at a fraction of the cost of traditional advertising.",
-      },
-      {
-        title: "Long-Term Relationship Building",
-        text: "We emphasize building lasting relationships with influencers, ensuring sustained brand presence. Long-term partnerships with the right influencers allow your brand to enjoy ongoing exposure and trust, extending the lifetime value of each campaign.",
-      },
-    ],
-
-    flow: [
-      {
-        mainheading: "Our Strategic Process",
-      },
-      {
-        number: 1,
-        title: "Initial Consultation and Brand Assessment",
-        description:
-          "We begin by understanding your brand’s goals, target audience, and key performance indicators (KPIs). This helps us identify the perfect influencers who can resonate with your brand and align with your objectives.",
-      },
-      {
-        number: 2,
-        title: "Influencer Selection and Vetting",
-        description:
-          "Based on your objectives, we research and select influencers who best match your brand values, audience demographics, and engagement levels. We assess their authenticity and past campaign performance to ensure optimal results.",
-      },
-      {
-        number: 3,
-        title: "Campaign Strategy Development",
-        description:
-          "Once the influencers are chosen, we create a detailed campaign strategy. This includes defining content types, messaging, posting schedules, and engagement tactics to ensure maximum reach and impact.",
-      },
-      {
-        number: 4,
-        title: "Content Creation and Collaboration",
-        description:
-          "We collaborate with the influencers to develop creative and engaging content that resonates with their audience while staying true to your brand. This includes photos, videos, blog posts, and social media content tailored for your campaign.",
-      },
-      {
-        number: 5,
-        title: "Campaign Launch and Monitoring",
-        description:
-          "Once the campaign is launched, we continuously monitor its progress. We track engagement rates, audience reactions, and overall performance to make real-time adjustments if necessary, ensuring the best outcomes.",
-      },
-      {
-        number: 6,
-        title: "Performance Analysis and Reporting",
-        description:
-          "After the campaign ends, we provide comprehensive analytics and performance reports. These insights include reach, impressions, conversions, and ROI, helping you understand the campaign’s success and how to refine future strategies.",
-      },
-    ],
-  },
-
- 
 
  
 ];
