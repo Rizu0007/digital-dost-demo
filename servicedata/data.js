@@ -1157,7 +1157,7 @@ export const servicedata = [
     slug: "Shopify-Development",
     id: "3",
     header: {
-      title: "Revenue Generating Tailored Shopify Design & Development Services",
+      title: "Revenue Generating Tailored Shopify Design & Development Services!",
       image: "/services-main/heroimg1.png",
       description:
       "As a strategic partner of Shopify Plus, we are a full-service Shopify design and development agency that offers everything from consulting to marketing. Our specialty is creating visually appealing designs that improve your client's purchasing experience. Our Shopify experts can build a custom e-commerce store that is expandable, fully search engine, and conversion-optimized to boost revenue in any sector.",
