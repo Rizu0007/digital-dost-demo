@@ -1152,7 +1152,120 @@ export const servicedata = [
       ],
     },
   
-   
+     //shopify dev
+  {
+    slug: "Shopify-Development",
+    id: "3",
+    header: {
+      title: "Revenue Generating Tailored Shopify Design & Development Services!",
+      image: "/services-main/heroimg1.png",
+      description:
+      "As a strategic partner of Shopify Plus, we are a full-service Shopify design and development agency that offers everything from consulting to marketing. Our specialty is creating visually appealing designs that improve your client's purchasing experience. Our Shopify experts can build a custom e-commerce store that is expandable, fully search engine, and conversion-optimized to boost revenue in any sector.",
+    },
+
+    services: [
+      {
+        mainheading: "Shopify Design & Development Services That Goes Above & Beyond",
+      },
+      {
+        title: "Tailored Shopify Website Development",
+        description:
+          "Shopex is the ideal Shopify development company if you want to create your first store, improve its functionality and performance, or update your Shopify website to Shopify Plus. We provide custom Shopify website development, shop setup, Shopify Plus development and custom builds, migration services, support and maintenance, and Shopify Plus.",
+      },
+      {
+        title: "Customized Shopify Website Design",
+        description:
+         " Our expertise includes planning, designing, optimizing, and marketing Shopify websites. Depending on the size of your Shopify project, we can help you with end-to-end customized design or offer Shopify UX and UI design as independent services. To get started, we advise implementing your idea or planning your digital experience with our strategists to position it for success.",
+      },
+      {
+        title: "Shopify Website Migration",
+        description:
+          "Our team of skilled Shopify expert developers offers smooth and trouble-free migration for Shopify e-commerce websites. We have helped many companies in different sectors move their online stores to Shopify. We provide Shopify migration services that allow you to move from Shopify to Shopify Plus and from other e-commerce platforms to Shopify with no worries.",
+      },
+      {
+        title: "Shopify SEO-Based Theme Development",
+        description:
+          "Your ideas and objectives have thousands of solutions. We use a data-driven approach to create customer-winning Shopify SEO themes, design user experiences, and boost revenue. Our skilled Shopify expert developers can help you make an SEO-friendly, responsive e-commerce theme that conveys your brand values and optimizes conversion.",
+      },
+      {
+        title: "Shopify Theme Customization",
+        description:
+          "Our Shopify experts are committed to customizing your Shopify e-commerce store. We let you customize your website to meet your business needs and add complicated features, unique workflows, and custom functionalities. We provide various Shopify customization services, such as custom integrations, extensions, theme customization, and bespoke app development.",
+      },
+      {
+        title: "Seamless Integration & Support",
+        description:
+          "Our Shopify e-commerce website agency offers powerful Shopify integrations to help you automate order, inventory, fulfillment, refund, and billing processes between your store and other third-party systems. Our Shopify experts in custom Shopify web development are available to offer continuous assistance.",
+      },
+    ],
+
+    advantages: [
+      {
+        mainheading:"How Do Our Shopify Design & Development Services Help You"
+       },
+      {
+        title: "Level of Experience",
+        text: "Our Shopify experts have years of experience in branding, marketing, and Shopify web design and development. They also serve as knowledgeable advisors across all partnerships, helping our customers at every stage. We accept responsibility for each project, conduct business with total openness and frequent contact, and provide our clients with quantifiable, long-term outcomes.",
+      },
+      {
+        title: "User Experience Matters",
+        text: "With the assistance of Shopex's skilled web designers, you can construct aesthetically pleasing, user-friendly, and incredibly functional online stores. Our Shopify expert developers make it easy for customers to view products on any device by optimizing layouts, responsiveness, and navigation. This promotes client retention and loyalty.",
+      },
+      {
+        title: "Build A Memorable Brand",
+        text: "Our Shopify experts can create custom themes that complement a brand's color scheme, style, and logo. We guarantee that each page represents the company's identity, Unique selling point (USP), and main messaging. In that way, both present and potential customers can quickly recognize and remember your Shopify store.",
+      },
+      {
+        title: "Trust In Data Security",
+        text: "Professional Shopify services can maximize the security of your data by using SSL encryption, safe server hosting, frequent software updates, and end-to-end payment processing. To prevent chargebacks and safeguard private customer data, Shopex, a reputable web design company, can also assist you in identifying and blocking fraudulent orders.",
+      },
+      {
+        title: "Scalability To Business Growth",
+        text: "With our Shopify web design and development services, we can customize your e-commerce site to fit your present business requirements and adjust to shifting customer preferences. Our team can update the site's design, including the order section, logo, color scheme, typography, and other on-page elements. This encourages long-term brand growth.",
+      },
+      {
+        title: "Mobile Responsiveness Leads to Sales",
+        text: "We optimize your Shopify store for mobile before desktop users to guarantee cross-device conversions. Our Shopify expert developers employ distinct payment buttons and well-placed calls to action. 3D models of related products for realistic depictions and captivating images and videos to showcase your products are examples of our solutions.",
+      },
+    ],
+
+    flow: [
+      {
+        mainheading: "How Does Our Shopify Design & Development Strategy Work",
+      },
+      {
+        number: 1,
+        title: "Initial Consultation",
+        description:
+          "First, we will conduct a free consultation to analyze your business. Then, our team of Shopify experts will walk you through each step of creating a unique Shopify website. We adhere to a defined web design and development process, from planning and research to web design, launch, marketing, and beyond. Thus, you can fully take advantage of our user-friendly e-commerce solution.",
+      },
+      {
+        number: 2,
+        title: "Plan A Strategic Process",
+        description:
+          "Every project begins with a dedicated website strategist assigned to it. To find potential customers, we collect information about your company, research competitors, and identify your target markets. From technological features to conversion funnels, we use everything we've learned to plan your website.",
+      },
+      {
+        number: 3,
+        title: "Create Wireframe/UX Design",
+        description:
+          "We create high-fidelity wireframes for important landing pages to demonstrate the functionality and messaging flow, and we convert the comprehensive website strategy into a UX design.",
+      },
+      {
+        number: 4,
+        title: "Develop UI Design",
+        description:
+          "Your Shopify website's UI design is attractive, whereas the wireframe is the foundation. We'll create a Shopify website prototype that gives you a realistic sense of the experience and displays some animation. Prototypes will begin development as soon as you provide your approval.",
+      },
+      {
+        number: 5,
+        title: "Final Development & Launch",
+        description:
+          "We will use our comprehensive Questions & Answers pre-launch checklist to ensure your Shopify store works before we go live. We'll then do further testing after the store launches. Consequently, you will have a safe, high-performing, quick-loading website prepared to make money.",
+      },
+    
+    ],
+  },
 
   //written by us
 
@@ -2364,125 +2477,7 @@ export const servicedata = [
     ],
   },
 
-  //shopify dev
-  {
-    slug: "Shopify-Development",
-    id: "3",
-    header: {
-      title: "Boost Your Sales with a High-Converting Shopify Store",
-      image: "/services-main/heroimg1.png",
-      description:
-      'Shopex specialists are highly accomplished in the digital sector, with a proven track record of expanding clients\' businesses through high-quality work and exceptional customer service.',
-    },
 
-    services: [
-      {
-        mainheading: "Shopify development services",
-      },
-      {
-        title: "Custom Shopify Store Design",
-        description:
-          "We offer custom Shopify store design to create unique, visually appealing eCommerce websites that reflect your brand. Our design services ensure that your store is user-friendly, responsive, and optimized for better performance across devices.",
-      },
-      {
-        title: "E-commerce Website",
-        description:
-          "Our eCommerce website development services focus on building secure and scalable online stores. We use Shopify’s powerful features to create platforms that enhance your store’s functionality, improve customer experience, and drive more sales.",
-      },
-      {
-        title: "Shopify Theme Customization",
-        description:
-          "We specialize in Shopify theme customization, tailoring pre-built themes to fit your brand’s identity. Our services ensure that your website stands out with personalized layouts, enhanced navigation, and optimized design for higher engagement and conversions.",
-      },
-      {
-        title: "E-commerce Web Development",
-        description:
-          "Our eCommerce web development services include integrating essential features like payment gateways, product catalogs, and shipping solutions. We provide a seamless online shopping experience, making it easier for your customers to purchase and for you to manage your store.",
-      },
-      {
-        title: "Shopify App Integration",
-        description:
-          "To enhance your Shopify store's functionality, we offer expert app integration services. Whether it's inventory management, marketing tools, or customer service apps, we ensure that the right apps are integrated to support your store's growth.",
-      },
-      {
-        title: "Shopify Store Optimization",
-        description:
-          "We optimize your Shopify store for better performance, faster loading times, and improved SEO. By implementing best practices for eCommerce web development, we help increase your site's visibility on search engines, boost traffic, and improve conversion rates.",
-      },
-    ],
-
-    advantages: [
-      {
-        mainheading:"Benefits of working with us"
-       },
-      {
-        title: "Customizable and Scalable Stores",
-        text: "Our Shopify development services provide fully customizable solutions tailored to your business needs. With scalable options, your store can grow as your business expands, allowing you to easily add features and manage a growing product catalog.",
-      },
-      {
-        title: "User-Friendly Interface",
-        text: "We design Shopify stores with a user-friendly interface, ensuring your customers have a seamless shopping experience. Our designs prioritize ease of navigation, ensuring higher customer satisfaction and increased sales.",
-      },
-      {
-        title: "Optimized for Mobile Devices",
-        text: "With our Shopify development services, your store is fully optimized for mobile devices. We ensure that your eCommerce site provides an excellent user experience across smartphones and tablets, expanding your reach to a larger audience.",
-      },
-      {
-        title: "Fast Loading Speed",
-        text: "Speed is crucial for retaining customers. We optimize your Shopify store for faster loading times, ensuring that visitors can quickly browse and make purchases, which can significantly reduce bounce rates and increase conversion rates.",
-      },
-      {
-        title: "SEO-Friendly Design",
-        text: "We focus on making your Shopify store SEO-friendly, ensuring better visibility on search engines. Our development services include optimizing product pages, meta tags, and content structure to improve organic traffic and enhance your store’s ranking.",
-      },
-      {
-        title: "Secure Payment Integration",
-        text: "Our Shopify development services ensure that your store is equipped with secure payment gateway integration. We implement industry-standard encryption to protect customer data, providing peace of mind and increasing trust in your eCommerce store.",
-      },
-    ],
-
-    flow: [
-      {
-        mainheading: "The Steps of Shopex Store as a service",
-      },
-      {
-        number: 1,
-        title: "Initial Consultation",
-        description:
-          "The first step is to understand the client's business goals, target audience, and specific requirements. This includes gathering information about the type of products, design preferences, and key features needed to build a customized Shopify store.",
-      },
-      {
-        number: 2,
-        title: "Design and Theme Selection",
-        description:
-          "After gathering the requirements, the next step is to choose a suitable Shopify theme or design a custom theme. The design is tailored to reflect the brand identity, ensuring the store is visually appealing, responsive, and easy to navigate.",
-      },
-      {
-        number: 3,
-        title: "Development and Customization",
-        description:
-          "During this phase, Shopify developers customize the store by integrating necessary features like product catalogs, shopping carts, payment gateways, and other functionalities. The store is developed to meet the client’s specific needs while ensuring high-quality performance.",
-      },
-      {
-        number: 4,
-        title: "Shopify App Integration",
-        description:
-          "Developers integrate third-party Shopify apps to enhance the store’s functionality. These can include apps for inventory management, customer support, marketing tools, and analytics. The right integrations are chosen to optimize operations and customer experience.",
-      },
-      {
-        number: 5,
-        title: "Testing and Quality Assurance",
-        description:
-          "Before launching the site, thorough testing is conducted to ensure everything works as expected. This includes testing site speed, mobile responsiveness, payment processing, and overall user experience to guarantee the website functions smoothly on all devices.",
-      },
-      {
-        number: 6,
-        title: "Launch and Post-Launch Support",
-        description:
-          "After the store is fully tested and optimized, it is launched. Post-launch support includes monitoring site performance, fixing any issues, and offering updates and enhancements as the business grows. Continuous maintenance ensures the site remains secure and up to date.",
-      },
-    ],
-  },
 
   //wix dev
   {
