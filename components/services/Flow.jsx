@@ -13,7 +13,7 @@ const Flow = ({ flow }) => {
         <div className="flex xs:flex-col lg:flex-row w-full max-w-7xl mx-auto space-y-36 lg:space-y-0">
           {/* Left side: Sticky Button and Title */}
           <div className="relative w-full lg:w-[50%]">
-            <div className="w-full leading-3 h-[200px] flex flex-col justify-between px-4">
+            <div className="w-full leading-3 h-[200px] flex flex-col justify-between px-4 ">
               <h2 className="xs:text-3xl sm:text-5xl font-semibold mb-8 leading-snug">
                 {flow[0].mainheading}
               </h2>
@@ -33,14 +33,14 @@ const Flow = ({ flow }) => {
                   </a>
                 </button>
                 {/* Modified video container with increased height */}
-                <div className="relative rounded-2xl overflow-hidden md:mt-32 mt-10">
+                <div className="relative rounded-2xl overflow-hidden  md:mt-32 mt-10">
                   <video
                     preload="metadata"
                     playsInline
                     controls
                     loop
                     muted
-                    className="w-full md:h-[700px] h-[360px]  rounded-2xl object-cover"
+                    className="w-full lg:h-[700px] h-[360px]  rounded-2xl object-cover"
                   >
                     <source src="/service.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
@@ -52,7 +52,7 @@ const Flow = ({ flow }) => {
 
           {/* Right side: Steps Content */}
           <div className="px-2 lg:px-0 lg:ml-12 w-full lg:w-2/3 ">
-            <div className="flex flex-col mt-60 md:mt-1">
+            <div className="flex flex-col mt-64 md:mt-1">
               {flow.slice(1, flow.length).map((step, index) => (
                 <div
                   key={index}

@@ -1,9 +1,11 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonial2 = () => {
-
   const testimonials = [
     {
       title: "Friendly, Fast, and Focused on Success",
@@ -38,8 +40,7 @@ const Testimonial2 = () => {
       img: "/Testimonial/naheed.png",
     },
     {
-      title:
-        "Each team member was exceptional and always available",
+      title: "Each team member was exceptional and always available",
       feedback:
         "I have truly enjoyed working with the SHOPEX team! They are incredibly professional, reliable, and always deliver top-notch service. With their expertise, we've seen great improvements in our online presence and overall business performance.",
       authorName: "Irum Changaiz",
@@ -55,140 +56,193 @@ const Testimonial2 = () => {
       img: "/Testimonial/kanda.png",
     },
   ];
-  const scrollContainerRef = useRef(null);
+      
+  const CustomPrevArrow = ({ onClick }) => (
+  <div
+    className="bg-[#fff3] border-solid border-2 border-[#00729F] rounded-full h-11 w-11 flex justify-center items-center absolute xs:left-1/3 xs:transform xs:-translate-x-1/2 xs:top-[110%] lg:left-[-35px] lg:top-[50%] lg:transform lg:-translate-y-1/2 z-10"
+    onClick={onClick}
+  >
+    <Image
+      src="/Podcast/whitearrowleft.svg"
+      alt="arrow"
+      height={25}
+      width={24}
+    />
+  </div>
+);
 
-  // State for controlling the black line width
-  const [activeIndex, setActiveIndex] = useState(0);
+const CustomNextArrow = ({ onClick }) => (
+  <div
+    className="bg-[#fff3] border-solid border-2 border-[#00729F] rounded-full h-11 w-11 flex justify-center items-center absolute xs:right-1/3 xs:transform xs:translate-x-1/2 xs:top-[110%] lg:right-[-35px] lg:top-[50%] lg:transform lg:-translate-y-1/2 z-10"
+    onClick={onClick}
+  >
+    <Image
+      src="/Podcast/whitearrow.svg"
+      alt="arrow"
+      height={25}
+      width={24}
+    />
+  </div>
+);
 
-  // Scroll functionality when clicking the arrow
-  const handleScroll = (direction) => {
-    const scrollAmount = window.innerWidth >= 768 ? 555 : 400; // Adjust scroll amount based on screen size
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2.2,
+    slidesToScroll: 1,
+    centerPadding: '20px',
+    arrows: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1478,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerPadding: '20px',
+        },
+      },
+      {
+        breakpoint: 1360,
+        settings: {
+          slidesToShow: 1.9,
+          slidesToScroll: 1,
+          centerPadding: '20px',
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerPadding: '20px',
+        },
+      },
+      {
+        breakpoint: 1179,
+        settings: {
+          slidesToShow: 1.8,
+          slidesToScroll: 1,
+          centerPadding: '20px',
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1.8,
+          slidesToScroll: 1,
+          centerPadding: '20px',
+        },
+      },
+      {
+        breakpoint:900,
+        settings: {
+          slidesToShow: 1.6,
+          slidesToScroll: 1,
+          centerPadding: '20px',
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+          centerPadding: '20px',
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1.3,
+          slidesToScroll: 1,
+          centerPadding: '10px',
+        },
+      },
+      {
+        breakpoint: 544,
+        settings: {
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          centerPadding: '10px',
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '10px',
+          infinite:true,
+        },
+      },
+      {
+        breakpoint: 0,
+        settings: {
+          infinite:true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '10px',
+          infinite:true,
 
-    if (direction === "left") {
-      scrollContainerRef.current.scrollBy({
-        left: -scrollAmount,
-        behavior: "smooth",
-      });
-      setActiveIndex((prev) => Math.max(prev - 1, 0));
-    } else if (direction === "right") {
-      scrollContainerRef.current.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
-      setActiveIndex((prev) => Math.min(prev + 1, testimonials.length - 1));
-    }
+        },
+      },
+    ],
   };
 
   return (
-    <section className="xs:px-5 md:px-32 pt-[274px] pb-[230px] xs:pt-10 xs:pb-32 overflow-hidden -mt-3 md:-mt-0">
-      {/* Inner container start */}
-
-      {/* Heading container start */}
-      <div className="w-full mb-12">
-        <h6 className="font-bold xs:text-[36px] md:text-[48px]">Testimonial</h6>
-        <p className="text-[16px] font-medium ml-2">
-      
+    <section className="px-4 sm:px-6 md:px-10 lg:px-32 py-12 sm:py-16 md:py-20 overflow-hidden">
+      {/* Heading container */}
+      <div className="w-full mb-8 sm:mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
+          Testimonial
+        </h2>
+        <p className="text-sm sm:text-base font-medium text-gray-600">
           Clients About Our Cooperation
         </p>
       </div>
-      {/* Heading container end */}
 
-      {/* Testimonial main */}
-      <div
-        className="flex xs:space-x-2 md:space-x-4 flex-shrink-0 overflow-x-hidden scrollbar-hide"
-        ref={scrollContainerRef}
-      >
-        {testimonials.map((test, index) => (
-          <div
-            className="xs:h-[420px] xs:w-[385px] md:h-[390px] md:w-[540px] shrink-0 rounded-xl bg-white xs:p-10 md:p-10 flex flex-col"
-            key={index}
-          >
-            {/* Testimonial title and feedback */}
-            <div className="font-bold text-[20px] mb-5 ">
-              <h1>{test.title}</h1>
-            </div>
-            <div className="font-light xs:text-[15px] md:text-[18px] text-[#757e8f] text-left">
-              {test.feedback}
-            </div>
+      {/* Testimonial slider */}
+      <div className="testimonial-slider-container mb-20">
+        <Slider {...settings}>
+          {testimonials.map((test, index) => (
+            <div key={index} className=""> 
+              <div className="bg-white rounded-xl shadow-lg h-full flex flex-col xs:h-[350px] xs:w-[385px] sm:w-[400px] sm:h-[400px] md:h-[390px] md:w-[450px] lg::w-[480px] xl:w-[540px] shrink-0 xs:p-10 md:p-10">
+                {/* Testimonial content */}
+                <h3 className="text-lg sm:text-xl font-bold mb-4">
+                  {test.title}
+                </h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-6">
+                  {test.feedback}
+                </p>
 
-            {/* Testimonial author */}
-            <div className="flex justify-between mt-3 items-center">
-              <div>
-                <Image
-                  src={test.img}
-                  alt="pic"
-                  width={96}
-                  height={96}
-                  className="w-16 h-16 rounded-full object-cover object-[60%_-3px] z-10"
-                />
-              </div>
-
-              <div className="flex flex-col md:mr-44">
-                <div className="text-[16px] font-bold">{test.authorName}</div>
-                <div className="text-[14px] text-[#171717]">
-                  {test.authorDesignation}
+                {/* Testimonial author */}
+                <div className="flex items-center space-x-4 mt-auto">
+                  <div className="flex-shrink-0">
+                    <Image
+                      src={test.img}
+                      alt={`${test.authorName} profile`}
+                      width={64}
+                      height={64}
+                      className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-sm sm:text-base font-bold">
+                      {test.authorName}
+                    </div>
+                    <div className="text-xs sm:text-sm text-gray-600">
+                      {test.authorDesignation}
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div>
-                {/* <Image
-                    src="/linkedin.svg"
-                    alt="pic"
-                    width={26}
-                    height={26}
-                  /> */}
-              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Slider>
       </div>
-
-      {/* Horizontal line with arrows */}
-      <div className="flex w-full h-auto mt-12 justify-center items-center">
-        {/* White line */}
-        <div className="relative h-[2px] w-[80%] bg-[#dadce2]">
-          {/* Black line */}
-          <div
-            className="absolute top-0 h-[2px] bg-[#00729f] transition-all duration-300 "
-            style={{
-              width: "20%", // The black line stays at a fixed length of 20%
-              left: `${(activeIndex / (testimonials.length - 1)) * 100}%`,
-            }}
-          ></div>
-        </div>
-
-        <div className="ml-8 flex">
-          {/* right arrow */}
-          <button
-            onClick={() => handleScroll("left")}
-            className="bg-white rounded-full h-11 w-11 flex justify-center items-center mr-3"
-          >
-            <Image
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABW0lEQVR4nO3ZvUoEQQwH8L+CVuoLWIjoU2jjR+FjaHWCIFyyp+1poZV2NuKRLIooopU+gVaCIBbqE4i94EflyQhnfblCkmV+MOVCNiSzM1kgy7Isc4llEywfYG13tUhv4AbLFFi+uw6e05J7uNBs9oPl1ha8tkHlLFxgXTIHz3oMF1b2hkD6Ysu8voHKUbjAum0vHS3gQnE4DpJPY/CPqO0PwAXSC3P2C5mDC4XO2BtXTuBm2yS5i9u4JMs9ZL8BF1aPRkDyagz+yVPj7vaQ/QW4QAeTYP0y1v4p3CC5Mmb/HUVrDC6wzttLR9fhBsmDrXTkGc2zQbhB0V+Ao5dQQnoZt4mTRjkRextNWHbifsiStdZw7KNEUpS1uIe5Shynk7pO9zAHcnKh6WA5j3ulrMSlPiHdijtWqcRgK6nLYtzR4q92X+zhbvjxegfphukHB+v137NZlmUZ/skPLLC2rxe/Qf0AAAAASUVORK5CYII="
-              className="w-7 h-7"
-              alt="arrow right"
-              height={50}
-              width={50}
-            />
-          </button>
-
-          {/* left arrow */}
-          <button
-            onClick={() => handleScroll("right")}
-            className="bg-white rounded-full h-11 w-11 flex justify-center items-center"
-          >
-            <Image
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXElEQVR4nO3Zvy5EURAG8C+IEqVCKbyDRBQkvICWik52Z1y2PAoqXsCfnVmRCEvFI4iO7NJ4BVREIjSW8AI7tzGTnF9y+/vdc+eeM3OBLMuy7F+QXoO1090l7yDdgCssre4D/Ib4AssE3KjK5N9NWULoLVLqgRukx8YAHVRlEW4UOgzSF2OIR6wcDcANlsK8CqRbcCOlPrDe2wLIJ2h/FLELWs7hCumJvaDrM3BV0CyvxhBtzDd74QbpmnkVVhvLCF3QrM+o6BDcYJ02rwLLDlxhOTV/VisH43BjfW8ErG/Gze0SrpDUSuzQc3AjNftB8mB8le7gRvgAVOIVYplF2CJmvUDozygfjiHsRka6jcC9wRNqu4MIe5gjXULc47S0/BynyzQ0VJ9C2JaS9AyBe4APP009lxmryCZcKKIPtqjEaJEaC4hbuHLjZ7jL0cfrpFexf3BkWZZlP0/gG8bWtq4XR3x4AAAAAElFTkSuQmCC"
-              className="w-7 h-7"
-              alt="arrow left"
-              height={50}
-              width={50}
-            />
-          </button>
-        </div>
-      </div>
-
-      {/* inner container end */}
     </section>
   );
 };
