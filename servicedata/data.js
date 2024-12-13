@@ -1267,6 +1267,118 @@ export const servicedata = [
     ],
   },
 
+   //wordpress dev
+   {
+    slug: "Wordpress-Development",
+    id: "3",
+    header: {
+      title:
+        "Drive More Sales Through Customized WordPress Website Development & Design Services",
+      image: "/services-main/heroimg1.png",
+      description:
+      'At Shopex, we help businesses drive more leads and online sales and improve WordPress website performance with our best WordPress website development and design services. Our award-winning team builds a customized theme to fulfill your business requirements. We focus on SEO-friendly WordPress websites to rank higher in search engines and generate more leads.',
+    },
+
+    services: [
+      {
+        mainheading: "Our Customized WordPress Website Development Services",
+      },
+      {
+        title: "Customized WordPress Website Development",
+        description:
+          "Shopex is a top custom WordPress development company that offers custom web design services. Our WordPress developer builds responsive, user-friendly WordPress websites to meet your business's requirements. We control every aspect of Full-stack WordPress development, from custom themes and integrations to speed, security, and scalability.",
+      },
+      {
+        title: "Tailored WordPress Website Design ",
+        description:
+          "A successful WordPress site is due to its design. As a top-rated WordPress website design company, we build a mobile-friendly WordPress design that matches your identity and helps you connect with your audience. We help you reach your target market through responsive WordPress website design services, enhance user experience, improve conversions, and achieve your business objectives. ",
+      },
+      {
+        title: "E-Commerce or WooCommerce Solutions",
+        description:
+          "In recent years, we have created thousands of e-commerce websites through a customized WooCommerce plugin, making buying easy for customers and increasing performance that leads to conversions and sales. We have created custom product pages, secure payment methods, and smooth order processes using WooCommerce.",
+      },
+      {
+        title: "WordPress Theme Customization & Development",
+        description:
+          "Theme design starts with a proper analysis of the target audience. Our dedicated team is ready to develop customized WordPress themes that suit your brand and functionality. Our method also includes understanding your goals, business, and specialty so that we can create a mobile-responsive website theme that will provide results.",
+      },
+      {
+        title: "WordPress Plugin Development & Integration",
+        description:
+          "At Shopex, we first analyze what plugin you used previously and, moving forward, which plugins can fulfill your business needs. WordPress plugins provide your website with new features, including the ability to schedule appointments or speed up your site. Our team will assist you with developing and integrating the plugins required for your website. We also provide the best WordPress hosting services.",
+      },
+      {
+        title: "WordPress Search Engine Optimization Solutions",
+        description:
+          "Search engine optimization helps websites rank higher for related search terms on search engine results pages. A customized search engine optimization strategy can increase organic search engine traffic to your website. The main goal of our WordPress website development services is to design and build websites that will rank well in relevant searches.",
+      },
+    ],
+
+    advantages: [
+      {
+        mainheading:" Here's How We Can Benefit You!"
+       },
+      {
+        title: "User-Friendly Design",
+        text: "User-friendly designs matter when you are selling services or products. At Shopex, we create WordPress websites that work well with fast pages, are easy to navigate, and fit design on any device. At the same time, each detail provided ensures a good experience for all visitors, which helps improve their engagement, conversion rate, and loyalty.",
+      },
+      {
+        title: "Standout From The Crowd",
+        text: "Your website is the first place customers look to learn about your brand, so it should create a great impression. We create custom WordPress themes and designs that match your brand style. You will enjoy the color themes, fonts, and custom icons or graphics that make your site unique and build unique recognition and visitor trust.",
+      },
+      {
+        title: "Website Security Protocols",
+        text: "One of the most important aspects of website building is security protocols. Security builds user trust and protects your customer or client's data. A website must also be secure to appear strongly on search engine result pages. For this reason, site security and HTTPS are part of our WordPress development services.",
+      },
+    
+  
+    ],
+
+    flow: [
+      {
+        mainheading: "Our Strategy Process As A Custom WordPress Website Development Company",
+      },
+      {
+        number: 1,
+        title: "Initial Consultation",
+        description:
+          "We offer a free first consultation to understand your business and your vision for your WordPress website. Our WordPress developer will then discuss your audience, competition, and desired features or functionalities, allowing us to outline a clear project plan and start working on it more efficiently.",
+      },
+      {
+        number: 2,
+        title: "Planning & Research",
+        description:
+          "We understand your requirements and will proceed with analysis and strategic planning. We know your industry, competitors, and audience, which helps us create a website that meets business requirements and user expectations. Our strategic process enables us to create a solid foundation for a successful WordPress website. ",
+      },
+      {
+        number: 3,
+        title: "Design and Prototyping",
+        description:
+          "We create wireframes and prototypes to show the actual layout and flow of the website before development starts. This way, you will see the design and structure upfront. We get your feedback before making any necessary changes to make it right.",
+      },
+      {
+        number: 4,
+        title: "Development & Customization",
+        description:
+          "Once we finalize our design, we will begin developing your custom WordPress website to integrate full features and functionality. You will need to manage all that the web may require to secure for use and ensure performance through responsive behavior for all possible mobile or web browsers.",
+      },
+      {
+        number: 5,
+        title: "Testing & Launch",
+        description:
+          "Before going live, we run thorough tests to ensure your WordPress website is perfect and runs easily on all browsers and devices. We will check for functionality, speed, SEO performance, and security. We know everything before considering our work and launching it live.",
+      },
+      {
+        number: 6,
+        title: "Continued Support & Optimization",
+        description:
+          "We continue to monitor the performance of your WordPress website after launching it and provide ongoing support. We will troubleshoot problems, add new features, and optimize your WordPress website for better performance. These things will certainly help you to explore more revenue.",
+      },
+    ],
+  },
+
+
   //written by us
 
 
@@ -2356,127 +2468,7 @@ export const servicedata = [
     ],
   },
 
-  //wordpress dev
-  {
-    slug: "Wordpress-Development",
-    id: "3",
-    header: {
-      title:
-        "Your Dream Website, Built with Our WordPress Website Development Services",
-      image: "/services-main/heroimg1.png",
-      description:
-      'Shopex specialists are highly accomplished in the digital sector, with a proven track record of expanding clients\' businesses through high-quality work and exceptional customer service.',
-    },
-
-    services: [
-      {
-        mainheading: "WordPress development services ",
-      },
-      {
-        title: "Custom WordPress Website Development",
-        description:
-          "As the best website development company, we specialize in custom WordPress website development tailored to your specific needs. Our expert developers create websites that reflect your brand identity while offering a user-friendly and responsive design for enhanced user experiences.",
-      },
-      {
-        title: "Developing Web Applications with WordPress",
-        description:
-          "We also specialize in developing web applications using WordPress, integrating custom features and functionalities. Whether it’s a complex tool or a simple plugin, we design seamless and scalable solutions to meet your business objectives effectively.",
-      },
-      {
-        title: "WordPress E-commerce Development",
-        description:
-          "Our WordPress e-commerce development services ensure that your online store is fully functional and secure. With the best website development company expertise, we integrate WooCommerce to create smooth shopping experiences with secure payment systems, inventory management, and more.",
-      },
-      {
-        title: "WordPress Theme & Plugin Development",
-        description:
-          "We offer custom WordPress theme and plugin development services, ensuring that your website is as unique as your brand. From aesthetic designs to advanced functionalities, we provide tailored solutions that suit your business needs and ensure optimal performance.",
-      },
-      {
-        title: "WordPress Website Optimization",
-        description:
-          "As a top-tier website development company, we optimize your WordPress site for speed, security, and SEO performance. We ensure your website loads faster, is secure from threats, and ranks higher on search engines, increasing both user engagement and traffic.",
-      },
-      {
-        title: "WordPress Maintenance & Support",
-        description:
-          "To keep your WordPress website running smoothly, we provide ongoing maintenance and support services. Our team ensures that your site is regularly updated, secured, and optimized, ensuring continued functionality and performance with minimal downtime.",
-      },
-    ],
-
-    advantages: [
-      {
-        mainheading:"Benefits of working with us"
-       },
-      {
-        title: "Customization",
-        text: "We offer custom WordPress website development, ensuring that your site is designed specifically to reflect your brand identity. Every element is tailored to meet your business goals, providing a unique online presence that sets you apart from the competition.",
-      },
-      {
-        title: "Scalable Solutions",
-        text: "Our WordPress development services ensure your website can grow with your business. Whether you're adding new features or expanding product offerings, we build websites that are scalable and flexible, easily adapting to future needs and changes in the market.",
-      },
-      {
-        title: "Cost-Effective Development",
-        text: "As a leading website development company, we provide cost-effective WordPress solutions without compromising quality. With open-source tools and a range of plugins, we build affordable, feature-rich websites that deliver maximum value for your investment.",
-      },
-      {
-        title: "SEO Optimization",
-        text: "Our WordPress websites are built with SEO best practices in mind, ensuring that your website ranks well on search engines. We integrate SEO-friendly designs and tools, improving visibility and helping you reach your target audience with optimized content and performance.",
-      },
-      {
-        title: "User-Friendly Experience",
-        text: "We prioritize creating websites that are easy to navigate, providing a seamless experience for your visitors. Our custom WordPress websites come with intuitive interfaces and responsive designs, ensuring that your users have a smooth experience across all devices.",
-      },
-      {
-        title: "Ongoing Support & Maintenance",
-        text: "We offer continuous support and maintenance to keep your WordPress website secure, up-to-date, and performing at its best. From regular updates to resolving any technical issues, our team ensures your website runs smoothly and securely at all times.",
-      },
-    ],
-
-    flow: [
-      {
-        mainheading: "The Steps of Wordpress Development as a service",
-      },
-      {
-        number: 1,
-        title: "Requirement Analysis",
-        description:
-          "The first step is to understand the client’s needs, objectives, and vision for the website. We conduct detailed discussions to gather information about functionality, design preferences, and the target audience to tailor a WordPress solution that meets business goals.",
-      },
-      {
-        number: 2,
-        title: "Design & Planning",
-        description:
-          "Based on the requirements, our team creates a blueprint for the website, including wireframes, mockups, and design prototypes. We plan the site’s structure, ensuring the design aligns with the brand and offers an intuitive user experience.",
-      },
-      {
-        number: 3,
-        title: "WordPress Theme Development",
-        description:
-          "In this stage, we begin developing a custom theme or selecting an appropriate pre-built theme. Our developers ensure the design is responsive, SEO-friendly, and optimized for performance, while also integrating any branding elements required by the client.",
-      },
-      {
-        number: 4,
-        title: "Custom Functionality Integration",
-        description:
-          "We develop custom plugins or integrate third-party plugins to add necessary features and functionalities to the website, such as e-commerce capabilities, forms, social media integration, or advanced SEO tools, ensuring everything works seamlessly.",
-      },
-      {
-        number: 5,
-        title: "Testing & Quality Assurance",
-        description:
-          "Before launching, our team performs thorough testing, including checking site speed, responsiveness, cross-browser compatibility, and overall functionality. We fix bugs and optimize the site to ensure it provides a smooth experience for all users.",
-      },
-      {
-        number: 6,
-        title: "Launch & Ongoing Maintenance",
-        description:
-          "Once the website is fully developed and tested, we launch it and ensure it’s live for users. Afterward, we offer ongoing support and maintenance services to keep the site updated, secure, and optimized for optimal performance.",
-      },
-    ],
-  },
-
+ 
 
 
   //wix dev
