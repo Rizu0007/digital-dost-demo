@@ -13,7 +13,7 @@ const Testimonial2 = () => {
         "SHOPEX Digital Marketing's services generate a substantial amount of revenue for the client. The team responds quickly to emails and calls, maintaining open and direct lines of communication. Customers can expect superior quality from a team that is both friendly and professional",
       authorName: "David Fraunberger",
       authorDesignation: "Shades Studio",
-      img: "/Testimonial/david-fraunberger.png",
+      img: "/feedback/david-fraunberger.png",
     },
     {
       title: "Thrilled with the Results and Exceptional Service",
@@ -21,7 +21,7 @@ const Testimonial2 = () => {
         "Very pleased with the level of service and the results we've received to date. We did our homework researching different vendors for PPC before deciding on SHOPEX. They won us over first on knowledge and then on price. I highly recommend SHOPEX for PPC & SEO.",
       authorName: "Brian Dunham",
       authorDesignation: "ACA Reporting,A Sky Reporting",
-      img: "/Testimonial/Dunham.png",
+      img: "/feedback/Dunham.png",
     },
     {
       title: "Effective Communication and Exponential Growth in Sales",
@@ -29,7 +29,7 @@ const Testimonial2 = () => {
         "We've had an amazing year with SHOPEX managing our apparel brand. Their expertise has driven exponential growth on digital platforms, and our sales have exceeded expectations. The team is highly cooperative and maintains excellent communication throughout.",
       authorName: "Amna Hussain",
       authorDesignation: "Brand Manager at Vanya",
-      img: "/Testimonial/hussain.png",
+      img: "/feedback/hussain.png",
     },
     {
       title: "Trusted Support in Building Our Leading Online Brand",
@@ -37,7 +37,7 @@ const Testimonial2 = () => {
         "We've built XOXO into a leading and favorite online lingerie brand, with SHOPEX supporting us every step of the way. Their expertise has been invaluable in our growth, helping us exceed expectations in both sales and customer satisfaction. We highly recommend their services for e-commerce success.",
       authorName: "Fatima Waheed",
       authorDesignation: "Founder & Brand Owner,XOXO",
-      img: "/Testimonial/naheed.png",
+      img: "/feedback/naheed.png",
     },
     {
       title: "Each team member was exceptional and always available",
@@ -45,7 +45,7 @@ const Testimonial2 = () => {
         "I have truly enjoyed working with the SHOPEX team! They are incredibly professional, reliable, and always deliver top-notch service. With their expertise, we've seen great improvements in our online presence and overall business performance.",
       authorName: "Irum Changaiz",
       authorDesignation: "Marketing Head,Nureh",
-      img: "/Testimonial/changaiz.png",
+      img: "/feedback/changaiz.png",
     },
     {
       title: "Professional, Effective, and a Pleasure to Work With",
@@ -53,7 +53,7 @@ const Testimonial2 = () => {
         "SHOPEX helped to develop my website. They did a great job and I noticed the positive results almost immediately. They are very professional and very pleasant to work with. I am very happy with the services provided and I highly recommend SHOPEX to everyone.",
       authorName: "Maryana Kanda",
       authorDesignation: "NEW JERSY MEDIATION",
-      img: "/Testimonial/kanda.png",
+      img: "/feedback/kanda.png",
     },
   ];
       
