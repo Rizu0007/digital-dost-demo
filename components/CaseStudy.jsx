@@ -6,7 +6,7 @@ import View from "./caseStudy/View";
 const CaseStudy = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center md:-mt-48 -mt-36">
+      <div className="flex flex-col justify-center pt-12 md:pt-24 items-center md:-mt-48 -mt-36">
         <View limitItems={true} />
 
         <Link href="/casestudyall">
